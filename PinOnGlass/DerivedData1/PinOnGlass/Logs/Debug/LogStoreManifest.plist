@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>D32E9C78-8A60-4098-99DE-6112DF4A0F5C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D32E9C78-8A60-4098-99DE-6112DF4A0F5C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>POSCart project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>POSCart</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug POSCart</string>
+			<key>timeStartedRecording</key>
+			<real>586863191.38305902</real>
+			<key>timeStoppedRecording</key>
+			<real>586863212.31840706</real>
+			<key>title</key>
+			<string>Debug POSCart</string>
+			<key>uniqueIdentifier</key>
+			<string>D32E9C78-8A60-4098-99DE-6112DF4A0F5C</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

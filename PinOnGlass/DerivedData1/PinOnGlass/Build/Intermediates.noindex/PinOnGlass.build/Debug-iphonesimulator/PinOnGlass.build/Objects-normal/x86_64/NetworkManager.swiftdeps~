@@ -1,0 +1,166 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NetworkManager"
+provides-nominal:
+- "10PinOnGlass14NetworkManagerC"
+provides-member:
+- ["10PinOnGlass14NetworkManagerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "Message"
+- !private "NSObject"
+- "NetworkManager"
+- "PinOnGlass"
+- !private "Reachability"
+- "ReachabilityManager"
+- !private "Settings"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["s7CVarArgP", "Error"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "startMonitoring"]
+- !private ["s7CVarArgP", "stopMonitoring"]
+- !private ["s28CustomDebugStringConvertibleP", "Error"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "startMonitoring"]
+- !private ["s28CustomDebugStringConvertibleP", "stopMonitoring"]
+- !private ["s23CustomStringConvertibleP", "Error"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "startMonitoring"]
+- !private ["s23CustomStringConvertibleP", "stopMonitoring"]
+- !private ["SQ", "Error"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "init"]
+- ["SQ", "shared"]
+- !private ["SQ", "startMonitoring"]
+- !private ["SQ", "stopMonitoring"]
+- !private ["SH", "Error"]
+- !private ["SH", "delegate"]
+- !private ["SH", "init"]
+- ["SH", "shared"]
+- !private ["SH", "startMonitoring"]
+- !private ["SH", "stopMonitoring"]
+- !private ["10PinOnGlass7MessageC", "Error"]
+- !private ["10PinOnGlass7MessageC", "init"]
+- !private ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "startMonitoring"]
+- !private ["So8NSObjectC", "stopMonitoring"]
+- !private ["So8NSObjectP", "Error"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "startMonitoring"]
+- !private ["So8NSObjectP", "stopMonitoring"]
+- ["10PinOnGlass14NetworkManagerC", "Bool"]
+- !private ["10PinOnGlass14NetworkManagerC", "Message"]
+- !private ["10PinOnGlass14NetworkManagerC", "NSObject"]
+- ["10PinOnGlass14NetworkManagerC", "PinOnGlass"]
+- !private ["10PinOnGlass14NetworkManagerC", "Reach"]
+- !private ["10PinOnGlass14NetworkManagerC", "Reachability"]
+- ["10PinOnGlass14NetworkManagerC", "ReachabilityManager"]
+- !private ["10PinOnGlass14NetworkManagerC", "Settings"]
+- ["10PinOnGlass14NetworkManagerC", "String"]
+- ["10PinOnGlass14NetworkManagerC", "authroizeTransaction"]
+- ["10PinOnGlass14NetworkManagerC", "checkActive"]
+- ["10PinOnGlass14NetworkManagerC", "checkCafisServer"]
+- ["10PinOnGlass14NetworkManagerC", "checkInternet"]
+- ["10PinOnGlass14NetworkManagerC", "completeTransaction"]
+- ["10PinOnGlass14NetworkManagerC", "createRock"]
+- ["10PinOnGlass14NetworkManagerC", "getStatus"]
+- ["10PinOnGlass14NetworkManagerC", "init"]
+- ["10PinOnGlass14NetworkManagerC", "start"]
+- ["10PinOnGlass14NetworkManagerC", "stop"]
+- !private ["10PinOnGlassAAC", "_Delegate"]
+- !private ["10PinOnGlass0abC9_DelegateP", "payError"]
+- !private ["10PinOnGlass12ReachabilityC", "init"]
+- !private ["10PinOnGlass12ReachabilityC", "isReachable"]
+- !private ["10PinOnGlass12ReachabilityC", "isReachableViaWiFi"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "delegate"]
+- ["10PinOnGlass19ReachabilityManagerC", "shared"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "startMonitoring"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "stopMonitoring"]
+- !private ["10PinOnGlass8SettingsV", "API_VERIFY"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Error"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startMonitoring"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopMonitoring"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- !private "10PinOnGlass7MessageC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "10PinOnGlass14NetworkManagerC"
+- !private "10PinOnGlassAAC"
+- !private "10PinOnGlass0abC9_DelegateP"
+- !private "10PinOnGlass12ReachabilityC"
+- "10PinOnGlass19ReachabilityManagerC"
+- !private "10PinOnGlass8SettingsV"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "afe13c0df2ff1bf502f0822e68bb9fdb"

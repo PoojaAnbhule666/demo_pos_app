@@ -1,0 +1,176 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MessageCodes"
+- "MessageData"
+- "Message"
+provides-nominal:
+- "10PinOnGlass12MessageCodesV"
+- "10PinOnGlass11MessageDataC"
+- "10PinOnGlass7MessageC"
+provides-member:
+- ["10PinOnGlass12MessageCodesV", ""]
+- ["10PinOnGlass11MessageDataC", ""]
+- ["10PinOnGlass7MessageC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- "Message"
+- "MessageCodes"
+- "MessageData"
+- "NSObject"
+- "String"
+- "StringLiteralType"
+depends-member:
+- !private ["s7CVarArgP", "Code"]
+- !private ["s7CVarArgP", "Message"]
+- !private ["s7CVarArgP", "MessageCodes"]
+- !private ["s7CVarArgP", "MessageData"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "Code"]
+- !private ["s28CustomDebugStringConvertibleP", "Message"]
+- !private ["s28CustomDebugStringConvertibleP", "MessageCodes"]
+- !private ["s28CustomDebugStringConvertibleP", "MessageData"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Code"]
+- !private ["s23CustomStringConvertibleP", "Message"]
+- !private ["s23CustomStringConvertibleP", "MessageCodes"]
+- !private ["s23CustomStringConvertibleP", "MessageData"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Code"]
+- !private ["SQ", "Message"]
+- !private ["SQ", "MessageCodes"]
+- !private ["SQ", "MessageData"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["SH", "Code"]
+- !private ["SH", "Message"]
+- !private ["SH", "MessageCodes"]
+- !private ["SH", "MessageData"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "subscript"]
+- ["10PinOnGlass7MessageC", "Error"]
+- ["10PinOnGlass7MessageC", "Information"]
+- !private ["10PinOnGlass7MessageC", "MessageCodes"]
+- ["10PinOnGlass7MessageC", "MessageData"]
+- ["10PinOnGlass7MessageC", "String"]
+- ["10PinOnGlass7MessageC", "Success"]
+- ["10PinOnGlass7MessageC", "deinit"]
+- ["10PinOnGlass7MessageC", "init"]
+- ["10PinOnGlass12MessageCodesV", "Error"]
+- ["10PinOnGlass12MessageCodesV", "Messages"]
+- ["10PinOnGlass12MessageCodesV", "Success"]
+- ["10PinOnGlass12MessageCodesV", "init"]
+- ["10PinOnGlass11MessageDataC", "Code"]
+- ["10PinOnGlass11MessageDataC", "Message"]
+- ["10PinOnGlass11MessageDataC", "String"]
+- ["10PinOnGlass11MessageDataC", "deinit"]
+- ["10PinOnGlass11MessageDataC", "init"]
+- ["So8NSObjectC", "Code"]
+- ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "Information"]
+- ["So8NSObjectC", "Message"]
+- !private ["So8NSObjectC", "MessageCodes"]
+- ["So8NSObjectC", "MessageData"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Success"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "Code"]
+- !private ["So8NSObjectP", "Message"]
+- !private ["So8NSObjectP", "MessageCodes"]
+- !private ["So8NSObjectP", "MessageData"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["ST", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Code"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Message"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MessageCodes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MessageData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "s7CVarArgP"
+- !private "Sl"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "SH"
+- "10PinOnGlass7MessageC"
+- "10PinOnGlass12MessageCodesV"
+- "10PinOnGlass11MessageDataC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "ST"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "07ad4ea23f9815ce2c4253e4d54cbb8e"

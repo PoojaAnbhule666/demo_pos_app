@@ -1,0 +1,326 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "7POSCart14ViewControllerC"
+provides-member:
+- ["7POSCart14ViewControllerC", ""]
+provides-dynamic-lookup:
+- "CancelButton"
+- "PayButton"
+- "cancelButtonClick"
+- "payButtonClick"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- "MessageData"
+- "NSObject"
+- "PinOnGlass"
+- "PinOnGlass_Delegate"
+- !private "StringLiteralType"
+- "UIButton"
+- "UIViewController"
+- "ViewController"
+- !private "print"
+depends-member:
+- !private ["s7CVarArgP", "CafisFramework"]
+- !private ["s7CVarArgP", "PinOnGlass"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "payError"]
+- ["s7CVarArgP", "payMessage"]
+- ["s7CVarArgP", "paySuccess"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "CafisFramework"]
+- !private ["s28CustomDebugStringConvertibleP", "PinOnGlass"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "payError"]
+- ["s28CustomDebugStringConvertibleP", "payMessage"]
+- ["s28CustomDebugStringConvertibleP", "paySuccess"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "CafisFramework"]
+- !private ["s23CustomStringConvertibleP", "PinOnGlass"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "payError"]
+- ["s23CustomStringConvertibleP", "payMessage"]
+- ["s23CustomStringConvertibleP", "paySuccess"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["SQ", "CafisFramework"]
+- !private ["SQ", "PinOnGlass"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- ["SQ", "payError"]
+- ["SQ", "payMessage"]
+- ["SQ", "paySuccess"]
+- !private ["SQ", "print"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SH", "CafisFramework"]
+- !private ["SH", "PinOnGlass"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- ["SH", "payError"]
+- ["SH", "payMessage"]
+- ["SH", "paySuccess"]
+- !private ["SH", "print"]
+- !private ["SH", "viewDidLoad"]
+- !private ["So8NSCodingP", "CafisFramework"]
+- !private ["So8NSCodingP", "PinOnGlass"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "payError"]
+- ["So8NSCodingP", "payMessage"]
+- ["So8NSCodingP", "paySuccess"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "CafisFramework"]
+- !private ["So26NSExtensionRequestHandlingP", "PinOnGlass"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "payError"]
+- ["So26NSExtensionRequestHandlingP", "payMessage"]
+- ["So26NSExtensionRequestHandlingP", "paySuccess"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "CafisFramework"]
+- ["So8NSObjectC", "CancelButton"]
+- ["So8NSObjectC", "MessageData"]
+- ["So8NSObjectC", "NSObject"]
+- ["So8NSObjectC", "PayButton"]
+- ["So8NSObjectC", "PinOnGlass"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "cancelButtonClick"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "payButtonClick"]
+- ["So8NSObjectC", "payError"]
+- ["So8NSObjectC", "payMessage"]
+- ["So8NSObjectC", "paySuccess"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "CafisFramework"]
+- !private ["So8NSObjectP", "PinOnGlass"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "payError"]
+- ["So8NSObjectP", "payMessage"]
+- ["So8NSObjectP", "paySuccess"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["10PinOnGlassAAC", "_Delegate"]
+- !private ["10PinOnGlassAAC", "cancel"]
+- !private ["10PinOnGlassAAC", "init"]
+- !private ["10PinOnGlassAAC", "startTransaction"]
+- !private ["10PinOnGlass0abC9_DelegateP", "CafisFramework"]
+- !private ["10PinOnGlass0abC9_DelegateP", "PinOnGlass"]
+- ["10PinOnGlass0abC9_DelegateP", ""]
+- ["10PinOnGlass0abC9_DelegateP", "payError"]
+- ["10PinOnGlass0abC9_DelegateP", "payMessage"]
+- ["10PinOnGlass0abC9_DelegateP", "paySuccess"]
+- !private ["10PinOnGlass0abC9_DelegateP", "print"]
+- !private ["So21UIAppearanceContainerP", "CafisFramework"]
+- !private ["So21UIAppearanceContainerP", "PinOnGlass"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "payError"]
+- ["So21UIAppearanceContainerP", "payMessage"]
+- ["So21UIAppearanceContainerP", "paySuccess"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "CafisFramework"]
+- !private ["So18UIContentContainerP", "PinOnGlass"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- ["So18UIContentContainerP", "payError"]
+- ["So18UIContentContainerP", "payMessage"]
+- ["So18UIContentContainerP", "paySuccess"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "CafisFramework"]
+- !private ["So18UIFocusEnvironmentP", "PinOnGlass"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "payError"]
+- ["So18UIFocusEnvironmentP", "payMessage"]
+- ["So18UIFocusEnvironmentP", "paySuccess"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "CafisFramework"]
+- !private ["So30UIPasteConfigurationSupportingP", "PinOnGlass"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "payError"]
+- ["So30UIPasteConfigurationSupportingP", "payMessage"]
+- ["So30UIPasteConfigurationSupportingP", "paySuccess"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "CafisFramework"]
+- ["So11UIResponderC", "CancelButton"]
+- ["So11UIResponderC", "MessageData"]
+- ["So11UIResponderC", "NSObject"]
+- ["So11UIResponderC", "PayButton"]
+- ["So11UIResponderC", "PinOnGlass"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "cancelButtonClick"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "payButtonClick"]
+- ["So11UIResponderC", "payError"]
+- ["So11UIResponderC", "payMessage"]
+- ["So11UIResponderC", "paySuccess"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "CafisFramework"]
+- !private ["So30UIResponderStandardEditActionsP", "PinOnGlass"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "payError"]
+- ["So30UIResponderStandardEditActionsP", "payMessage"]
+- ["So30UIResponderStandardEditActionsP", "paySuccess"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "CafisFramework"]
+- !private ["So16UIStateRestoringP", "PinOnGlass"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- ["So16UIStateRestoringP", "payError"]
+- ["So16UIStateRestoringP", "payMessage"]
+- ["So16UIStateRestoringP", "paySuccess"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "CafisFramework"]
+- !private ["So18UITraitEnvironmentP", "PinOnGlass"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "payError"]
+- ["So18UITraitEnvironmentP", "payMessage"]
+- ["So18UITraitEnvironmentP", "paySuccess"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "CafisFramework"]
+- !private ["So23UIUserActivityRestoringP", "PinOnGlass"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "payError"]
+- ["So23UIUserActivityRestoringP", "payMessage"]
+- ["So23UIUserActivityRestoringP", "paySuccess"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So16UIViewControllerC", "CafisFramework"]
+- ["So16UIViewControllerC", "CancelButton"]
+- ["So16UIViewControllerC", "MessageData"]
+- ["So16UIViewControllerC", "NSObject"]
+- ["So16UIViewControllerC", "PayButton"]
+- ["So16UIViewControllerC", "PinOnGlass"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "cancelButtonClick"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "payButtonClick"]
+- ["So16UIViewControllerC", "payError"]
+- ["So16UIViewControllerC", "payMessage"]
+- ["So16UIViewControllerC", "paySuccess"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["7POSCart14ViewControllerC", "CafisFramework"]
+- ["7POSCart14ViewControllerC", "CancelButton"]
+- ["7POSCart14ViewControllerC", "MessageData"]
+- ["7POSCart14ViewControllerC", "NSObject"]
+- ["7POSCart14ViewControllerC", "PayButton"]
+- ["7POSCart14ViewControllerC", "PinOnGlass"]
+- ["7POSCart14ViewControllerC", "UIButton"]
+- ["7POSCart14ViewControllerC", "cancelButtonClick"]
+- ["7POSCart14ViewControllerC", "deinit"]
+- ["7POSCart14ViewControllerC", "init"]
+- ["7POSCart14ViewControllerC", "payButtonClick"]
+- ["7POSCart14ViewControllerC", "payError"]
+- ["7POSCart14ViewControllerC", "payMessage"]
+- ["7POSCart14ViewControllerC", "paySuccess"]
+- !private ["7POSCart14ViewControllerC", "print"]
+- ["7POSCart14ViewControllerC", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CafisFramework"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PinOnGlass"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "payError"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "payMessage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "paySuccess"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "10PinOnGlassAAC"
+- "10PinOnGlass0abC9_DelegateP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- "7POSCart14ViewControllerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Products/Debug-iphonesimulator/PinOnGlass.framework/Modules/PinOnGlass.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Products/Debug-iphonesimulator/PinOnGlass.framework/Headers/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Products/Debug-iphonesimulator/PinOnGlass.framework/Headers/PinOnGlass-Swift.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Products/Debug-iphonesimulator/PinOnGlass.framework/Modules/module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8d5372cc34c3ee24ad9e24532028e8bb"

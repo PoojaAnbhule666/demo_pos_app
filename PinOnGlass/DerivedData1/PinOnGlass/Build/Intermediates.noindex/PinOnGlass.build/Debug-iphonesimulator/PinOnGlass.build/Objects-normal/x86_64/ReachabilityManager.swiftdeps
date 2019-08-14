@@ -1,0 +1,256 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ReachabilityManager"
+provides-nominal:
+- "10PinOnGlass19ReachabilityManagerC"
+provides-member:
+- ["10PinOnGlass19ReachabilityManagerC", ""]
+provides-dynamic-lookup:
+- "reachabilityChanged"
+depends-top-level:
+- !private "!="
+- "Bool"
+- "CastingPrecedence"
+- "NSObject"
+- "NetworkManager"
+- "Notification"
+- !private "NotificationCenter"
+- "Reachability"
+- !private "ReachabilityChangedNotification"
+- "ReachabilityManager"
+- !private "StringLiteralType"
+- !private "debugPrint"
+depends-member:
+- !private ["s7CVarArgP", "NotificationCenter"]
+- ["s7CVarArgP", "Reachability"]
+- !private ["s7CVarArgP", "ReachabilityChangedNotification"]
+- ["s7CVarArgP", "ReachabilityManager"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "debugPrint"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "delegate"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "reachability"]
+- !private ["s7CVarArgP", "reachabilityChanged"]
+- !private ["s7CVarArgP", "reachabilityStatus"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- ["s28CustomDebugStringConvertibleP", "Reachability"]
+- !private ["s28CustomDebugStringConvertibleP", "ReachabilityChangedNotification"]
+- ["s28CustomDebugStringConvertibleP", "ReachabilityManager"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "debugPrint"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "reachability"]
+- !private ["s28CustomDebugStringConvertibleP", "reachabilityChanged"]
+- !private ["s28CustomDebugStringConvertibleP", "reachabilityStatus"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s17CustomReflectableP", "object"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- ["s23CustomStringConvertibleP", "Reachability"]
+- !private ["s23CustomStringConvertibleP", "ReachabilityChangedNotification"]
+- ["s23CustomStringConvertibleP", "ReachabilityManager"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "debugPrint"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "notReachable"]
+- !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "reachability"]
+- !private ["s23CustomStringConvertibleP", "reachabilityChanged"]
+- !private ["s23CustomStringConvertibleP", "reachabilityStatus"]
+- ["s23CustomStringConvertibleP", "reachableViaWWAN"]
+- ["s23CustomStringConvertibleP", "reachableViaWiFi"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["SQ", "NotificationCenter"]
+- ["SQ", "Reachability"]
+- !private ["SQ", "ReachabilityChangedNotification"]
+- ["SQ", "ReachabilityManager"]
+- ["SQ", ""]
+- !private ["SQ", "addObserver"]
+- !private ["SQ", "debugPrint"]
+- !private ["SQ", "default"]
+- !private ["SQ", "delegate"]
+- ["SQ", "init"]
+- ["SQ", "notReachable"]
+- !private ["SQ", "object"]
+- !private ["SQ", "reachability"]
+- !private ["SQ", "reachabilityChanged"]
+- !private ["SQ", "reachabilityStatus"]
+- ["SQ", "reachableViaWWAN"]
+- ["SQ", "reachableViaWiFi"]
+- !private ["SQ", "removeObserver"]
+- !private ["SH", "NotificationCenter"]
+- ["SH", "Reachability"]
+- !private ["SH", "ReachabilityChangedNotification"]
+- ["SH", "ReachabilityManager"]
+- ["SH", ""]
+- !private ["SH", "addObserver"]
+- !private ["SH", "debugPrint"]
+- !private ["SH", "default"]
+- !private ["SH", "delegate"]
+- ["SH", "init"]
+- ["SH", "notReachable"]
+- !private ["SH", "object"]
+- !private ["SH", "reachability"]
+- !private ["SH", "reachabilityChanged"]
+- !private ["SH", "reachabilityStatus"]
+- ["SH", "reachableViaWWAN"]
+- ["SH", "reachableViaWiFi"]
+- !private ["SH", "removeObserver"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "NetworkManager"]
+- ["So8NSObjectC", "Notification"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- ["So8NSObjectC", "Reachability"]
+- !private ["So8NSObjectC", "ReachabilityChangedNotification"]
+- ["So8NSObjectC", "ReachabilityManager"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "debugPrint"]
+- !private ["So8NSObjectC", "default"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isNetworkAvailable"]
+- ["So8NSObjectC", "reachability"]
+- ["So8NSObjectC", "reachabilityChanged"]
+- ["So8NSObjectC", "reachabilityStatus"]
+- !private ["So8NSObjectC", "removeObserver"]
+- ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "startMonitoring"]
+- ["So8NSObjectC", "stopMonitoring"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- ["So8NSObjectP", "Reachability"]
+- !private ["So8NSObjectP", "ReachabilityChangedNotification"]
+- ["So8NSObjectP", "ReachabilityManager"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "debugPrint"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "reachability"]
+- !private ["So8NSObjectP", "reachabilityChanged"]
+- !private ["So8NSObjectP", "reachabilityStatus"]
+- !private ["So8NSObjectP", "removeObserver"]
+- !private ["10PinOnGlass14NetworkManagerC", "getStatus"]
+- !private ["10PinOnGlass12ReachabilityC13NetworkStatusO", "deinit"]
+- ["10PinOnGlass12ReachabilityC13NetworkStatusO", "notReachable"]
+- ["10PinOnGlass12ReachabilityC13NetworkStatusO", "reachableViaWWAN"]
+- ["10PinOnGlass12ReachabilityC13NetworkStatusO", "reachableViaWiFi"]
+- !private ["10Foundation12NotificationV", "object"]
+- !private ["So20NSNotificationCenterC", "addObserver"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "removeObserver"]
+- ["10PinOnGlass12ReachabilityC", "NetworkStatus"]
+- !private ["10PinOnGlass12ReachabilityC", "currentReachabilityStatus"]
+- ["10PinOnGlass12ReachabilityC", "init"]
+- !private ["10PinOnGlass12ReachabilityC", "startNotifier"]
+- !private ["10PinOnGlass12ReachabilityC", "stopNotifier"]
+- ["10PinOnGlass19ReachabilityManagerC", "Bool"]
+- ["10PinOnGlass19ReachabilityManagerC", "NetworkManager"]
+- ["10PinOnGlass19ReachabilityManagerC", "Notification"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "NotificationCenter"]
+- ["10PinOnGlass19ReachabilityManagerC", "Reachability"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "ReachabilityChangedNotification"]
+- ["10PinOnGlass19ReachabilityManagerC", "ReachabilityManager"]
+- !private ["10PinOnGlass19ReachabilityManagerC", "debugPrint"]
+- ["10PinOnGlass19ReachabilityManagerC", "deinit"]
+- ["10PinOnGlass19ReachabilityManagerC", "delegate"]
+- ["10PinOnGlass19ReachabilityManagerC", "init"]
+- ["10PinOnGlass19ReachabilityManagerC", "isNetworkAvailable"]
+- ["10PinOnGlass19ReachabilityManagerC", "reachability"]
+- ["10PinOnGlass19ReachabilityManagerC", "reachabilityChanged"]
+- ["10PinOnGlass19ReachabilityManagerC", "reachabilityStatus"]
+- ["10PinOnGlass19ReachabilityManagerC", "shared"]
+- ["10PinOnGlass19ReachabilityManagerC", "startMonitoring"]
+- ["10PinOnGlass19ReachabilityManagerC", "stopMonitoring"]
+- !private ["10Foundation20ReferenceConvertibleP", "object"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Reachability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ReachabilityChangedNotification"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ReachabilityManager"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "debugPrint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reachability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reachabilityChanged"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reachabilityStatus"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["s21_ObjectiveCBridgeableP", "object"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "10PinOnGlass14NetworkManagerC"
+- "10PinOnGlass12ReachabilityC13NetworkStatusO"
+- !private "10Foundation12NotificationV"
+- !private "So20NSNotificationCenterC"
+- "10PinOnGlass12ReachabilityC"
+- "10PinOnGlass19ReachabilityManagerC"
+- !private "10Foundation20ReferenceConvertibleP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4b59d49b45dda69d551a34786d2721d6"

@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "aea7090e612929fae254fe15e19a969e"
+build_time: [1565257676, 649888000]
+inputs:
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/POSCart/POSCart/ViewController.swift": [1565087214, 486398184]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/POSCart/POSCart/AppDelegate.swift": [1564769056, 810994279]

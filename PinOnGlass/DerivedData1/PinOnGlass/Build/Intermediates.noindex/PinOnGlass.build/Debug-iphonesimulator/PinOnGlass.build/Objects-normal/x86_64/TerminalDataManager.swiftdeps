@@ -1,0 +1,268 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TerminalDataManager"
+provides-nominal:
+- "10PinOnGlass19TerminalDataManagerC"
+provides-member:
+- ["10PinOnGlass19TerminalDataManagerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private "IDTUtility"
+- !private "IDT_NEO2"
+- "NSObject"
+- !private "NSString"
+- !private "RETURN_CODE"
+- !private "RETURN_CODE_DO_SUCCESS"
+- "String"
+- "StringLiteralType"
+- "TerminalDataManager"
+depends-member:
+- !private ["s7CVarArgP", "AIDS"]
+- !private ["s7CVarArgP", "CAPK"]
+- !private ["s7CVarArgP", "IDTUtility"]
+- !private ["s7CVarArgP", "IDT_NEO2"]
+- !private ["s7CVarArgP", "RETURN_CODE_DO_SUCCESS"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "config_getSerialNumber"]
+- !private ["s7CVarArgP", "emv_setApplicationData"]
+- !private ["s7CVarArgP", "emv_setCAPKFile"]
+- !private ["s7CVarArgP", "emv_setTerminalData"]
+- !private ["s7CVarArgP", "hex"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "setTerminalData"]
+- !private ["s7CVarArgP", "sharedController"]
+- !private ["s7CVarArgP", "terminalSettng"]
+- !private ["s7CVarArgP", "tlVtoDICT"]
+- !private ["s28CustomDebugStringConvertibleP", "AIDS"]
+- !private ["s28CustomDebugStringConvertibleP", "CAPK"]
+- !private ["s28CustomDebugStringConvertibleP", "IDTUtility"]
+- !private ["s28CustomDebugStringConvertibleP", "IDT_NEO2"]
+- !private ["s28CustomDebugStringConvertibleP", "RETURN_CODE_DO_SUCCESS"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "config_getSerialNumber"]
+- !private ["s28CustomDebugStringConvertibleP", "emv_setApplicationData"]
+- !private ["s28CustomDebugStringConvertibleP", "emv_setCAPKFile"]
+- !private ["s28CustomDebugStringConvertibleP", "emv_setTerminalData"]
+- !private ["s28CustomDebugStringConvertibleP", "hex"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "setTerminalData"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedController"]
+- !private ["s28CustomDebugStringConvertibleP", "terminalSettng"]
+- !private ["s28CustomDebugStringConvertibleP", "tlVtoDICT"]
+- !private ["s17CustomReflectableP", "config_getSerialNumber"]
+- !private ["s17CustomReflectableP", "emv_setApplicationData"]
+- !private ["s17CustomReflectableP", "emv_setCAPKFile"]
+- !private ["s17CustomReflectableP", "emv_setTerminalData"]
+- !private ["s23CustomStringConvertibleP", "AIDS"]
+- !private ["s23CustomStringConvertibleP", "CAPK"]
+- !private ["s23CustomStringConvertibleP", "IDTUtility"]
+- !private ["s23CustomStringConvertibleP", "IDT_NEO2"]
+- !private ["s23CustomStringConvertibleP", "RETURN_CODE_DO_SUCCESS"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "config_getSerialNumber"]
+- !private ["s23CustomStringConvertibleP", "emv_setApplicationData"]
+- !private ["s23CustomStringConvertibleP", "emv_setCAPKFile"]
+- !private ["s23CustomStringConvertibleP", "emv_setTerminalData"]
+- !private ["s23CustomStringConvertibleP", "hex"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "setTerminalData"]
+- !private ["s23CustomStringConvertibleP", "sharedController"]
+- !private ["s23CustomStringConvertibleP", "terminalSettng"]
+- !private ["s23CustomStringConvertibleP", "tlVtoDICT"]
+- !private ["Se", "config_getSerialNumber"]
+- !private ["Se", "emv_setApplicationData"]
+- !private ["Se", "emv_setCAPKFile"]
+- !private ["Se", "emv_setTerminalData"]
+- !private ["SE", "config_getSerialNumber"]
+- !private ["SE", "emv_setApplicationData"]
+- !private ["SE", "emv_setCAPKFile"]
+- !private ["SE", "emv_setTerminalData"]
+- !private ["SQ", "AIDS"]
+- !private ["SQ", "CAPK"]
+- !private ["SQ", "IDTUtility"]
+- !private ["SQ", "IDT_NEO2"]
+- !private ["SQ", "RETURN_CODE_DO_SUCCESS"]
+- ["SQ", ""]
+- !private ["SQ", "config_getSerialNumber"]
+- !private ["SQ", "emv_setApplicationData"]
+- !private ["SQ", "emv_setCAPKFile"]
+- !private ["SQ", "emv_setTerminalData"]
+- !private ["SQ", "hex"]
+- !private ["SQ", "init"]
+- !private ["SQ", "setTerminalData"]
+- !private ["SQ", "sharedController"]
+- !private ["SQ", "terminalSettng"]
+- !private ["SQ", "tlVtoDICT"]
+- !private ["s23ExpressibleByNilLiteralP", "config_getSerialNumber"]
+- !private ["s23ExpressibleByNilLiteralP", "emv_setApplicationData"]
+- !private ["s23ExpressibleByNilLiteralP", "emv_setCAPKFile"]
+- !private ["s23ExpressibleByNilLiteralP", "emv_setTerminalData"]
+- !private ["SH", "AIDS"]
+- !private ["SH", "CAPK"]
+- !private ["SH", "IDTUtility"]
+- !private ["SH", "IDT_NEO2"]
+- !private ["SH", "RETURN_CODE_DO_SUCCESS"]
+- ["SH", ""]
+- !private ["SH", "config_getSerialNumber"]
+- !private ["SH", "emv_setApplicationData"]
+- !private ["SH", "emv_setCAPKFile"]
+- !private ["SH", "emv_setTerminalData"]
+- !private ["SH", "hex"]
+- !private ["SH", "init"]
+- !private ["SH", "setTerminalData"]
+- !private ["SH", "sharedController"]
+- !private ["SH", "terminalSettng"]
+- !private ["SH", "tlVtoDICT"]
+- !private ["So10IDTUtilityC", "hex"]
+- !private ["So10IDTUtilityC", "tlVtoDICT"]
+- !private ["So19IDT_Device_DelegateP", "config_getSerialNumber"]
+- !private ["So19IDT_Device_DelegateP", "emv_setApplicationData"]
+- !private ["So19IDT_Device_DelegateP", "emv_setCAPKFile"]
+- !private ["So19IDT_Device_DelegateP", "emv_setTerminalData"]
+- !private ["So19IDT_Device_DelegateP", "sharedController"]
+- !private ["So8IDT_NEO2C", "config_getSerialNumber"]
+- !private ["So8IDT_NEO2C", "emv_setApplicationData"]
+- !private ["So8IDT_NEO2C", "emv_setCAPKFile"]
+- !private ["So8IDT_NEO2C", "emv_setTerminalData"]
+- !private ["So8IDT_NEO2C", "sharedController"]
+- ["So8NSObjectC", "AIDS"]
+- ["So8NSObjectC", "CAPK"]
+- !private ["So8NSObjectC", "IDTUtility"]
+- !private ["So8NSObjectC", "IDT_NEO2"]
+- !private ["So8NSObjectC", "NSString"]
+- !private ["So8NSObjectC", "RETURN_CODE"]
+- !private ["So8NSObjectC", "RETURN_CODE_DO_SUCCESS"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "config_getSerialNumber"]
+- !private ["So8NSObjectC", "emv_setApplicationData"]
+- !private ["So8NSObjectC", "emv_setCAPKFile"]
+- !private ["So8NSObjectC", "emv_setTerminalData"]
+- !private ["So8NSObjectC", "hex"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "setTerminalData"]
+- ["So8NSObjectC", "setUpTerminal"]
+- !private ["So8NSObjectC", "sharedController"]
+- ["So8NSObjectC", "terminalSettng"]
+- !private ["So8NSObjectC", "tlVtoDICT"]
+- !private ["So8NSObjectP", "AIDS"]
+- !private ["So8NSObjectP", "CAPK"]
+- !private ["So8NSObjectP", "IDTUtility"]
+- !private ["So8NSObjectP", "IDT_NEO2"]
+- !private ["So8NSObjectP", "RETURN_CODE_DO_SUCCESS"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "config_getSerialNumber"]
+- !private ["So8NSObjectP", "emv_setApplicationData"]
+- !private ["So8NSObjectP", "emv_setCAPKFile"]
+- !private ["So8NSObjectP", "emv_setTerminalData"]
+- !private ["So8NSObjectP", "hex"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "setTerminalData"]
+- !private ["So8NSObjectP", "sharedController"]
+- !private ["So8NSObjectP", "terminalSettng"]
+- !private ["So8NSObjectP", "tlVtoDICT"]
+- !private ["Sq", "config_getSerialNumber"]
+- !private ["Sq", "emv_setApplicationData"]
+- !private ["Sq", "emv_setCAPKFile"]
+- !private ["Sq", "emv_setTerminalData"]
+- ["10PinOnGlass19TerminalDataManagerC", "AIDS"]
+- ["10PinOnGlass19TerminalDataManagerC", "CAPK"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "IDTUtility"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "IDT_NEO2"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "NSString"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "RETURN_CODE"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "RETURN_CODE_DO_SUCCESS"]
+- ["10PinOnGlass19TerminalDataManagerC", "String"]
+- ["10PinOnGlass19TerminalDataManagerC", "deinit"]
+- ["10PinOnGlass19TerminalDataManagerC", "init"]
+- ["10PinOnGlass19TerminalDataManagerC", "setTerminalData"]
+- ["10PinOnGlass19TerminalDataManagerC", "setUpTerminal"]
+- ["10PinOnGlass19TerminalDataManagerC", "terminalSettng"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AIDS"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAPK"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IDTUtility"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IDT_NEO2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RETURN_CODE_DO_SUCCESS"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "config_getSerialNumber"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emv_setApplicationData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emv_setCAPKFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emv_setTerminalData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setTerminalData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "terminalSettng"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tlVtoDICT"]
+- !private ["s21_ObjectiveCBridgeableP", "config_getSerialNumber"]
+- !private ["s21_ObjectiveCBridgeableP", "emv_setApplicationData"]
+- !private ["s21_ObjectiveCBridgeableP", "emv_setCAPKFile"]
+- !private ["s21_ObjectiveCBridgeableP", "emv_setTerminalData"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "So10IDTUtilityC"
+- !private "So19IDT_Device_DelegateP"
+- !private "So8IDT_NEO2C"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- "10PinOnGlass19TerminalDataManagerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6e579942d1239b40a0cb9a0f3897e9bd"

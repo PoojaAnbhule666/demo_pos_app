@@ -1,0 +1,18 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "f4bbad8b49b7f267db787f820f347fc5"
+build_time: [1565339003, 959522000]
+inputs:
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/NetworkManager.swift": [1565088108, 238139667]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Helpers/PinOnGlass_Delegate.swift": [1565259310, 949311746]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Helpers/Reachability.swift": [1489044943, 0]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/BluetoothManager.swift": [1565339000, 602453347]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Class/ReachabilityManager.swift": [1565087465, 440817515]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/RequestResponse/PayConfirm.swift": [1565176842, 849567045]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Class/Battery.swift": [1565170241, 660916203]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/RequestResponse/Pay.swift": [1565176552, 386963591]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/DeviceManager.swift": [1565338733, 212523987]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/RequestResponse/DataCardAuthenticate.swift": [1565176119, 292747423]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.swift": [1565334827, 635146237]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Class/TerminalDataManager.swift": [1565338869, 523634612]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Helpers/Property.swift": [1565334320, 402616236]
+  "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/Helpers/Message.swift": [1565259926, 435564627]

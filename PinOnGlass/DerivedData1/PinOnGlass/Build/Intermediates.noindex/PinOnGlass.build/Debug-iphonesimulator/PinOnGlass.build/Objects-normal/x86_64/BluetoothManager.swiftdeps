@@ -1,0 +1,465 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BluetoothManager"
+provides-nominal:
+- "10PinOnGlass16BluetoothManagerC"
+provides-member:
+- ["10PinOnGlass16BluetoothManagerC", ""]
+provides-dynamic-lookup:
+- "deviceConnected"
+- "deviceDisconnected"
+- "deviceMessage"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Battery"
+- "BluetoothManager"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Float"
+- "FloatLiteralType"
+- "IDT_Device_Delegate"
+- !private "IDT_VP3300"
+- "IntegerLiteralType"
+- !private "Message"
+- "NSObject"
+- "PinOnGlass"
+- "String"
+- "StringLiteralType"
+- !private "TerminalDataManager"
+- !private "UIDevice"
+depends-member:
+- !private ["10PinOnGlass7BatteryC", "delegate"]
+- !private ["10PinOnGlass7BatteryC", "init"]
+- !private ["10PinOnGlass7BatteryC", "start"]
+- !private ["10PinOnGlass7BatteryC", "stop"]
+- ["10PinOnGlass16BluetoothManagerC", "Battery"]
+- ["10PinOnGlass16BluetoothManagerC", "Bool"]
+- ["10PinOnGlass16BluetoothManagerC", "Float"]
+- !private ["10PinOnGlass16BluetoothManagerC", "IDT_VP3300"]
+- !private ["10PinOnGlass16BluetoothManagerC", "Message"]
+- !private ["10PinOnGlass16BluetoothManagerC", "NSObject"]
+- ["10PinOnGlass16BluetoothManagerC", "PinOnGlass"]
+- ["10PinOnGlass16BluetoothManagerC", "String"]
+- !private ["10PinOnGlass16BluetoothManagerC", "TerminalDataManager"]
+- !private ["10PinOnGlass16BluetoothManagerC", "UIDevice"]
+- ["10PinOnGlass16BluetoothManagerC", "UniPay_EventFunctionICC"]
+- ["10PinOnGlass16BluetoothManagerC", "_Battery"]
+- ["10PinOnGlass16BluetoothManagerC", "batteryLevel"]
+- ["10PinOnGlass16BluetoothManagerC", "bypassData"]
+- ["10PinOnGlass16BluetoothManagerC", "checkActive"]
+- ["10PinOnGlass16BluetoothManagerC", "checkBattery"]
+- ["10PinOnGlass16BluetoothManagerC", "connect"]
+- ["10PinOnGlass16BluetoothManagerC", "data"]
+- ["10PinOnGlass16BluetoothManagerC", "dataInOutMonitor"]
+- ["10PinOnGlass16BluetoothManagerC", "deinit"]
+- ["10PinOnGlass16BluetoothManagerC", "deviceBattery"]
+- ["10PinOnGlass16BluetoothManagerC", "deviceConnected"]
+- ["10PinOnGlass16BluetoothManagerC", "deviceDisconnected"]
+- ["10PinOnGlass16BluetoothManagerC", "deviceMessage"]
+- ["10PinOnGlass16BluetoothManagerC", "disconnect"]
+- ["10PinOnGlass16BluetoothManagerC", "emvTransactionData"]
+- ["10PinOnGlass16BluetoothManagerC", "init"]
+- ["10PinOnGlass16BluetoothManagerC", "lcdDisplay"]
+- ["10PinOnGlass16BluetoothManagerC", "pinRequest"]
+- ["10PinOnGlass16BluetoothManagerC", "pinpadData"]
+- ["10PinOnGlass16BluetoothManagerC", "plugStatusChange"]
+- ["10PinOnGlass16BluetoothManagerC", "start"]
+- ["10PinOnGlass16BluetoothManagerC", "stop"]
+- ["10PinOnGlass16BluetoothManagerC", "swipeMSRData"]
+- ["10PinOnGlass16BluetoothManagerC", "uniPay_EventFunctionICC"]
+- !private ["s7CVarArgP", "Battery"]
+- !private ["s7CVarArgP", "Error"]
+- !private ["s7CVarArgP", "IDT_VP3300"]
+- !private ["s7CVarArgP", "Message"]
+- !private ["s7CVarArgP", "NSObject"]
+- !private ["s7CVarArgP", "PinOnGlass"]
+- !private ["s7CVarArgP", "TerminalDataManager"]
+- !private ["s7CVarArgP", "UIDevice"]
+- ["s7CVarArgP", "UniPay_EventFunctionICC"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_Battery"]
+- !private ["s7CVarArgP", "batteryLevel"]
+- ["s7CVarArgP", "bypassData"]
+- !private ["s7CVarArgP", "current"]
+- ["s7CVarArgP", "data"]
+- ["s7CVarArgP", "dataInOutMonitor"]
+- !private ["s7CVarArgP", "delegate"]
+- ["s7CVarArgP", "deviceConnected"]
+- ["s7CVarArgP", "deviceDisconnected"]
+- ["s7CVarArgP", "deviceMessage"]
+- !private ["s7CVarArgP", "device_enableBLEDeviceSearch"]
+- !private ["s7CVarArgP", "device_setBLEFriendlyName"]
+- ["s7CVarArgP", "emvTransactionData"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isBatteryMonitoringEnabled"]
+- ["s7CVarArgP", "lcdDisplay"]
+- ["s7CVarArgP", "pinRequest"]
+- ["s7CVarArgP", "pinpadData"]
+- ["s7CVarArgP", "plugStatusChange"]
+- !private ["s7CVarArgP", "setUpTerminal"]
+- !private ["s7CVarArgP", "sharedController"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "stop"]
+- ["s7CVarArgP", "swipeMSRData"]
+- ["s7CVarArgP", "uniPay_EventFunctionICC"]
+- !private ["s28CustomDebugStringConvertibleP", "Battery"]
+- !private ["s28CustomDebugStringConvertibleP", "Error"]
+- !private ["s28CustomDebugStringConvertibleP", "IDT_VP3300"]
+- !private ["s28CustomDebugStringConvertibleP", "Message"]
+- !private ["s28CustomDebugStringConvertibleP", "NSObject"]
+- !private ["s28CustomDebugStringConvertibleP", "PinOnGlass"]
+- !private ["s28CustomDebugStringConvertibleP", "TerminalDataManager"]
+- !private ["s28CustomDebugStringConvertibleP", "UIDevice"]
+- ["s28CustomDebugStringConvertibleP", "UniPay_EventFunctionICC"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "_Battery"]
+- !private ["s28CustomDebugStringConvertibleP", "batteryLevel"]
+- ["s28CustomDebugStringConvertibleP", "bypassData"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- ["s28CustomDebugStringConvertibleP", "data"]
+- ["s28CustomDebugStringConvertibleP", "dataInOutMonitor"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- ["s28CustomDebugStringConvertibleP", "deviceConnected"]
+- ["s28CustomDebugStringConvertibleP", "deviceDisconnected"]
+- ["s28CustomDebugStringConvertibleP", "deviceMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "device_enableBLEDeviceSearch"]
+- !private ["s28CustomDebugStringConvertibleP", "device_setBLEFriendlyName"]
+- ["s28CustomDebugStringConvertibleP", "emvTransactionData"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isBatteryMonitoringEnabled"]
+- ["s28CustomDebugStringConvertibleP", "lcdDisplay"]
+- ["s28CustomDebugStringConvertibleP", "pinRequest"]
+- ["s28CustomDebugStringConvertibleP", "pinpadData"]
+- ["s28CustomDebugStringConvertibleP", "plugStatusChange"]
+- !private ["s28CustomDebugStringConvertibleP", "setUpTerminal"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedController"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "stop"]
+- ["s28CustomDebugStringConvertibleP", "swipeMSRData"]
+- ["s28CustomDebugStringConvertibleP", "uniPay_EventFunctionICC"]
+- !private ["s23CustomStringConvertibleP", "Battery"]
+- !private ["s23CustomStringConvertibleP", "Error"]
+- !private ["s23CustomStringConvertibleP", "IDT_VP3300"]
+- !private ["s23CustomStringConvertibleP", "Message"]
+- !private ["s23CustomStringConvertibleP", "NSObject"]
+- !private ["s23CustomStringConvertibleP", "PinOnGlass"]
+- !private ["s23CustomStringConvertibleP", "TerminalDataManager"]
+- !private ["s23CustomStringConvertibleP", "UIDevice"]
+- ["s23CustomStringConvertibleP", "UniPay_EventFunctionICC"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_Battery"]
+- !private ["s23CustomStringConvertibleP", "batteryLevel"]
+- ["s23CustomStringConvertibleP", "bypassData"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- ["s23CustomStringConvertibleP", "data"]
+- ["s23CustomStringConvertibleP", "dataInOutMonitor"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- ["s23CustomStringConvertibleP", "deviceConnected"]
+- ["s23CustomStringConvertibleP", "deviceDisconnected"]
+- ["s23CustomStringConvertibleP", "deviceMessage"]
+- !private ["s23CustomStringConvertibleP", "device_enableBLEDeviceSearch"]
+- !private ["s23CustomStringConvertibleP", "device_setBLEFriendlyName"]
+- ["s23CustomStringConvertibleP", "emvTransactionData"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isBatteryMonitoringEnabled"]
+- ["s23CustomStringConvertibleP", "lcdDisplay"]
+- ["s23CustomStringConvertibleP", "pinRequest"]
+- ["s23CustomStringConvertibleP", "pinpadData"]
+- ["s23CustomStringConvertibleP", "plugStatusChange"]
+- !private ["s23CustomStringConvertibleP", "setUpTerminal"]
+- !private ["s23CustomStringConvertibleP", "sharedController"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "stop"]
+- ["s23CustomStringConvertibleP", "swipeMSRData"]
+- ["s23CustomStringConvertibleP", "uniPay_EventFunctionICC"]
+- !private ["SQ", "Battery"]
+- !private ["SQ", "Error"]
+- !private ["SQ", "IDT_VP3300"]
+- !private ["SQ", "Message"]
+- !private ["SQ", "NSObject"]
+- !private ["SQ", "PinOnGlass"]
+- !private ["SQ", "TerminalDataManager"]
+- !private ["SQ", "UIDevice"]
+- ["SQ", "UniPay_EventFunctionICC"]
+- ["SQ", ""]
+- !private ["SQ", "_Battery"]
+- !private ["SQ", "batteryLevel"]
+- ["SQ", "bypassData"]
+- !private ["SQ", "current"]
+- ["SQ", "data"]
+- ["SQ", "dataInOutMonitor"]
+- !private ["SQ", "delegate"]
+- ["SQ", "deviceConnected"]
+- ["SQ", "deviceDisconnected"]
+- ["SQ", "deviceMessage"]
+- !private ["SQ", "device_enableBLEDeviceSearch"]
+- !private ["SQ", "device_setBLEFriendlyName"]
+- ["SQ", "emvTransactionData"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isBatteryMonitoringEnabled"]
+- ["SQ", "lcdDisplay"]
+- ["SQ", "pinRequest"]
+- ["SQ", "pinpadData"]
+- ["SQ", "plugStatusChange"]
+- !private ["SQ", "setUpTerminal"]
+- !private ["SQ", "sharedController"]
+- !private ["SQ", "start"]
+- !private ["SQ", "stop"]
+- ["SQ", "swipeMSRData"]
+- ["SQ", "uniPay_EventFunctionICC"]
+- !private ["SH", "Battery"]
+- !private ["SH", "Error"]
+- !private ["SH", "IDT_VP3300"]
+- !private ["SH", "Message"]
+- !private ["SH", "NSObject"]
+- !private ["SH", "PinOnGlass"]
+- !private ["SH", "TerminalDataManager"]
+- !private ["SH", "UIDevice"]
+- ["SH", "UniPay_EventFunctionICC"]
+- ["SH", ""]
+- !private ["SH", "_Battery"]
+- !private ["SH", "batteryLevel"]
+- ["SH", "bypassData"]
+- !private ["SH", "current"]
+- ["SH", "data"]
+- ["SH", "dataInOutMonitor"]
+- !private ["SH", "delegate"]
+- ["SH", "deviceConnected"]
+- ["SH", "deviceDisconnected"]
+- ["SH", "deviceMessage"]
+- !private ["SH", "device_enableBLEDeviceSearch"]
+- !private ["SH", "device_setBLEFriendlyName"]
+- ["SH", "emvTransactionData"]
+- !private ["SH", "init"]
+- !private ["SH", "isBatteryMonitoringEnabled"]
+- ["SH", "lcdDisplay"]
+- ["SH", "pinRequest"]
+- ["SH", "pinpadData"]
+- ["SH", "plugStatusChange"]
+- !private ["SH", "setUpTerminal"]
+- !private ["SH", "sharedController"]
+- !private ["SH", "start"]
+- !private ["SH", "stop"]
+- ["SH", "swipeMSRData"]
+- ["SH", "uniPay_EventFunctionICC"]
+- !private ["So19IDT_Device_DelegateP", "Battery"]
+- !private ["So19IDT_Device_DelegateP", "IDT_VP3300"]
+- !private ["So19IDT_Device_DelegateP", "Message"]
+- !private ["So19IDT_Device_DelegateP", "NSObject"]
+- !private ["So19IDT_Device_DelegateP", "PinOnGlass"]
+- !private ["So19IDT_Device_DelegateP", "TerminalDataManager"]
+- !private ["So19IDT_Device_DelegateP", "UIDevice"]
+- ["So19IDT_Device_DelegateP", "UniPay_EventFunctionICC"]
+- ["So19IDT_Device_DelegateP", ""]
+- !private ["So19IDT_Device_DelegateP", "_Battery"]
+- !private ["So19IDT_Device_DelegateP", "batteryLevel"]
+- ["So19IDT_Device_DelegateP", "bypassData"]
+- ["So19IDT_Device_DelegateP", "data"]
+- ["So19IDT_Device_DelegateP", "dataInOutMonitor"]
+- ["So19IDT_Device_DelegateP", "deviceConnected"]
+- ["So19IDT_Device_DelegateP", "deviceDisconnected"]
+- ["So19IDT_Device_DelegateP", "deviceMessage"]
+- !private ["So19IDT_Device_DelegateP", "device_enableBLEDeviceSearch"]
+- !private ["So19IDT_Device_DelegateP", "device_setBLEFriendlyName"]
+- ["So19IDT_Device_DelegateP", "emvTransactionData"]
+- ["So19IDT_Device_DelegateP", "lcdDisplay"]
+- ["So19IDT_Device_DelegateP", "pinRequest"]
+- ["So19IDT_Device_DelegateP", "pinpadData"]
+- ["So19IDT_Device_DelegateP", "plugStatusChange"]
+- !private ["So19IDT_Device_DelegateP", "sharedController"]
+- ["So19IDT_Device_DelegateP", "swipeMSRData"]
+- ["So19IDT_Device_DelegateP", "uniPay_EventFunctionICC"]
+- !private ["So10IDT_VP3300C", "device_enableBLEDeviceSearch"]
+- !private ["So10IDT_VP3300C", "device_setBLEFriendlyName"]
+- !private ["So10IDT_VP3300C", "sharedController"]
+- !private ["10PinOnGlass7MessageC", "Error"]
+- !private ["10PinOnGlass7MessageC", "init"]
+- ["So8NSObjectC", "Battery"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "Float"]
+- !private ["So8NSObjectC", "IDT_VP3300"]
+- !private ["So8NSObjectC", "Message"]
+- !private ["So8NSObjectC", "NSObject"]
+- ["So8NSObjectC", "PinOnGlass"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TerminalDataManager"]
+- !private ["So8NSObjectC", "UIDevice"]
+- ["So8NSObjectC", "UniPay_EventFunctionICC"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "_Battery"]
+- ["So8NSObjectC", "batteryLevel"]
+- ["So8NSObjectC", "bypassData"]
+- ["So8NSObjectC", "checkActive"]
+- ["So8NSObjectC", "checkBattery"]
+- ["So8NSObjectC", "connect"]
+- !private ["So8NSObjectC", "current"]
+- ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "dataInOutMonitor"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "deviceBattery"]
+- ["So8NSObjectC", "deviceConnected"]
+- ["So8NSObjectC", "deviceDisconnected"]
+- ["So8NSObjectC", "deviceMessage"]
+- !private ["So8NSObjectC", "device_enableBLEDeviceSearch"]
+- !private ["So8NSObjectC", "device_setBLEFriendlyName"]
+- ["So8NSObjectC", "disconnect"]
+- ["So8NSObjectC", "emvTransactionData"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isBatteryMonitoringEnabled"]
+- ["So8NSObjectC", "lcdDisplay"]
+- ["So8NSObjectC", "pinRequest"]
+- ["So8NSObjectC", "pinpadData"]
+- ["So8NSObjectC", "plugStatusChange"]
+- !private ["So8NSObjectC", "setUpTerminal"]
+- !private ["So8NSObjectC", "sharedController"]
+- ["So8NSObjectC", "start"]
+- ["So8NSObjectC", "stop"]
+- ["So8NSObjectC", "swipeMSRData"]
+- ["So8NSObjectC", "uniPay_EventFunctionICC"]
+- !private ["So8NSObjectP", "Battery"]
+- !private ["So8NSObjectP", "Error"]
+- !private ["So8NSObjectP", "IDT_VP3300"]
+- !private ["So8NSObjectP", "Message"]
+- !private ["So8NSObjectP", "NSObject"]
+- !private ["So8NSObjectP", "PinOnGlass"]
+- !private ["So8NSObjectP", "TerminalDataManager"]
+- !private ["So8NSObjectP", "UIDevice"]
+- ["So8NSObjectP", "UniPay_EventFunctionICC"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "_Battery"]
+- !private ["So8NSObjectP", "batteryLevel"]
+- ["So8NSObjectP", "bypassData"]
+- !private ["So8NSObjectP", "current"]
+- ["So8NSObjectP", "data"]
+- ["So8NSObjectP", "dataInOutMonitor"]
+- !private ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "deviceConnected"]
+- ["So8NSObjectP", "deviceDisconnected"]
+- ["So8NSObjectP", "deviceMessage"]
+- !private ["So8NSObjectP", "device_enableBLEDeviceSearch"]
+- !private ["So8NSObjectP", "device_setBLEFriendlyName"]
+- ["So8NSObjectP", "emvTransactionData"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isBatteryMonitoringEnabled"]
+- ["So8NSObjectP", "lcdDisplay"]
+- ["So8NSObjectP", "pinRequest"]
+- ["So8NSObjectP", "pinpadData"]
+- ["So8NSObjectP", "plugStatusChange"]
+- !private ["So8NSObjectP", "setUpTerminal"]
+- !private ["So8NSObjectP", "sharedController"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "stop"]
+- ["So8NSObjectP", "swipeMSRData"]
+- ["So8NSObjectP", "uniPay_EventFunctionICC"]
+- !private ["10PinOnGlassAAC", "_Delegate"]
+- !private ["10PinOnGlassAAC", "activeTransaction"]
+- !private ["10PinOnGlassAAC", "startPayment"]
+- !private ["10PinOnGlass0abC9_DelegateP", "payError"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "init"]
+- !private ["10PinOnGlass19TerminalDataManagerC", "setUpTerminal"]
+- !private ["So8UIDeviceC", "batteryLevel"]
+- !private ["So8UIDeviceC", "current"]
+- !private ["So8UIDeviceC", "isBatteryMonitoringEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Battery"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Error"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IDT_VP3300"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Message"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PinOnGlass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TerminalDataManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIDevice"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UniPay_EventFunctionICC"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "_Battery"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "batteryLevel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "bypassData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "dataInOutMonitor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "deviceConnected"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "deviceDisconnected"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "deviceMessage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "device_enableBLEDeviceSearch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "device_setBLEFriendlyName"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "emvTransactionData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isBatteryMonitoringEnabled"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "lcdDisplay"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "pinRequest"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "pinpadData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "plugStatusChange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpTerminal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "swipeMSRData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "uniPay_EventFunctionICC"]
+depends-nominal:
+- !private "10PinOnGlass7BatteryC"
+- "10PinOnGlass16BluetoothManagerC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So19IDT_Device_DelegateP"
+- !private "So10IDT_VP3300C"
+- !private "10PinOnGlass7MessageC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "10PinOnGlassAAC"
+- !private "10PinOnGlass0abC9_DelegateP"
+- !private "10PinOnGlass19TerminalDataManagerC"
+- !private "So8UIDeviceC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c1e46129007fd2ab37ab179a290d7d4c"

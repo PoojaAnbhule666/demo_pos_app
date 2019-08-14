@@ -1,0 +1,10 @@
+framework module PinOnGlass {
+  umbrella header "PinOnGlass.h"
+
+  export *
+  module * { export * }
+}
+
+module PinOnGlass.__Swift {
+    exclude header "PinOnGlass-Swift.h"
+}

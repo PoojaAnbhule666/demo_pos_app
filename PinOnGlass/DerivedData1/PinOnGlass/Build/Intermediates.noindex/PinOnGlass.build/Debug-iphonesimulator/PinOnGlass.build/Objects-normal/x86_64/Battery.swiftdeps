@@ -1,0 +1,216 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Battery"
+provides-nominal:
+- "10PinOnGlass7BatteryC"
+provides-member:
+- ["10PinOnGlass7BatteryC", ""]
+provides-dynamic-lookup:
+- "batteryLevelDidChange"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Battery"
+- "BluetoothManager"
+- !private "BooleanLiteralType"
+- "NSObject"
+- "Notification"
+- !private "NotificationCenter"
+- !private "UIDevice"
+depends-member:
+- ["10PinOnGlass7BatteryC", "BluetoothManager"]
+- ["10PinOnGlass7BatteryC", "Notification"]
+- !private ["10PinOnGlass7BatteryC", "NotificationCenter"]
+- !private ["10PinOnGlass7BatteryC", "UIDevice"]
+- ["10PinOnGlass7BatteryC", "batteryLevelDidChange"]
+- ["10PinOnGlass7BatteryC", "deinit"]
+- ["10PinOnGlass7BatteryC", "delegate"]
+- ["10PinOnGlass7BatteryC", "init"]
+- ["10PinOnGlass7BatteryC", "start"]
+- ["10PinOnGlass7BatteryC", "stop"]
+- !private ["10PinOnGlass16BluetoothManagerC", "deviceBattery"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "UIDevice"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "batteryLevel"]
+- !private ["s7CVarArgP", "batteryLevelDidChange"]
+- !private ["s7CVarArgP", "batteryLevelDidChangeNotification"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "deviceBattery"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isBatteryMonitoringEnabled"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "UIDevice"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "batteryLevel"]
+- !private ["s28CustomDebugStringConvertibleP", "batteryLevelDidChange"]
+- !private ["s28CustomDebugStringConvertibleP", "batteryLevelDidChangeNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "deviceBattery"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isBatteryMonitoringEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "UIDevice"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "batteryLevel"]
+- !private ["s23CustomStringConvertibleP", "batteryLevelDidChange"]
+- !private ["s23CustomStringConvertibleP", "batteryLevelDidChangeNotification"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "deviceBattery"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isBatteryMonitoringEnabled"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["SQ", "NotificationCenter"]
+- !private ["SQ", "UIDevice"]
+- ["SQ", ""]
+- !private ["SQ", "addObserver"]
+- !private ["SQ", "batteryLevel"]
+- !private ["SQ", "batteryLevelDidChange"]
+- !private ["SQ", "batteryLevelDidChangeNotification"]
+- !private ["SQ", "current"]
+- !private ["SQ", "default"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "deviceBattery"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isBatteryMonitoringEnabled"]
+- !private ["SQ", "removeObserver"]
+- !private ["SH", "NotificationCenter"]
+- !private ["SH", "UIDevice"]
+- ["SH", ""]
+- !private ["SH", "addObserver"]
+- !private ["SH", "batteryLevel"]
+- !private ["SH", "batteryLevelDidChange"]
+- !private ["SH", "batteryLevelDidChangeNotification"]
+- !private ["SH", "current"]
+- !private ["SH", "default"]
+- !private ["SH", "delegate"]
+- !private ["SH", "deviceBattery"]
+- !private ["SH", "init"]
+- !private ["SH", "isBatteryMonitoringEnabled"]
+- !private ["SH", "removeObserver"]
+- !private ["So19IDT_Device_DelegateP", "deviceBattery"]
+- ["So8NSObjectC", "BluetoothManager"]
+- ["So8NSObjectC", "Notification"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "UIDevice"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "batteryLevel"]
+- ["So8NSObjectC", "batteryLevelDidChange"]
+- !private ["So8NSObjectC", "batteryLevelDidChangeNotification"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "default"]
+- ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "deviceBattery"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isBatteryMonitoringEnabled"]
+- !private ["So8NSObjectC", "removeObserver"]
+- ["So8NSObjectC", "start"]
+- ["So8NSObjectC", "stop"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- !private ["So8NSObjectP", "UIDevice"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "batteryLevel"]
+- !private ["So8NSObjectP", "batteryLevelDidChange"]
+- !private ["So8NSObjectP", "batteryLevelDidChangeNotification"]
+- !private ["So8NSObjectP", "current"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "deviceBattery"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isBatteryMonitoringEnabled"]
+- !private ["So8NSObjectP", "removeObserver"]
+- !private ["So20NSNotificationCenterC", "addObserver"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "removeObserver"]
+- !private ["So8UIDeviceC", "batteryLevel"]
+- !private ["So8UIDeviceC", "batteryLevelDidChangeNotification"]
+- !private ["So8UIDeviceC", "current"]
+- !private ["So8UIDeviceC", "isBatteryMonitoringEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIDevice"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "batteryLevel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "batteryLevelDidChange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "batteryLevelDidChangeNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceBattery"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isBatteryMonitoringEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+depends-nominal:
+- "10PinOnGlass7BatteryC"
+- !private "10PinOnGlass16BluetoothManagerC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- !private "So19IDT_Device_DelegateP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So20NSNotificationCenterC"
+- !private "So8UIDeviceC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_VP3300.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_NEO2.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/IDT_UniPayI_V.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTMSRData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTEMVData.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_Device.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/APDUResponse.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_iMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/iDTech.framework/Headers/uniMag.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTech.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTCommon.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/PinOnGlass.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_BTPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDT_UniPay.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/IDTech.framework/Headers/IDTUtility.h"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/DerivedData1/PinOnGlass/Build/Intermediates.noindex/PinOnGlass.build/Debug-iphonesimulator/PinOnGlass.build/unextended-module.modulemap"
+- "/Users/user914766/Documents/PinOnGlass/PinOnGlass/PinOnGlass/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "10eb679736ce46ed056baf84af948a7a"
