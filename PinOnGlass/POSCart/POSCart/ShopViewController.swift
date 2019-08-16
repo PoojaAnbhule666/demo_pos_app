@@ -15,6 +15,8 @@ class ShopViewController: UIViewController ,PinOnGlass_Delegate  {
     @IBOutlet weak var product_TableView: UITableView!
     @IBOutlet weak var total_Price_Lable: UILabel!
     
+    @IBOutlet weak var statusLable: UILabel!
+    @IBOutlet weak var logTextView: UITextView!
     @IBOutlet weak var pay_Button: UIButton!
     @IBOutlet weak var clear_button: UIButton!
     
@@ -32,8 +34,8 @@ class ShopViewController: UIViewController ,PinOnGlass_Delegate  {
         //        manager  = CBCentralManager()
         //        manager.delegate = self
         
-        self.CafisFramework = PinOnGlass(Delegate: self);
-        self.CafisFramework?._Delegate = self;
+        self.CafisFramework = PinOnGlass(Delegate: self)
+        self.CafisFramework?._Delegate = self
         
         selcetedItemArray.removeAll()
         
@@ -49,7 +51,7 @@ class ShopViewController: UIViewController ,PinOnGlass_Delegate  {
     
     @IBAction func cancel(_ sender: UIButton) {
         print("Transaction  Cancelled")
-        self.CafisFramework?.cancel();
+        self.CafisFramework?.cancel()
     }
 
 
@@ -62,24 +64,30 @@ class ShopViewController: UIViewController ,PinOnGlass_Delegate  {
     }
     @IBAction func Pay(_ sender: UIButton) {
         print("Transaction  Started")
-        let dAmount: Double = 10 ;
-        //dAmount = total_Price_Lable?.text
-        self.CafisFramework?.startTransaction(dAmount: dAmount, sSeqNumber: "ttt", sProductCategoryCode: "000",sDeviceName: "");
+        let dAmount: Double = 10
+//        dAmount = total_Price_Lable?.text
+        self.CafisFramework?.startTransaction(dAmount: dAmount, sSeqNumber: "ttt", sProductCategoryCode: "000",sDeviceName: "")
     }
     
     func paySuccess(response: NSObject) {
-        print("Message");
+        print("Message")
     }
     
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR -------------")
-        print(error.Code);
+        logTextView.text = error.Message
+        statusLable.textColor = .red
+        statusLable.text = error.Message
+        print(error.Code)
         print(error.Message)
     }
     
     func payMessage(message: MessageData) {
         print("----------MESSAGE -------------")
-        print(message.Code);
+        logTextView.text = message.Message
+        statusLable.textColor = .green
+        statusLable.text = message.Message
+        print(message.Code)
         print(message.Message)
     }
     

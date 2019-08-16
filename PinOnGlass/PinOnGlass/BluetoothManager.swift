@@ -9,7 +9,9 @@
 import Foundation
 import IDTech
 
-class BluetoothManager: NSObject, IDT_NEO2_Delegate , CBCentralManagerDelegate  {
+class BluetoothManager: NSObject
+
+, CBCentralManagerDelegate  {
     
     // getting refernce to pinonglass oject
     public var PinOnGlass: PinOnGlass?
@@ -33,9 +35,18 @@ class BluetoothManager: NSObject, IDT_NEO2_Delegate , CBCentralManagerDelegate  
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .poweredOn:
+            let message = Message()
+            self.PinOnGlass?._Delegate?.payMessage(message: message.Information(code: "M007"))
             self.bluetoothStatus = true
+            
+            
+            if(self.PinOnGlass?.idTechDeviceName == "") {
+                self.PinOnGlass?.idTechDeviceName = self.PinOnGlass?.showAlertWithTextField() ?? ""
+            }
             break
         case .poweredOff:
+            let message = Message()
+            self.PinOnGlass?._Delegate?.payError(error: message.Error(code: "B007"), response: NSObject());
             self.bluetoothStatus = false
             break
             
@@ -80,12 +91,12 @@ class BluetoothManager: NSObject, IDT_NEO2_Delegate , CBCentralManagerDelegate  
     
     func checkBattery() -> Bool {
         self.batteryLevel = UIDevice.current.batteryLevel
-        print(batteryLevel)
         return true
     }
     
     // Check if bluetooth
     func checkActive() -> Bool{
+        
         return self.bluetoothStatus
     }
     
@@ -96,17 +107,33 @@ class BluetoothManager: NSObject, IDT_NEO2_Delegate , CBCentralManagerDelegate  
         
         let friendlyName : String = IDT_NEO2.sharedController().device_getBLEFriendlyName() ?? ""
         if(friendlyName == "IDTECH") {
-        
-            IDT_NEO2.sharedController().device_setBLEFriendlyName(deviceName)
-            if(IDT_NEO2.sharedController().device_enableBLEDeviceSearch(nil) == false) {
-                print("Bluetooth not connected")
-                return false 
+            if(deviceName == "") {
+                let _Message : Message = Message();
+                self.PinOnGlass?._Delegate?.payError(error: _Message.Error(code: "B004"), response: NSObject())
+                return false;
             }
-        } else {
-            self.PinOnGlass?.startPayment()
+            IDT_NEO2.sharedController().device_setBLEFriendlyName(deviceName);
         }
         
+        if(IDT_NEO2.sharedController().device_enableBLEDeviceSearch(nil) == false) {
+            let _Message1 : Message = Message();
+            self.PinOnGlass?._Delegate?.payError(error: _Message1.Error(code: "B003"), response: NSObject())
+            return false;
+        }
+        
+        
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(checkBlueToothConnection), userInfo: nil, repeats: false)
+        
         return true
+    }
+    
+    @objc func checkBlueToothConnection() {
+        if self.PinOnGlass?.getDevice()._deviceConnected == 0 {
+            let _Message1 : Message = Message();
+            self.PinOnGlass?._Delegate?.payError(error: _Message1.Error(code: "B003"), response: NSObject())
+            IDT_NEO2.sharedController()?.device_disconnectBLE();
+            IDT_NEO2.sharedController()?.device_setBLEFriendlyName("IDTECH");
+        }
     }
     
     

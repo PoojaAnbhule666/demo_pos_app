@@ -26,6 +26,11 @@
 		06F82E4422F4AC8400F76EB1 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F82E4322F4AC8400F76EB1 /* DeviceManager.swift */; };
 		06FFE20522FAE625000D66CE /* DataCardAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFE20422FAE625000D66CE /* DataCardAuthenticate.swift */; };
 		06FFE20722FAE817000D66CE /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFE20622FAE817000D66CE /* Pay.swift */; };
+		830F43DE23066E06004D1B11 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43DC23066E06004D1B11 /* ExternalAccessory.framework */; };
+		830F43E023066E15004D1B11 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43DF23066E15004D1B11 /* MediaPlayer.framework */; };
+		830F43E223066E21004D1B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43E123066E21004D1B11 /* AVFoundation.framework */; };
+		830F43E423066E30004D1B11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43E323066E30004D1B11 /* AudioToolbox.framework */; };
+		830F43E623066E3C004D1B11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43E523066E3C004D1B11 /* CFNetwork.framework */; };
 		83203FE922FD7CBD0039A471 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83203FE822FD7CBD0039A471 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +77,11 @@
 		06F82F2022F4B2A100F76EB1 /* POSCart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = POSCart.xcodeproj; path = POSCart/POSCart.xcodeproj; sourceTree = "<group>"; };
 		06FFE20422FAE625000D66CE /* DataCardAuthenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCardAuthenticate.swift; sourceTree = "<group>"; };
 		06FFE20622FAE817000D66CE /* Pay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
+		830F43DC23066E06004D1B11 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		830F43DF23066E15004D1B11 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		830F43E123066E21004D1B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		830F43E323066E30004D1B11 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		830F43E523066E3C004D1B11 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		83203FE822FD7CBD0039A471 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -80,6 +90,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F43E623066E3C004D1B11 /* CFNetwork.framework in Frameworks */,
+				830F43E423066E30004D1B11 /* AudioToolbox.framework in Frameworks */,
+				830F43E223066E21004D1B11 /* AVFoundation.framework in Frameworks */,
+				830F43E023066E15004D1B11 /* MediaPlayer.framework in Frameworks */,
+				830F43DE23066E06004D1B11 /* ExternalAccessory.framework in Frameworks */,
 				83203FE922FD7CBD0039A471 /* CoreBluetooth.framework in Frameworks */,
 				0616E93122F5D63F00D7F96C /* IDTech.framework in Frameworks */,
 			);
@@ -187,6 +202,11 @@
 		83203FE622FD7CBC0039A471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				830F43E523066E3C004D1B11 /* CFNetwork.framework */,
+				830F43E323066E30004D1B11 /* AudioToolbox.framework */,
+				830F43E123066E21004D1B11 /* AVFoundation.framework */,
+				830F43DF23066E15004D1B11 /* MediaPlayer.framework */,
+				830F43DC23066E06004D1B11 /* ExternalAccessory.framework */,
 				83203FE822FD7CBD0039A471 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
@@ -480,9 +500,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2C6V6DF7SS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -514,6 +535,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2C6V6DF7SS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -13,6 +13,11 @@
 		06F82F1422F4B2A000F76EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F82F1222F4B2A000F76EB1 /* Main.storyboard */; };
 		06F82F1622F4B2A100F76EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F82F1522F4B2A100F76EB1 /* Assets.xcassets */; };
 		06F82F1922F4B2A100F76EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F82F1722F4B2A100F76EB1 /* LaunchScreen.storyboard */; };
+		830F43D323066D3C004D1B11 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43D223066D3B004D1B11 /* ExternalAccessory.framework */; };
+		830F43D523066D4C004D1B11 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43D423066D4C004D1B11 /* MediaPlayer.framework */; };
+		830F43D723066D5C004D1B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43D623066D5C004D1B11 /* AVFoundation.framework */; };
+		830F43D923066D6B004D1B11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43D823066D6B004D1B11 /* AudioToolbox.framework */; };
+		830F43DB23066D77004D1B11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830F43DA23066D77004D1B11 /* CFNetwork.framework */; };
 		83203FF822FD88190039A471 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0616E92C22F5C91500D7F96C /* PinOnGlass.framework */; };
 		83203FF922FD88190039A471 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0616E92C22F5C91500D7F96C /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83203FFE22FD9CD50039A471 /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83203FFB22FD9CD40039A471 /* productTableViewCell.swift */; };
@@ -43,6 +48,11 @@
 		06F82F1522F4B2A100F76EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F82F1822F4B2A100F76EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F82F1A22F4B2A100F76EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830F43D223066D3B004D1B11 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		830F43D423066D4C004D1B11 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		830F43D623066D5C004D1B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		830F43D823066D6B004D1B11 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		830F43DA23066D77004D1B11 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		83203FFB22FD9CD40039A471 /* productTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productTableViewCell.swift; sourceTree = "<group>"; };
 		83203FFC22FD9CD50039A471 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		83203FFD22FD9CD50039A471 /* logo_ntt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_ntt.jpg; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F43DB23066D77004D1B11 /* CFNetwork.framework in Frameworks */,
+				830F43D923066D6B004D1B11 /* AudioToolbox.framework in Frameworks */,
+				830F43D723066D5C004D1B11 /* AVFoundation.framework in Frameworks */,
+				830F43D523066D4C004D1B11 /* MediaPlayer.framework in Frameworks */,
+				830F43D323066D3C004D1B11 /* ExternalAccessory.framework in Frameworks */,
 				83203FF822FD88190039A471 /* PinOnGlass.framework in Frameworks */,
 				0616E92D22F5C91500D7F96C /* PinOnGlass.framework in Frameworks */,
 			);
@@ -97,6 +112,11 @@
 		06F82F2622F4B2D000F76EB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				830F43DA23066D77004D1B11 /* CFNetwork.framework */,
+				830F43D823066D6B004D1B11 /* AudioToolbox.framework */,
+				830F43D623066D5C004D1B11 /* AVFoundation.framework */,
+				830F43D423066D4C004D1B11 /* MediaPlayer.framework */,
+				830F43D223066D3B004D1B11 /* ExternalAccessory.framework */,
 				0616E92C22F5C91500D7F96C /* PinOnGlass.framework */,
 			);
 			name = Frameworks;

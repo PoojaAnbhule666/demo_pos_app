@@ -67,10 +67,14 @@ open class PinOnGlass : NSObject, UIAlertViewDelegate{
         return self._Network
     }
     
+    
+    func getDevice() -> DeviceManager {
+        return self._Device;
+    }
     // Send error response
     func sendError(Code: String, Response: NSObject? = nil) {
         let _Message: Message = Message()
-        var _Response: NSObject = NSObject()
+        let _Response: NSObject = NSObject()
         
         if(Response != nil) {
             //_Response = Response
@@ -107,16 +111,24 @@ open class PinOnGlass : NSObject, UIAlertViewDelegate{
         idTechDeviceName = sDeviceName
         
         print("ssDeviceName \(idTechDeviceName)")
-        
-    
+
         // Assign PinOnGlass refrence to active class
         IDT_NEO2.sharedController()?.delegate = self._Device
         self._Bluetooth.PinOnGlass = self
         self._Network.PinOnGlass = self
         self._Device.PinOnGlass = self
         
+        if(_Bluetooth.checkActive() == false) {
+            
+            let message = Message()
+            self._Delegate?.payError(error: message.Error(code: "B007"), response: NSObject());
+
+            print("-- Bluetooth is not enabled ---")
+            return 
+        }
+        
+        
         let friendlyName : String = IDT_NEO2.sharedController().device_getBLEFriendlyName() ?? ""
-        print(friendlyName)
         
         if(friendlyName != "IDTECH") {
             idTechDeviceName = friendlyName;
@@ -125,12 +137,11 @@ open class PinOnGlass : NSObject, UIAlertViewDelegate{
         if(sLang != "") { language = sLang }
         if(sCurrencyCode != "") { currency = sCurrencyCode }
         
-        
+
         if(idTechDeviceName == "") {
-            print("ssDeviceName --\(idTechDeviceName)")
             idTechDeviceName = self.showAlertWithTextField()
-            print("idTechDeviceName \(idTechDeviceName)")
         }
+        
         
         if(idTechDeviceName != "") {
             self._connect();
@@ -149,6 +160,8 @@ open class PinOnGlass : NSObject, UIAlertViewDelegate{
         _Bluetooth.start()
         
         if(self._Bluetooth.connect(deviceName: self.idTechDeviceName) == false) {
+            let _Message : Message = Message();
+            self._Delegate?.payError(error: _Message.Error(code: "BOO2"), response: NSObject())
             
         }
     }
@@ -165,15 +178,22 @@ open class PinOnGlass : NSObject, UIAlertViewDelegate{
         let confirmAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             if let txtField = alertController.textFields?.first, let text = txtField.text {
                 // operations
-                print("Text==>" + text)
                 deviceNameText = text
-                self.idTechDeviceName = deviceNameText
-                print("idTechDeviceName--\(self.idTechDeviceName)")
-                self._connect();
-                
+                if(deviceNameText == "") {
+                    let _Message : Message = Message();
+                    self._Delegate?.payError(error: _Message.Error(code: "BOO2"), response: NSObject())
+                }  else {
+                    self.idTechDeviceName = deviceNameText
+                    self._connect();
+                }
             }
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            
+            let _Message : Message = Message();
+            self._Delegate?.payError(error: _Message.Error(code: "BOO2"), response: NSObject())
+        }
         alertController.addTextField { (textField) in
             textField.placeholder = "Device name"
         }

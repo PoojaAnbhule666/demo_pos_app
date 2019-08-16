@@ -19,6 +19,7 @@ struct MessageCodes {
         "B004": "Unable to pair device",
         "B005": "Connection lost to device",
         "B006": "Low battery",
+        "B007": "Bluetooth disabled",
         "N001": "Disconneted from network",
         "N002": "Internet not avaliable",
         "N003": "Unable to connct cafis server",
@@ -63,7 +64,8 @@ struct MessageCodes {
         "M003": "Insert Card",
         "M004": "Start Trasnaction",
         "M005": "Currently no support contact less card",
-        "M006": "Bluetooth connected"
+        "M006": "Bluetooth connected",
+        "M007": "Device Bluetooth enabled",
     ]
     
 }

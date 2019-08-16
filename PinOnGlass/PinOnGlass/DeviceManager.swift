@@ -35,20 +35,12 @@ class DeviceManager: NSObject, IDT_NEO2_Delegate {
     public var Request: Any?
     private var EMVData: IDTEMVData?
     private var encryptTags: [AnyHashable: Any]?
+    
+    public var _deviceConnected : Int = 0
 
     
     @objc func iccStatus() {
 
-//
-//        var result: NSString?
-//        let rt1: RETURN_CODE = IDT_NEO2.sharedController().config_getSerialNumber(&result)
-//
-//        if RETURN_CODE_DO_SUCCESS == rt1 {
-//            print("Get serial number: \(result!)")
-//        } else {
-//            print("Get Error serial number")
-//        }
-//
         
         var response: UnsafeMutablePointer<ICCReaderStatus>? = nil
         let rt: RETURN_CODE = IDT_NEO2.sharedController().icc_get(&response)
@@ -78,6 +70,8 @@ class DeviceManager: NSObject, IDT_NEO2_Delegate {
         print("LCD");
     }
     
+    
+    
     // Starting new trsnaction
     public func startTransation(dAmount: Double) {
         
@@ -86,8 +80,8 @@ class DeviceManager: NSObject, IDT_NEO2_Delegate {
         let _Message: Message = Message()
 //        _ = Timer(timeInterval: 0.4, target: self, selector: #selector(iccStatus), userInfo: nil, repeats: true)
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(iccStatus), userInfo: nil, repeats: true)
-        return;
-        
+
+        return ;
         
 
         
@@ -96,6 +90,7 @@ class DeviceManager: NSObject, IDT_NEO2_Delegate {
         // let returnCode = IDT_NEO2.sharedController().device_startTransaction(1.00,  type: 0, timeout: 60, tags: nil)
         
         let returnCode = IDT_NEO2.sharedController().emv_startTransaction(dAmount, amtOther: 0, type: 0, timeout: 60, tags: nil, forceOnline: false, fallback: true)
+        
         if RETURN_CODE_DO_SUCCESS == returnCode {
             PinOnGlass?._Delegate?.payMessage(message: _Message.Information(code: "M004"))
         } else {
@@ -243,21 +238,30 @@ class DeviceManager: NSObject, IDT_NEO2_Delegate {
     
     // =============== CALLBACK ====================== //
     func deviceMessage(_ message: String!) {
+        print(message ?? "");
     }
     
     
+    @objc func getDeviceUUID() {
+        //print(IDT_NEO2.sharedController()?.device_connectedBLEDevice() ?? "");
+    }
     func deviceConnected() {
+        
+        //Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(getDeviceUUID), userInfo: nil, repeats: true);
         
         //let terminalManager: TerminalDataManager = TerminalDataManager()
         //terminalManager.setUpTerminal()
+        self._deviceConnected = 1;
         let message :Message = Message()
         self.PinOnGlass?._Delegate?.payMessage(message: message.Information(code: "M006"))
         //self.PinOnGlass?.startPayment()
     }
     
     func deviceDisconnected() {
-        let _Message = Message()
-        self.PinOnGlass?._Delegate?.payError(error: _Message.Error(code: "B005"), response: NSObject())
+        if(self._deviceConnected == 1) {
+            let _Message = Message()
+            self.PinOnGlass?._Delegate?.payError(error: _Message.Error(code: "B005"), response: NSObject())
+        }
     }
 
 }
