@@ -24,8 +24,6 @@
 		8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */; };
 		8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AC231E775800B25BC6 /* AVFoundation.framework */; };
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
-		838DCC8623211E170003A6E1 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838DCC8223211BB50003A6E1 /* PinOnGlass.framework */; };
-		838DCC8723211E170003A6E1 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 838DCC8223211BB50003A6E1 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
@@ -40,27 +38,6 @@
 			remoteGlobalIDString = 8301E157231E6D3D00B25BC6;
 			remoteInfo = DemoAppMCInfox;
 		};
-		838DCC8123211BB50003A6E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 061309CF22F43B4100056970;
-			remoteInfo = PinOnGlass;
-		};
-		838DCC8323211BB50003A6E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 061309D822F43B4100056970;
-			remoteInfo = PinOnGlassTests;
-		};
-		838DCC8823211E170003A6E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 061309CE22F43B4100056970;
-			remoteInfo = PinOnGlass;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				838DCC8723211E170003A6E1 /* PinOnGlass.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +76,6 @@
 		8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8301E1AC231E775800B25BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8301E1AE231E776500B25BC6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../Documents/SDK/PinOnGlass/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +93,6 @@
 				8301E1A9231E774000B25BC6 /* CFNetwork.framework in Frameworks */,
 				8301E1A7231E773300B25BC6 /* CoreBluetooth.framework in Frameworks */,
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
-				838DCC8623211E170003A6E1 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +110,6 @@
 		8301E14F231E6D3D00B25BC6 = {
 			isa = PBXGroup;
 			children = (
-				838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */,
 				8301E15A231E6D3D00B25BC6 /* DemoAppMCInfox */,
 				8301E16F231E6D3F00B25BC6 /* DemoAppMCInfoxTests */,
 				8301E159231E6D3D00B25BC6 /* Products */,
@@ -198,15 +171,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		838DCC7D23211BB50003A6E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				838DCC8223211BB50003A6E1 /* PinOnGlass.framework */,
-				838DCC8423211BB50003A6E1 /* PinOnGlassTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,7 +186,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				838DCC8923211E170003A6E1 /* PBXTargetDependency */,
 			);
 			name = DemoAppMCInfox;
 			productName = DemoAppMCInfox;
@@ -277,12 +240,6 @@
 			mainGroup = 8301E14F231E6D3D00B25BC6;
 			productRefGroup = 8301E159231E6D3D00B25BC6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 838DCC7D23211BB50003A6E1 /* Products */;
-					ProjectRef = 838DCC7C23211BB50003A6E1 /* PinOnGlass.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8301E157231E6D3D00B25BC6 /* DemoAppMCInfox */,
@@ -290,23 +247,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		838DCC8223211BB50003A6E1 /* PinOnGlass.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PinOnGlass.framework;
-			remoteRef = 838DCC8123211BB50003A6E1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		838DCC8423211BB50003A6E1 /* PinOnGlassTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PinOnGlassTests.xctest;
-			remoteRef = 838DCC8323211BB50003A6E1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8301E156231E6D3D00B25BC6 /* Resources */ = {
@@ -361,11 +301,6 @@
 			isa = PBXTargetDependency;
 			target = 8301E157231E6D3D00B25BC6 /* DemoAppMCInfox */;
 			targetProxy = 8301E16D231E6D3F00B25BC6 /* PBXContainerItemProxy */;
-		};
-		838DCC8923211E170003A6E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PinOnGlass;
-			targetProxy = 838DCC8823211E170003A6E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
