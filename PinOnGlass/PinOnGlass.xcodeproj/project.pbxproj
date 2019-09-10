@@ -42,13 +42,6 @@
 			remoteGlobalIDString = 061309CE22F43B4100056970;
 			remoteInfo = PinOnGlass;
 		};
-		06F82F2422F4B2A200F76EB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06F82F2022F4B2A100F76EB1 /* POSCart.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06F82F0B22F4B2A000F76EB1;
-			remoteInfo = POSCart;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +67,6 @@
 		06F82E3F22F4AC4D00F76EB1 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		06F82E4122F4AC6500F76EB1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		06F82E4322F4AC8400F76EB1 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
-		06F82F2022F4B2A100F76EB1 /* POSCart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = POSCart.xcodeproj; path = POSCart/POSCart.xcodeproj; sourceTree = "<group>"; };
 		06FFE20422FAE625000D66CE /* DataCardAuthenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCardAuthenticate.swift; sourceTree = "<group>"; };
 		06FFE20622FAE817000D66CE /* Pay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		830F43DC23066E06004D1B11 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -114,7 +106,6 @@
 		061309C522F43B4100056970 = {
 			isa = PBXGroup;
 			children = (
-				06F82F2022F4B2A100F76EB1 /* POSCart.xcodeproj */,
 				061309D122F43B4100056970 /* PinOnGlass */,
 				061309DC22F43B4100056970 /* PinOnGlassTests */,
 				061309D022F43B4100056970 /* Products */,
@@ -179,14 +170,6 @@
 				06F6BE1222F829EE00B73A26 /* Property.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		06F82F2122F4B2A100F76EB1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				06F82F2522F4B2A200F76EB1 /* POSCart.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		06FFE20222FAE5EB000D66CE /* RequestResponse */ = {
@@ -291,12 +274,6 @@
 			mainGroup = 061309C522F43B4100056970;
 			productRefGroup = 061309D022F43B4100056970 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 06F82F2122F4B2A100F76EB1 /* Products */;
-					ProjectRef = 06F82F2022F4B2A100F76EB1 /* POSCart.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				061309CE22F43B4100056970 /* PinOnGlass */,
@@ -304,16 +281,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		06F82F2522F4B2A200F76EB1 /* POSCart.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = POSCart.app;
-			remoteRef = 06F82F2422F4B2A200F76EB1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		061309CD22F43B4100056970 /* Resources */ = {
