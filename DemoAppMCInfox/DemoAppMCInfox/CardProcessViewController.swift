@@ -54,6 +54,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         print("refund request for slip number ",slipNo)
         
         payment = PinOnGlass.shared(Delegate: self)
+        
         if(isRefund) {
               payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.amount ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "IDT23181")
         }
