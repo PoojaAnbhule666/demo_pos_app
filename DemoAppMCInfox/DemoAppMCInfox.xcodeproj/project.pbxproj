@@ -26,6 +26,7 @@
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
@@ -101,6 +102,7 @@
 		8301E1AC231E775800B25BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8301E1AE231E776500B25BC6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
+		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				8301E162231E6D3F00B25BC6 /* Assets.xcassets */,
 				8301E164231E6D3F00B25BC6 /* LaunchScreen.storyboard */,
 				8301E167231E6D3F00B25BC6 /* Info.plist */,
+				92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */,
 			);
 			path = DemoAppMCInfox;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				8301E19C231E769C00B25BC6 /* AppDelegate.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
+				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
 				9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */,
 				8301E180231E71C700B25BC6 /* ShopViewController.swift in Sources */,
 				8301E17F231E71C700B25BC6 /* productTableViewCell.swift in Sources */,

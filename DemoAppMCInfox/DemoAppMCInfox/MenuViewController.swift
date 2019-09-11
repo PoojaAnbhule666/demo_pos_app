@@ -8,7 +8,13 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let menuLblArray = ["Pay","Money","Report","Refund","Wallet"]
+    
+    let imageArray = ["pay","money","report","refund","wallet"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,35 +29,57 @@ class MenuViewController: UIViewController {
         let image = UIImage(named: "logo")
         imageView.image = image
         navigationItem.titleView = imageView
+        collectionView.delegate = self
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.menuLblArray.count
+    }
+    
+    // make a cell for each cell index path
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        // get a reference to our storyboard cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath as IndexPath) as! MenuCollectionViewCell
+        cell.menuLbl.text = self.menuLblArray[indexPath.item]
+        cell.menuImg.image = UIImage(named: imageArray[indexPath.item])
+        
+        return cell
+    }
+    
+    // MARK: - UICollectionViewDelegate protocol
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
+        
+        if(indexPath.item == 0 ){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let payVC = storyboard.instantiateViewController(withIdentifier: "ShopViewController") as! ShopViewController
+            self.navigationController?.pushViewController(payVC, animated: true)
+        }
+        else if(indexPath.item == 3) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let slipVC = storyboard.instantiateViewController(withIdentifier: "SlipNumberViewController") as! SlipNumberViewController
+            self.navigationController?.pushViewController(slipVC, animated: true)
+        }
+        
+        
     }
     
     
-    @IBAction func payButton(_ sender: UIButton) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let payVC = storyboard.instantiateViewController(withIdentifier: "ShopViewController") as! ShopViewController
-//        self.present(slipVC, animated: true, completion: nil)
-        self.navigationController?.pushViewController(payVC, animated: true)
-        
-    }
-    @IBAction func refund(_ sender: Any?) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let slipVC = storyboard.instantiateViewController(withIdentifier: "SlipNumberViewController") as! SlipNumberViewController
-//        self.present(slipVC, animated: true, completion: nil)
-        self.navigationController?.pushViewController(slipVC, animated: true)
-        
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.width / 3 - 10, height: collectionView.bounds.width / 3 + 30)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+        
+    }
 }
