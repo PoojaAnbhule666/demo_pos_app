@@ -8,28 +8,16 @@
 
 import UIKit
 
-class MenuViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class MenuViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     let menuLblArray = ["Pay","Money","Report","Refund","Wallet"]
     
     let imageArray = ["pay","money","report","refund","wallet"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setInitialSettings()
-      
-        // Do any additional setup after loading the view.
-    }
-    
-    func setInitialSettings() {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 98, height: 100))
-        imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "logo")
-        imageView.image = image
-        navigationItem.titleView = imageView
-        collectionView.delegate = self
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -82,4 +70,6 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         return 0
         
     }
+    
+    
 }
