@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "589889856.058511"
+            filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlassTests/PinOnGlassTests.swift"
+            timestampString = "589895262.460166"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "410"
-            endingLineNumber = "410"
-            landmarkName = "setRequestForAggregateDetails(sequenceNumber:transTid:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "payMessage(message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlassTests/MockIDT_Neo2.swift"
+            timestampString = "589895262.460428"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "device_connectedBLEDevice()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
