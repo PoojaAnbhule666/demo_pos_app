@@ -22,7 +22,7 @@ class CompleteTransactionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("in complete details")
-        setIntialSettings()
+       // setIntialSettings()
         setDetails()
 
         // Do any additional setup after loading the view.

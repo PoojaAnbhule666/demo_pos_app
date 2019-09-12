@@ -49,6 +49,7 @@ class SlipNumberViewController: UIViewController, UITextFieldDelegate {
 //        let image = UIImage(named: "logo")
 //        imageView.image = image
 //        navigationItem.titleView = imageView
+        
         slipNumberTxt.delegate = self
         amountTxt.delegate = self
         amountTxt.keyboardType = .numberPad
