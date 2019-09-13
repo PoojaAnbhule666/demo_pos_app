@@ -24,6 +24,10 @@
 		8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */; };
 		8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AC231E775800B25BC6 /* AVFoundation.framework */; };
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
+		83CC12992328F1140009A750 /* AggregationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12982328F1140009A750 /* AggregationViewController.swift */; };
+		83CC129C2328F12D0009A750 /* AggregateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC129B2328F12D0009A750 /* AggregateData.swift */; };
+		83CC129E2328F1450009A750 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 83CC129D2328F1450009A750 /* Data.json */; };
+		83CC12A1232905160009A750 /* Sales&RefundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */; };
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
@@ -101,6 +105,10 @@
 		8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8301E1AC231E775800B25BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8301E1AE231E776500B25BC6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		83CC12982328F1140009A750 /* AggregationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregationViewController.swift; sourceTree = "<group>"; };
+		83CC129B2328F12D0009A750 /* AggregateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateData.swift; sourceTree = "<group>"; };
+		83CC129D2328F1450009A750 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sales&RefundTableViewCell.swift"; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +183,7 @@
 				8301E164231E6D3F00B25BC6 /* LaunchScreen.storyboard */,
 				8301E167231E6D3F00B25BC6 /* Info.plist */,
 				92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */,
+				83CC129F232904A60009A750 /* Aggregation */,
 			);
 			path = DemoAppMCInfox;
 			sourceTree = "<group>";
@@ -199,6 +208,17 @@
 				8301E1A4231E771500B25BC6 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CC129F232904A60009A750 /* Aggregation */ = {
+			isa = PBXGroup;
+			children = (
+				83CC12982328F1140009A750 /* AggregationViewController.swift */,
+				83CC129B2328F12D0009A750 /* AggregateData.swift */,
+				83CC129D2328F1450009A750 /* Data.json */,
+				83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */,
+			);
+			path = Aggregation;
 			sourceTree = "<group>";
 		};
 		92113ECB23278107002315C9 /* Products */ = {
@@ -321,6 +341,7 @@
 				8301E19A231E768C00B25BC6 /* IDTech.bundle in Resources */,
 				8301E163231E6D3F00B25BC6 /* Assets.xcassets in Resources */,
 				8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */,
+				83CC129E2328F1450009A750 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8301E19C231E769C00B25BC6 /* AppDelegate.swift in Sources */,
+				83CC129C2328F12D0009A750 /* AggregateData.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
+				83CC12A1232905160009A750 /* Sales&RefundTableViewCell.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
 				9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */,
 				8301E180231E71C700B25BC6 /* ShopViewController.swift in Sources */,
@@ -347,6 +370,7 @@
 				9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */,
 				9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */,
 				8301E15E231E6D3D00B25BC6 /* ViewController.swift in Sources */,
+				83CC12992328F1140009A750 /* AggregationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
