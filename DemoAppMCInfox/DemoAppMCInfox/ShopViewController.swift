@@ -207,7 +207,6 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
-        
     }
     
 }
