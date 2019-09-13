@@ -18,6 +18,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     var slipNo : String = ""
     var amount : String = ""
     var isRefund = false
+    var isCancel = false
 
     
     var payment : PinOnGlass = PinOnGlass()
@@ -63,15 +64,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     func paySuccess(response: NSDictionary) {
         // logTextView.text = "Transaction Complete"
-       
         print("response is ..." , response)
-        
-    
-        
-        
-        
-        
-  
         
         statusLable.backgroundColor = .green
         //statusLable.text = "Transaction Complete"
@@ -93,6 +86,9 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         if(isRefund) {
             completeVC.requestType = "Refund"
         }
+        else if(isCancel) {
+            completeVC.requestType = "Cancel"
+        }
         else {
             completeVC.requestType = "Pay"
         }
@@ -112,13 +108,13 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         print(error.Message)
         
         
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(showCancelButton), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(showBackButton), userInfo: nil, repeats: false)
       
        
     }
     
     
-    @objc func showCancelButton() {
+    @objc func showBackButton() {
          cancelBtn.isHidden = false
         }
     
@@ -142,7 +138,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     
     
-    @IBAction func cancelMethod(_ sender: UIButton) {
+    @IBAction func backMethod(_ sender: UIButton) {
         
         if(statusMsgLabel.text == "Bluetooth disabled" || statusMsgLabel.text == "Connection lost to device"){
             
@@ -154,6 +150,17 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         }
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBAction func cancelMethod(_ sender: UIButton) {
+        
+        isCancel = true
+        payment.cancelTranscationMethod()
+        
+    }
+    
+    
+    
     
     /*
     // MARK: - Navigation
