@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590068097.9513969"
+            timestampString = "590305438.346507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "410"
             endingLineNumber = "410"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "cancelTranscationMethod()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
