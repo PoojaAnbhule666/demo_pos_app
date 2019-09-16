@@ -162,13 +162,9 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
 
         statusLable.textColor = .green
         statusLable.text = message.Message
-        
-        
     }
    
-    
-    
-    
+
     func getSlipNumber() {
         let alertController = UIAlertController(title: "Request For Refund", message: "", preferredStyle: .alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
