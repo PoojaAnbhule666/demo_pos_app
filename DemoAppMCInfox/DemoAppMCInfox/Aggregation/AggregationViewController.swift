@@ -9,6 +9,15 @@
 import UIKit
 
 class AggregationViewController: UIViewController {
+    @IBOutlet weak var topTabBar: UIView!
+    @IBOutlet weak var flipView: UIView!
+    @IBOutlet weak var summaryTab_View: UIView!
+    @IBOutlet weak var DetailTab_View: UIView!
+    @IBOutlet weak var subView_summary: UIView!
+    @IBOutlet weak var subView_Detail: UIView!
+    
+    var  isUpdatePageDisplayed : Bool = false
+    
     var productArray = [
         ["Price" : "10000" ,"Product Name" : "Success : AMEX CARD"],
         ["Price" : "500" ,"Product Name" : "Success : VISA CARD"],
@@ -28,19 +37,56 @@ class AggregationViewController: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //        isUpdatePageDisplayed = true
+        //        tap_summaryButton(nil)
+        summaryTab_View .backgroundColor = .blue
+        DetailTab_View .backgroundColor = .white
+        
+        summaryTab_View.layer.cornerRadius = 12
+        DetailTab_View.layer.cornerRadius = 12
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tap_summaryButton(_ sender: UIButton) {
+        print("tap_summaryButton")
+        if isUpdatePageDisplayed {
+            summaryTab_View .backgroundColor = .blue
+            DetailTab_View .backgroundColor = .white
+            isUpdatePageDisplayed = false
+            
+            UIView .transition(with: flipView, duration: 0.5, options:.showHideTransitionViews, animations: {
+                self.subView_summary.isHidden = false
+                self.subView_Detail.isHidden = true
+            }) { (Finished) in
+            }
+        }
+        
     }
-    */
-
+    @IBAction func tap_detailButton(_ sender: UIButton) {
+        print("tap_detailButton")
+        if !isUpdatePageDisplayed {
+            print("tap_detailButton")
+            summaryTab_View .backgroundColor = .white
+            DetailTab_View .backgroundColor = .blue
+            isUpdatePageDisplayed = true
+            
+            UIView .transition(with: flipView, duration: 0.5, options:.showHideTransitionViews, animations: {
+                self.subView_summary.isHidden = true
+                self.subView_Detail.isHidden = false
+            }) { (Finished) in
+            }
+        }
+    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
