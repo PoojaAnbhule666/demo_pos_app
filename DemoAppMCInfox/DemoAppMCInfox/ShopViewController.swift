@@ -158,7 +158,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
     }
 
     func payMessage(message: MessageData) {
-        print("----------MESSAGE -------------")
+        print("----------MESSAGE -------------", message.Code)
 
         statusLable.textColor = .green
         statusLable.text = message.Message

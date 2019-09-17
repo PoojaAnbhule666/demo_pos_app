@@ -41,13 +41,12 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     
     func setIntialSettings() {
-        cancelBtn.isHidden = true
+      // cancelBtn.isHidden = true
         
     }
 
     
     func startTransactionProcess() {
-        print("refund request for slip number ",slipNo)
         
         payment = PinOnGlass.shared(Delegate: self)
         
@@ -85,14 +84,16 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         completeVC.payDictory = response
         if(isRefund) {
             completeVC.requestType = "Refund"
+             self.navigationController?.pushViewController(completeVC, animated: true)
         }
         else if(isCancel) {
             completeVC.requestType = "Cancel"
         }
         else {
             completeVC.requestType = "Pay"
+             self.navigationController?.pushViewController(completeVC, animated: true)
         }
-        self.navigationController?.pushViewController(completeVC, animated: true)
+       
     }
     
     func payError(error: MessageData, response: NSObject) {
@@ -115,23 +116,25 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     
     @objc func showBackButton() {
-         cancelBtn.isHidden = false
+        // cancelBtn.isHidden = false
         }
     
     
     func payMessage(message: MessageData) {
-        print("----------MESSAGE -------------")
+        print("----------MESSAGE -------------",message.Code)
         
         statusLable.backgroundColor = .green
         //statusLable.text = message.Message
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message
+        if (message.Code == "C021") {
+             statusMsgLabel.textColor = .red
+             self.navigationController?.popViewController(animated: true)
+        }
         
     }
     
     @objc func landToMenuVc() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -140,23 +143,33 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     @IBAction func backMethod(_ sender: UIButton) {
         
-        if(statusMsgLabel.text == "Bluetooth disabled" || statusMsgLabel.text == "Connection lost to device"){
-            
-            //@TODO: disconnect bluetooth
-            
-        }
-        else{
-            payment.cancelTransaction()
-        }
+//        if(statusMsgLabel.text == "Bluetooth disabled" || statusMsgLabel.text == "Connection lost to device"){
+//
+//            //@TODO: disconnect bluetooth
+//
+//        }
+//        else{
+//            payment.cancelTransaction()
+//        }
         self.navigationController?.popViewController(animated: true)
     }
     
     
     @IBAction func cancelMethod(_ sender: UIButton) {
         
-        isCancel = true
-        payment.cancelTranscationMethod()
-        
+        if(!isCancel) {
+            print("cancel button clicked")
+            isCancel = true
+            if(payment._inTransaction == 0){
+                print("cancel button clicked , in transaction 0")
+                payment.cancelInMiddle()
+                self.navigationController?.popViewController(animated: true)
+            }
+            else {
+                print("cancel button clicked , in transaction 1")
+                payment.callCancel()
+            }
+        }
     }
     
     
