@@ -29,7 +29,6 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         super.viewDidLoad()
         
         self.navigationController?.navigationItem.hidesBackButton = true
-        setIntialSettings()
         startTransactionProcess()
         // Do any additional setup after loading the view.
     }
@@ -39,15 +38,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         self.navigationItem .setHidesBackButton(true, animated: true)
     }
     
-    
-    func setIntialSettings() {
-        cancelBtn.isHidden = true
-        
-    }
-
-    
     func startTransactionProcess() {
-        print("refund request for slip number ",slipNo)
         
         payment = PinOnGlass.shared(Delegate: self)
         
@@ -85,91 +76,63 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         completeVC.payDictory = response
         if(isRefund) {
             completeVC.requestType = "Refund"
+             self.navigationController?.pushViewController(completeVC, animated: true)
         }
         else if(isCancel) {
             completeVC.requestType = "Cancel"
         }
         else {
             completeVC.requestType = "Pay"
+             self.navigationController?.pushViewController(completeVC, animated: true)
         }
-        self.navigationController?.pushViewController(completeVC, animated: true)
+       
     }
     
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR -------------")
-        
-//        C014
-        
         statusLable.backgroundColor = .red
         //statusLable.text = error.Message
         statusMsgLabel.textColor = .red
         statusMsgLabel.text = error.Message
-        print(error.Code)
-        print(error.Message)
-        
-        
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(showBackButton), userInfo: nil, repeats: false)
-      
-       
     }
     
     
-    @objc func showBackButton() {
-         cancelBtn.isHidden = false
-        }
-    
-    
     func payMessage(message: MessageData) {
-        print("----------MESSAGE -------------")
+        print("----------MESSAGE -------------",message.Code)
         
         statusLable.backgroundColor = .green
         //statusLable.text = message.Message
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message
+
+        if (message.Code == "M013") {
+             statusMsgLabel.textColor = .red
+             self.navigationController?.popViewController(animated: true)
+        }
         
     }
     
     @objc func landToMenuVc() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    
-    
-    @IBAction func backMethod(_ sender: UIButton) {
-        
-        if(statusMsgLabel.text == "Bluetooth disabled" || statusMsgLabel.text == "Connection lost to device"){
-            
-            //@TODO: disconnect bluetooth
-            
-        }
-        else{
-            payment.cancelTransaction()
-        }
-        self.navigationController?.popViewController(animated: true)
-    }
     
     
     @IBAction func cancelMethod(_ sender: UIButton) {
         
-        isCancel = true
-        payment.cancelTranscationMethod()
-        
+        if(!isCancel) {
+            print("cancel button clicked")
+            isCancel = true
+            if(payment._inTransaction == 0){
+                print("cancel button clicked , in transaction 0")
+                payment.cancelInMiddle()
+                self.navigationController?.popViewController(animated: true)
+            }
+            else {
+                print("cancel button clicked , in transaction 1")
+                payment.callCancel()
+            }
+        }
     }
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
