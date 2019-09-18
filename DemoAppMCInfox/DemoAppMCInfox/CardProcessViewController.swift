@@ -29,7 +29,6 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         super.viewDidLoad()
         
         self.navigationController?.navigationItem.hidesBackButton = true
-        setIntialSettings()
         startTransactionProcess()
         // Do any additional setup after loading the view.
     }
@@ -38,13 +37,6 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         super.viewDidAppear(true)
         self.navigationItem .setHidesBackButton(true, animated: true)
     }
-    
-    
-    func setIntialSettings() {
-      // cancelBtn.isHidden = true
-        
-    }
-
     
     func startTransactionProcess() {
         
@@ -98,26 +90,11 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR -------------")
-        
-//        C014
-        
         statusLable.backgroundColor = .red
         //statusLable.text = error.Message
         statusMsgLabel.textColor = .red
         statusMsgLabel.text = error.Message
-        print(error.Code)
-        print(error.Message)
-        
-        
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(showBackButton), userInfo: nil, repeats: false)
-      
-       
     }
-    
-    
-    @objc func showBackButton() {
-        // cancelBtn.isHidden = false
-        }
     
     
     func payMessage(message: MessageData) {
@@ -127,7 +104,8 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         //statusLable.text = message.Message
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message
-        if (message.Code == "C021") {
+
+        if (message.Code == "M013") {
              statusMsgLabel.textColor = .red
              self.navigationController?.popViewController(animated: true)
         }
@@ -138,21 +116,6 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    
-    
-    @IBAction func backMethod(_ sender: UIButton) {
-        
-//        if(statusMsgLabel.text == "Bluetooth disabled" || statusMsgLabel.text == "Connection lost to device"){
-//
-//            //@TODO: disconnect bluetooth
-//
-//        }
-//        else{
-//            payment.cancelTransaction()
-//        }
-        self.navigationController?.popViewController(animated: true)
-    }
     
     
     @IBAction func cancelMethod(_ sender: UIButton) {
@@ -172,17 +135,4 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         }
     }
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

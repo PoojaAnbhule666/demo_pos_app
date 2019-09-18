@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.982921"
+            timestampString = "590475700.340407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "cancelTranscationMethod()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.983664"
+            timestampString = "590475700.3407249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "375"
-            endingLineNumber = "375"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
             landmarkName = "completeTransaction(paymentDic:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.9840831"
+            timestampString = "590475700.34096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "640"
-            endingLineNumber = "640"
-            landmarkName = "refundTrans()"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
+            landmarkName = "checkCardRemoved()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoAppMCInfox/CardProcessViewController.swift"
-            timestampString = "590405943.984485"
+            timestampString = "590475700.341202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "cancelMethod(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,7 +90,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.9846849"
+            timestampString = "590475700.341247"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "717"
+            endingLineNumber = "717"
+            landmarkName = "checkCard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
+            timestampString = "590475700.341478"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "723"
@@ -106,29 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.98507"
+            timestampString = "590475700.341714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "729"
             endingLineNumber = "729"
-            landmarkName = "Payment"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.985435"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "735"
-            endingLineNumber = "735"
-            landmarkName = "Payment"
-            landmarkType = "3">
+            landmarkName = "checkCard()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Bluetooth.swift"
-            timestampString = "590405943.985806"
+            timestampString = "590475700.341958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.9862731"
+            timestampString = "590475700.342205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "689"
-            endingLineNumber = "689"
+            startingLineNumber = "683"
+            endingLineNumber = "683"
             landmarkName = "checkCard()"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/Payment.swift"
-            timestampString = "590405943.9866101"
+            timestampString = "590475700.34243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "697"
-            endingLineNumber = "697"
+            startingLineNumber = "691"
+            endingLineNumber = "691"
             landmarkName = "checkCard()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoAppMCInfox/CardProcessViewController.swift"
-            timestampString = "590405943.986901"
+            timestampString = "590475700.342653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
