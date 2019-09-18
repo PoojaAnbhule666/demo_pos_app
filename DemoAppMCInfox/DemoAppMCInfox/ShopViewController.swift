@@ -116,7 +116,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
         if(total_Price_Lable.text != "0.0" ) { // amount validations
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let cardVC = storyboard.instantiateViewController(withIdentifier: "CardProcessViewController") as! CardProcessViewController
-            cardVC.amount = total_Price_Lable.text ?? "0.00"
+            cardVC.amount = amountLabel.text ?? "0.00"
             
             
             self.navigationController?.pushViewController(cardVC, animated: true)

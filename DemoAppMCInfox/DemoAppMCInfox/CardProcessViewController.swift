@@ -89,11 +89,14 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     }
     
     func payError(error: MessageData, response: NSObject) {
-        print("----------ERROR -------------")
+        print("----------ERROR ------------- ", error.Code)
         statusLable.backgroundColor = .red
         //statusLable.text = error.Message
         statusMsgLabel.textColor = .red
         statusMsgLabel.text = error.Message
+        if (error.Code == "C003" || error.Code == "C010") {
+            isCancel = false
+        }
     }
     
     
