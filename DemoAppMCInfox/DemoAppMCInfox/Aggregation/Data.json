@@ -1,1 +1,198 @@
-{"success":true,"total":200,"start":0,"end":100,"refund":{"Master":{"total":5,"amount":1420},"VISA":{"total":5,"amount":2124}},"sales":{"Master":{"total":48,"amount":22967},"VISA":{"total":42,"amount":19407}},"data":[{"type":"sales","cardName":"Master","Date":"2019-08-11 04:18","OK":"","Amount":603,"SlipNumber":4555,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-21 18:10","OK":"","Amount":771,"SlipNumber":3016,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-01 06:42","OK":"","Amount":284,"SlipNumber":5776,"Tid":-191551186,"Status":"Success"},{"type":"refund","cardName":"Master","Date":"2019-05-20 16:59","OK":"","Amount":346,"SlipNumber":3138,"Tid":-566662113,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-24 13:53","OK":"","Amount":818,"SlipNumber":711,"Tid":-199032707,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-07 17:09","OK":"","Amount":527,"SlipNumber":2628,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-05 02:31","OK":"","Amount":565,"SlipNumber":214,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-24 22:22","OK":"","Amount":600,"SlipNumber":8042,"Tid":-153699178,"Status":"Failure"},{"type":"refund","cardName":"Master","Date":"2019-05-25 22:11","OK":"","Amount":119,"SlipNumber":242,"Tid":-1096156600,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-01 04:18","OK":"","Amount":96,"SlipNumber":424,"Tid":-462526319,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-06-02 12:56","OK":"","Amount":306,"SlipNumber":6811,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-07 05:43","OK":"","Amount":703,"SlipNumber":6342,"Tid":-1179068335,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-08 17:47","OK":"","Amount":439,"SlipNumber":6317,"Tid":-1356923241,"Status":"Success"},{"type":"refund","cardName":"VISA","Date":"2019-06-16 05:14","OK":"","Amount":657,"SlipNumber":831,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-23 06:33","OK":"","Amount":126,"SlipNumber":4985,"Tid":-285397414,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-01 02:26","OK":"","Amount":180,"SlipNumber":6064,"Tid":-340890033,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-24 13:43","OK":"","Amount":241,"SlipNumber":3729,"Tid":81044615,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-26 16:50","OK":"","Amount":5,"SlipNumber":894,"Tid":5498685,"Status":"Success"},{"type":"refund","cardName":"VISA","Date":"2019-08-07 14:57","OK":"","Amount":173,"SlipNumber":7804,"Tid":-1530110892,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-20 01:29","OK":"","Amount":280,"SlipNumber":7513,"Tid":-1625123811,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-03 21:52","OK":"","Amount":358,"SlipNumber":1680,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-09 23:58","OK":"","Amount":542,"SlipNumber":2897,"Tid":-1026747682,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-09 07:25","OK":"","Amount":380,"SlipNumber":2835,"Tid":-523395090,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-08-02 10:18","OK":"","Amount":65,"SlipNumber":440,"Tid":108623500,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-24 09:27","OK":"","Amount":796,"SlipNumber":1691,"Tid":289161410,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-01 13:23","OK":"","Amount":338,"SlipNumber":1765,"Tid":-96360262,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-05 08:22","OK":"","Amount":467,"SlipNumber":6022,"Tid":-1002795952,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-24 06:35","OK":"","Amount":886,"SlipNumber":1377,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-21 02:45","OK":"","Amount":182,"SlipNumber":929,"Tid":-1038795244,"Status":"Success"},{"type":"refund","cardName":"Master","Date":"2019-07-03 19:16","OK":"","Amount":263,"SlipNumber":5274,"Tid":373692871,"Status":"Success"},{"type":"refund","cardName":"VISA","Date":"2019-08-22 10:09","OK":"","Amount":704,"SlipNumber":2388,"Tid":-128841995,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-19 01:19","OK":"","Amount":842,"SlipNumber":4360,"Tid":266122606,"Status":"Success"},{"type":"refund","cardName":"VISA","Date":"2019-06-15 17:48","OK":"","Amount":574,"SlipNumber":9223,"Tid":-1573369716,"Status":"Success"},{"type":"refund","cardName":"VISA","Date":"2019-08-10 00:37","OK":"","Amount":16,"SlipNumber":2082,"Tid":373692871,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-22 06:36","OK":"","Amount":736,"SlipNumber":1108,"Tid":-982203505,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-20 00:58","OK":"","Amount":350,"SlipNumber":5704,"Tid":-1654782114,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-06 00:19","OK":"","Amount":7,"SlipNumber":1853,"Tid":-29558380,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-27 21:25","OK":"","Amount":108,"SlipNumber":9320,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-01 19:40","OK":"","Amount":141,"SlipNumber":3338,"Tid":178137765,"Status":"Success"},{"type":"refund","cardName":"Master","Date":"2019-06-11 05:59","OK":"","Amount":445,"SlipNumber":6764,"Tid":-71085092,"Status":"Failure"},{"type":"refund","cardName":"Master","Date":"2019-08-12 19:33","OK":"","Amount":247,"SlipNumber":2882,"Tid":-236075223,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-08-22 12:18","OK":"","Amount":474,"SlipNumber":5812,"Tid":362884946,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-22 10:41","OK":"","Amount":705,"SlipNumber":1045,"Tid":373692871,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-08-21 04:04","OK":"","Amount":382,"SlipNumber":134,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-24 12:25","OK":"","Amount":902,"SlipNumber":5778,"Tid":-438770483,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-06 10:18","OK":"","Amount":825,"SlipNumber":780,"Tid":-816271114,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-02 16:51","OK":"","Amount":912,"SlipNumber":810,"Tid":-646830523,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-20 21:31","OK":"","Amount":320,"SlipNumber":4892,"Tid":-1237820132,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-05 04:58","OK":"","Amount":337,"SlipNumber":5175,"Tid":-16410700,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-24 02:36","OK":"","Amount":144,"SlipNumber":5635,"Tid":-1625617666,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-06-01 15:38","OK":"","Amount":970,"SlipNumber":2776,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-21 20:33","OK":"","Amount":84,"SlipNumber":9522,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-26 08:16","OK":"","Amount":513,"SlipNumber":6955,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-26 17:06","OK":"","Amount":643,"SlipNumber":2301,"Tid":98288815,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-22 05:13","OK":"","Amount":773,"SlipNumber":1966,"Tid":-807206728,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-31 09:37","OK":"","Amount":53,"SlipNumber":9299,"Tid":-44745862,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-29 09:51","OK":"","Amount":118,"SlipNumber":880,"Tid":66821237,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-08-29 05:36","OK":"","Amount":424,"SlipNumber":8280,"Tid":373692871,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-05-24 02:22","OK":"","Amount":406,"SlipNumber":5390,"Tid":315867449,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-06 15:59","OK":"","Amount":241,"SlipNumber":4129,"Tid":221688870,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-29 21:36","OK":"","Amount":633,"SlipNumber":7254,"Tid":167268237,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-30 01:12","OK":"","Amount":769,"SlipNumber":6741,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-09 17:07","OK":"","Amount":523,"SlipNumber":6343,"Tid":-1510768224,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-09-04 11:51","OK":"","Amount":498,"SlipNumber":4488,"Tid":-1680847101,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-20 23:45","OK":"","Amount":7,"SlipNumber":3126,"Tid":339532817,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-07-12 04:57","OK":"","Amount":933,"SlipNumber":8332,"Tid":-1642978428,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-30 00:08","OK":"","Amount":295,"SlipNumber":3983,"Tid":-274397084,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-19 12:44","OK":"","Amount":99,"SlipNumber":9060,"Tid":211745425,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-07 12:53","OK":"","Amount":518,"SlipNumber":5742,"Tid":45948744,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-02 17:23","OK":"","Amount":308,"SlipNumber":4903,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-02 15:13","OK":"","Amount":319,"SlipNumber":8454,"Tid":305791803,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-06-19 14:03","OK":"","Amount":1,"SlipNumber":9006,"Tid":-644637536,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-17 03:35","OK":"","Amount":635,"SlipNumber":6254,"Tid":-631341458,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-05-18 15:47","OK":"","Amount":702,"SlipNumber":2685,"Tid":-349345315,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-21 00:08","OK":"","Amount":866,"SlipNumber":7339,"Tid":-973409220,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-26 13:44","OK":"","Amount":287,"SlipNumber":1549,"Tid":-465946983,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-07 04:25","OK":"","Amount":67,"SlipNumber":7886,"Tid":-771679692,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-26 22:32","OK":"","Amount":997,"SlipNumber":2120,"Tid":31640501,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-27 06:44","OK":"","Amount":71,"SlipNumber":689,"Tid":-60749599,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-31 17:20","OK":"","Amount":657,"SlipNumber":8388,"Tid":-1297688440,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-19 14:09","OK":"","Amount":930,"SlipNumber":8591,"Tid":65048950,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-07-07 07:03","OK":"","Amount":463,"SlipNumber":323,"Tid":-383326449,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-06-04 13:17","OK":"","Amount":968,"SlipNumber":3671,"Tid":260197823,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-06-19 13:46","OK":"","Amount":137,"SlipNumber":7919,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-22 12:23","OK":"","Amount":909,"SlipNumber":7942,"Tid":-868723416,"Status":"Failure"},{"type":"sales","cardName":"VISA","Date":"2019-08-08 10:29","OK":"","Amount":939,"SlipNumber":6610,"Tid":-1523056131,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-09 18:43","OK":"","Amount":807,"SlipNumber":3758,"Tid":4898227,"Status":"Failure"},{"type":"sales","cardName":"Master","Date":"2019-07-21 18:44","OK":"","Amount":270,"SlipNumber":1217,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-06-07 00:47","OK":"","Amount":559,"SlipNumber":2807,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-09-01 13:08","OK":"","Amount":558,"SlipNumber":2546,"Tid":-99267650,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-04 00:13","OK":"","Amount":106,"SlipNumber":3969,"Tid":-1335643019,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-16 10:19","OK":"","Amount":284,"SlipNumber":8309,"Tid":-771708017,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-08-02 15:37","OK":"","Amount":829,"SlipNumber":2724,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-08-07 13:17","OK":"","Amount":375,"SlipNumber":2055,"Tid":-60387067,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-31 17:36","OK":"","Amount":835,"SlipNumber":9168,"Tid":-640446615,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-29 02:46","OK":"","Amount":293,"SlipNumber":8900,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-18 16:19","OK":"","Amount":569,"SlipNumber":7908,"Tid":373692871,"Status":"Success"},{"type":"sales","cardName":"Master","Date":"2019-05-28 03:57","OK":"","Amount":589,"SlipNumber":9297,"Tid":-1512281097,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-05-29 10:14","OK":"","Amount":182,"SlipNumber":4805,"Tid":280576045,"Status":"Success"},{"type":"sales","cardName":"VISA","Date":"2019-07-06 23:15","OK":"","Amount":619,"SlipNumber":5036,"Tid":-488697819,"Status":"Failure"}]}
+{
+    "aggregateData": [
+        {
+            "companyName": "HDFC",
+            "sales": {
+                "amountComplete": 4000,
+                "amountInComplete": 4000,
+                "totalCountComplete": 1,
+                "totalCountInComplete": 0
+            },
+            "refund": {
+                "amountComplete": 0,
+                "amountInComplete": 0,
+                "totalCountComplete": 0,
+                "totalCountInComplete": 0
+            }
+        },
+        {
+            "companyName": "SBI",
+            "sales": {
+                "amountComplete": 8000,
+                "amountInComplete": 0,
+                "totalCountComplete": 2,
+                "totalCountInComplete": 0
+            },
+            "refund": {
+                "amountComplete": 0,
+                "amountInComplete": 0,
+                "totalCountComplete": 0,
+                "totalCountInComplete": 0
+            }
+        },
+        {
+            "companyName": "CITIBANK",
+            "sales": {
+                "amountComplete": 4000,
+                "amountInComplete": 0,
+                "totalCountComplete": 1,
+                "totalCountInComplete": 0
+            },
+            "refund": {
+                "amountComplete": 0,
+                "amountInComplete": 0,
+                "totalCountComplete": 0,
+                "totalCountInComplete": 0
+            }
+        },
+        {
+            "sales": {
+                "amountComplete": 0,
+                "amountInComplete": 12000,
+                "totalCountComplete": 0,
+                "totalCountInComplete": 0
+            },
+            "refund": {
+                "amountComplete": 0,
+                "amountInComplete": 0,
+                "totalCountComplete": 0,
+                "totalCountInComplete": 0
+            }
+        }
+    ],
+    "detailData": [
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "tid": "9999956000001",
+            "status": "1",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337159",
+            "cardCompanyName": "HDFC"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "cardName": "VISA",
+            "tid": "9999956000001",
+            "status": "0",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "errorCode": "    ",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337159",
+            "cardCompanyName": "HDFC"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "tid": "9999956000001",
+            "status": "1",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337160"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "cardName": "VISA",
+            "tid": "9999956000001",
+            "status": "0",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "errorCode": "    ",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337160",
+            "cardCompanyName": "SBI"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "tid": "9999956000001",
+            "status": "1",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337161"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "cardName": "VISA",
+            "tid": "9999956000001",
+            "status": "0",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "errorCode": "    ",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337161",
+            "cardCompanyName": "SBI"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "tid": "9999956000001",
+            "status": "1",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337162"
+        },
+        {
+            "type": "PAY",
+            "amount": 4000,
+            "slipNumber": 0,
+            "cardName": "VISA",
+            "tid": "9999956000001",
+            "status": "0",
+            "approveNumber": 123,
+            "autoCancelStatus": "0",
+            "captureSend": "true",
+            "transactionDate": "2019-09-18T05:44:16.052+0000",
+            "errorCode": "    ",
+            "transactionCompletionStatus": "true",
+            "orgSlipNumber": "0",
+            "paymentDivision": "",
+            "processingNumber": "12337162",
+            "cardCompanyName": "CITIBANK"
+        }
+    ]
+}
