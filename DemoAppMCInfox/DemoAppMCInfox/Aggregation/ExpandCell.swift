@@ -1,15 +1,15 @@
 //
-//  Sales&RefundTableViewCell.swift
+//  ExpandCell.swift
 //  DemoAppMCInfox
 //
-//  Created by CAFIS_Mac_1 on 11/09/19.
+//  Created by CAFIS_Mac_1 on 16/09/19.
 //  Copyright © 2019 NTTDATA_Cafis. All rights reserved.
 //
 
 import UIKit
 
-class Sales_RefundTableViewCell: UITableViewCell {
-//Sales&rRefundCell reuseIdentifier name
+class ExpandCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
