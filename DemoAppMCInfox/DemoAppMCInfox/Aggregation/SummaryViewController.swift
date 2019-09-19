@@ -37,7 +37,7 @@ class SummaryViewController: UIViewController, UITableViewDataSource , UITableVi
             Cell.sale_totalAmountCOmplete_label.text = String(_aggregateData[indexPath.row].sales!.amountComplete!)
         
            Cell.refund_TotalCountComplete_Label.text = String(_aggregateData[indexPath.row].sales!.totalCountComplete!)
-           Cell.refund_TotalAmountComplete_Label.text = String(_aggregateData[indexPath.row].sales!.totalCountComplete!)
+           Cell.refund_TotalAmountComplete_Label.text = String(_aggregateData[indexPath.row].sales!.amountComplete!)
         
         
       

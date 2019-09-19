@@ -50,6 +50,15 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let slipVC = storyboard.instantiateViewController(withIdentifier: "SlipNumberViewController") as! SlipNumberViewController
             self.navigationController?.pushViewController(slipVC, animated: true)
+        } else if (indexPath.item == 2)  {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if #available(iOS 11.0, *) {
+                let slipVC = storyboard.instantiateViewController(withIdentifier: "AggregationViewController") as! AggregationViewController
+                self.navigationController?.pushViewController(slipVC, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
         
         

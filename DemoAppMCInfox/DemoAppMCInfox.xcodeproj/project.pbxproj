@@ -37,6 +37,7 @@
 		837C705E2333362D0004D636 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70592333362C0004D636 /* DetailData.swift */; };
 		837C705F2333362D0004D636 /* Refund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C705A2333362D0004D636 /* Refund.swift */; };
 		837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C705B2333362D0004D636 /* AggregateTransationData.swift */; };
+		837C70642333B4DF0004D636 /* LodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70622333B4DE0004D636 /* LodingViewController.swift */; };
 		83CC12C3232F57270009A750 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = 83CC12C2232F57270009A750 /* .gitIgnore */; };
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -128,6 +129,7 @@
 		837C70592333362C0004D636 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
 		837C705A2333362D0004D636 /* Refund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refund.swift; sourceTree = "<group>"; };
 		837C705B2333362D0004D636 /* AggregateTransationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateTransationData.swift; sourceTree = "<group>"; };
+		837C70622333B4DE0004D636 /* LodingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		83CC129F232904A60009A750 /* Aggregation */ = {
 			isa = PBXGroup;
 			children = (
+				837C70622333B4DE0004D636 /* LodingViewController.swift */,
 				837C7056233336140004D636 /* AggregationResponse */,
 				837C7040233334D90004D636 /* AggregationRequest.swift */,
 				837C703B233334D80004D636 /* AggregationViewController.swift */,
@@ -419,6 +422,7 @@
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
 				837C7041233334D90004D636 /* ExpandCell.swift in Sources */,
 				837C7046233334D90004D636 /* DetailViewController.swift in Sources */,
+				837C70642333B4DF0004D636 /* LodingViewController.swift in Sources */,
 				837C705F2333362D0004D636 /* Refund.swift in Sources */,
 				837C704A233334D90004D636 /* AggregationRequest.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
@@ -614,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nttdata;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,7 +642,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nttdata;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
