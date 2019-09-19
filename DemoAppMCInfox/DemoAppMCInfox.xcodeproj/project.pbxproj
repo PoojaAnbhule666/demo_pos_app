@@ -41,7 +41,7 @@
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
-		92139AE1233335DC00EE730C /* AggregateCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92139AE0233335DC00EE730C /* AggregateCallAPI.swift */; };
+		92139AE82333868400EE730C /* ActivationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92139AE72333868400EE730C /* ActivationStatusViewController.swift */; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
@@ -132,7 +132,7 @@
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		92139AE0233335DC00EE730C /* AggregateCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateCallAPI.swift; sourceTree = "<group>"; };
+		92139AE72333868400EE730C /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +173,7 @@
 				8301E16F231E6D3F00B25BC6 /* DemoAppMCInfoxTests */,
 				8301E159231E6D3D00B25BC6 /* Products */,
 				8301E1A3231E771500B25BC6 /* Frameworks */,
+				92139AE323333FB500EE730C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +194,7 @@
 				837C701F2330EAE80004D636 /* Pay&Refund */,
 				83CC12BE232F56A20009A750 /* Git Ignore */,
 				8301E19B231E769C00B25BC6 /* AppDelegate.swift */,
+				837C7054233335610004D636 /* Assets.xcassets */,
 				8301E17B231E71C700B25BC6 /* logo_ntt.jpg */,
 				8301E15F231E6D3D00B25BC6 /* Main.storyboard */,
 				8301E19D231E76AD00B25BC6 /* Header.h */,
@@ -235,6 +237,7 @@
 				9219E5F0231F88A300D822DD /* CardProcessViewController.swift */,
 				9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */,
 				92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */,
+				92139AE72333868400EE730C /* ActivationStatusViewController.swift */,
 			);
 			path = "Pay&Refund";
 			sourceTree = "<group>";
@@ -271,7 +274,6 @@
 		83CC12BE232F56A20009A750 /* Git Ignore */ = {
 			isa = PBXGroup;
 			children = (
-				837C7054233335610004D636 /* Assets.xcassets */,
 				83CC12C2232F57270009A750 /* .gitIgnore */,
 			);
 			path = "Git Ignore";
@@ -284,6 +286,13 @@
 				92113ED223278107002315C9 /* PinOnGlassTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		92139AE323333FB500EE730C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,12 +427,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8301E19C231E769C00B25BC6 /* AppDelegate.swift in Sources */,
-				83CC12CE232F5CFA0009A750 /* SummaryViewController.swift in Sources */,
-				83CC1308232F91510009A750 /* ExpandCell.swift in Sources */,
-				83CC13592330D9BA0009A750 /* AggregationRequest.swift in Sources */,
-				92139AE1233335DC00EE730C /* AggregateCallAPI.swift in Sources */,
-				837C70322332042A0004D636 /* Refund.swift in Sources */,
-				837C70302332042A0004D636 /* DetailData.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
 				837C7041233334D90004D636 /* ExpandCell.swift in Sources */,
 				837C7046233334D90004D636 /* DetailViewController.swift in Sources */,
@@ -431,6 +434,7 @@
 				837C704A233334D90004D636 /* AggregationRequest.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
 				9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */,
+				92139AE82333868400EE730C /* ActivationStatusViewController.swift in Sources */,
 				837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */,
 				8301E17F231E71C700B25BC6 /* productTableViewCell.swift in Sources */,
 				9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */,

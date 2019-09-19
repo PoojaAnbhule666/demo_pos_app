@@ -44,11 +44,6 @@ class SlipNumberViewController: UIViewController, UITextFieldDelegate {
     
     
     func setIntialSettings() {
-//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 98, height: 58))
-//        imageView.contentMode = .scaleAspectFit
-//        let image = UIImage(named: "logo")
-//        imageView.image = image
-//        navigationItem.titleView = imageView
         
         slipNumberTxt.delegate = self
         amountTxt.delegate = self
