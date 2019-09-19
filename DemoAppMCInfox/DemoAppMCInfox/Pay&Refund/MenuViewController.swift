@@ -72,4 +72,36 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     }
     
     
+    
+    func testCallAGgregateApi() {
+       
+            let Url = String(format: "http://10.232.35.2:8080/v1/aggregate")
+            guard let serviceUrl = URL(string: Url) else { return }
+            let parameterDictionary = ["ToTID" : "", "FromDate" : "2019-09-15" ,"ToDate": "", "FromTID" : "0000356000000" ] ////YYYY-MM-DD HH:II
+            var request = URLRequest(url: serviceUrl)
+            request.httpMethod = "POST"
+            request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+            guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
+                return
+            }
+            request.httpBody = httpBody
+            
+            let session = URLSession.shared
+            session.dataTask(with: request) { (data, response, error) in
+                if let response = response {
+                    print(response)
+                }
+                if let data = data {
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        print(json)
+                    } catch {
+                        print(error)
+                    }
+                }
+                }.resume()
+        }
+        
+    
+    
 }

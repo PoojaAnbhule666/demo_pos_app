@@ -41,6 +41,7 @@
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
+		92139AE1233335DC00EE730C /* AggregateCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92139AE0233335DC00EE730C /* AggregateCallAPI.swift */; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
@@ -131,6 +132,7 @@
 		83CC13582330D9BA0009A750 /* AggregationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregationRequest.swift; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		92139AE0233335DC00EE730C /* AggregateCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateCallAPI.swift; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				837C70252331FB4E0004D636 /* HeaderView.swift */,
 				837C70262331FB4E0004D636 /* HeaderView.xib */,
 				83CC129D2328F1450009A750 /* Data.json */,
+				92139AE0233335DC00EE730C /* AggregateCallAPI.swift */,
 			);
 			path = Aggregation;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				83CC12CE232F5CFA0009A750 /* SummaryViewController.swift in Sources */,
 				83CC1308232F91510009A750 /* ExpandCell.swift in Sources */,
 				83CC13592330D9BA0009A750 /* AggregationRequest.swift in Sources */,
+				92139AE1233335DC00EE730C /* AggregateCallAPI.swift in Sources */,
 				837C70322332042A0004D636 /* Refund.swift in Sources */,
 				837C70302332042A0004D636 /* DetailData.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
@@ -609,12 +613,12 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nttdata;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.ntt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -633,12 +637,12 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nttdata;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.ntt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
