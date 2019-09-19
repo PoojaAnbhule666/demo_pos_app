@@ -22,6 +22,7 @@ struct DetailData : Codable {
 	let autoCancelStatus : String?
 	let captureSend : String?
 	let transactionDate : String?
+    let errorCode : String?
 	let transactionCompletionStatus : String?
 	let orgSlipNumber : String?
 	let paymentDivision : String?
@@ -39,6 +40,7 @@ struct DetailData : Codable {
 		case autoCancelStatus = "autoCancelStatus"
 		case captureSend = "captureSend"
 		case transactionDate = "transactionDate"
+        case errorCode = "errorCode"
 		case transactionCompletionStatus = "transactionCompletionStatus"
 		case orgSlipNumber = "orgSlipNumber"
 		case paymentDivision = "paymentDivision"
@@ -57,6 +59,7 @@ struct DetailData : Codable {
 		autoCancelStatus = try values.decodeIfPresent(String.self, forKey: .autoCancelStatus)
 		captureSend = try values.decodeIfPresent(String.self, forKey: .captureSend)
 		transactionDate = try values.decodeIfPresent(String.self, forKey: .transactionDate)
+        errorCode = try values.decodeIfPresent(String.self, forKey: .errorCode)
 		transactionCompletionStatus = try values.decodeIfPresent(String.self, forKey: .transactionCompletionStatus)
 		orgSlipNumber = try values.decodeIfPresent(String.self, forKey: .orgSlipNumber)
 		paymentDivision = try values.decodeIfPresent(String.self, forKey: .paymentDivision)

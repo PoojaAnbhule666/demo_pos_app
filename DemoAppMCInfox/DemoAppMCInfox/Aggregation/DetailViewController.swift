@@ -12,11 +12,15 @@ import UIKit
     @objc optional func shouldCollapseByDefault(_ tableView: UITableView) -> Bool
     @objc optional func shouldCollapseOthers(_ tableView: UITableView) -> Bool
 }
+@available(iOS 11.0, *)
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var aggregateDetail_TableView: UITableView!
     
+    var detailData_ = [DetailData]() 
 //     fileprivate let viewModel = AggregateViewModel()
+     let colorSucess = UIColor(named: "ColorSucces")
+     let colorFail = UIColor(named: "ColorFail")
     
     public var delegate: CollapsibleTableSectionDelegate?
     var _sectionsState = [Int : Bool]()
@@ -57,25 +61,38 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Hello")
+        print("deatail data ",detailData_)
         aggregateDetail_TableView?.register(HeaderView.nib, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
         // Auto resizing the height of the cell
-        aggregateDetail_TableView.estimatedRowHeight = 44.0
+        aggregateDetail_TableView.estimatedRowHeight = 100.0
         aggregateDetail_TableView.rowHeight = UITableView.automaticDimension
         
         
+    }
+    
+    func dateformate(dateString : String) -> String {
+        
+                let dateFormatterGet = DateFormatter()
+                dateFormatterGet.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSSZ"
+        let dateString = dateString
+
+        let date = dateFormatterGet.date(from: dateString)!
+            dateFormatterGet.dateFormat = "dd-MM-yyyy"
+         let dateStr = dateFormatterGet.string(from: date)
+        return dateStr
     }
     
 }
 
 // MARK: - View Controller DataSource and Delegate
 //
+@available(iOS 11.0, *)
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     public func numberOfSections(in tableView: UITableView) -> Int {
         //            return delegate?.numberOfSections?(tableView) ?? 1
         
-        return 4
+        return detailData_.count
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,8 +104,20 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //            return delegate?.collapsibleTableView?(tableView, cellForRowAt: indexPath) ?? UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "DefaultCell")
         
-        let expandCell = tableView.dequeueReusableCell(withIdentifier: "ExpandCell") as! ExpandCell
-        return expandCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandCell") as! ExpandCell
+        
+        cell.tid_label.text = String(detailData_[indexPath.row].tid!)
+        cell.orgSlipNo_label.text = detailData_[indexPath.row].orgSlipNumber
+        cell.paymentDivison_Label.text = detailData_[indexPath.row].paymentDivision
+        cell.approveNo_label.text = String(detailData_[indexPath.row].approveNumber!)
+        cell.errorCode_label.text = detailData_[indexPath.row].errorCode
+        cell.autoCancelSts_label.text = detailData_[indexPath.row].autoCancelStatus
+        cell.captureSend_label.text = detailData_[indexPath.row].captureSend
+        cell.processingNo_label.text = detailData_[indexPath.row].processingNumber
+        
+
+        
+        return cell
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -101,31 +130,36 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     // Header
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        //            let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
-        //
-        //            let title = delegate?.collapsibleTableView?(tableView, titleForHeaderInSection: section) ?? ""
-        //
-        //            header.titleLabel.text = title
+       
         //            header.arrowLabel.text = ">"
-        //            header.setCollapsed(isSectionCollapsed(section))
-        //
-        //            header.section = section
-        //            header.delegate = self
+       
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as? HeaderView
         
+         headerView?.transactionType_Label.text = detailData_[section].type
+         headerView?.slipNo_Label.text =  String(detailData_[section].slipNumber!)
+         headerView?.brandName_Label.text =  detailData_[section].cardCompanyName
+        headerView?.amount_Label.text = String(detailData_[section].amount!)
         
-        //            header.brandName_Label.text = tittle
-        headerView?.amount_Label.text = "1000"
+           let status = detailData_[section].status
+        
+        if status == "0" {
+             headerView?.checkOk_label.text = "Ok"
+            headerView?.containView.backgroundColor = colorSucess
+        } else {
+            headerView?.checkOk_label.text = "fail"
+            headerView?.containView.backgroundColor = colorFail
+        }
+        headerView?.date_Label.text = dateformate(dateString: detailData_[section].transactionDate ?? "")
+//    detailData_[section].transactionDate
+       
         headerView?.setCollapsed(isSectionCollapsed(section))
-        
         headerView?.section = section
         headerView?.delegate = self
         return headerView
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return  90.0
-    }
+        return  100.0    }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return  0.0
@@ -136,6 +170,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
 //
 // MARK: - Section Header Delegate
 //
+@available(iOS 11.0, *)
 extension DetailViewController: HeaderViewDelegate {
     
     func toggleSection(_ section: Int) {

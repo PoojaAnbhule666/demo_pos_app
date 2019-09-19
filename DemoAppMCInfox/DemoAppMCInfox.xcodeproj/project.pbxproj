@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8301E15F231E6D3D00B25BC6 /* Main.storyboard */; };
-		8301E163231E6D3F00B25BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8301E162231E6D3F00B25BC6 /* Assets.xcassets */; };
 		8301E166231E6D3F00B25BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8301E164231E6D3F00B25BC6 /* LaunchScreen.storyboard */; };
 		8301E171231E6D3F00B25BC6 /* DemoAppMCInfoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8301E170231E6D3F00B25BC6 /* DemoAppMCInfoxTests.swift */; };
 		8301E17E231E71C700B25BC6 /* logo_ntt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8301E17B231E71C700B25BC6 /* logo_ntt.jpg */; };
@@ -23,21 +22,22 @@
 		8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AC231E775800B25BC6 /* AVFoundation.framework */; };
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
 		837C70222330EB130004D636 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70212330EB130004D636 /* ShopViewController.swift */; };
-		837C70282331FB4E0004D636 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70252331FB4E0004D636 /* HeaderView.swift */; };
-		837C70292331FB4E0004D636 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837C70262331FB4E0004D636 /* HeaderView.xib */; };
-		837C702F2332042A0004D636 /* AggregateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C702A233204290004D636 /* AggregateData.swift */; };
-		837C70302332042A0004D636 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C702B233204290004D636 /* DetailData.swift */; };
-		837C70312332042A0004D636 /* AggregateTransationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C702C233204290004D636 /* AggregateTransationData.swift */; };
-		837C70322332042A0004D636 /* Refund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C702D233204290004D636 /* Refund.swift */; };
-		837C70332332042A0004D636 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C702E2332042A0004D636 /* Sales.swift */; };
-		83CC12992328F1140009A750 /* AggregationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12982328F1140009A750 /* AggregationViewController.swift */; };
-		83CC129E2328F1450009A750 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 83CC129D2328F1450009A750 /* Data.json */; };
-		83CC12A1232905160009A750 /* Sales&RefundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */; };
+		837C7041233334D90004D636 /* ExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7037233334D60004D636 /* ExpandCell.swift */; };
+		837C7042233334D90004D636 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7038233334D70004D636 /* SummaryViewController.swift */; };
+		837C7043233334D90004D636 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 837C7039233334D70004D636 /* Data.json */; };
+		837C7044233334D90004D636 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837C703A233334D70004D636 /* HeaderView.xib */; };
+		837C7045233334D90004D636 /* AggregationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703B233334D80004D636 /* AggregationViewController.swift */; };
+		837C7046233334D90004D636 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703C233334D80004D636 /* DetailViewController.swift */; };
+		837C7047233334D90004D636 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703D233334D80004D636 /* HeaderView.swift */; };
+		837C7049233334D90004D636 /* Sales&RefundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */; };
+		837C704A233334D90004D636 /* AggregationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7040233334D90004D636 /* AggregationRequest.swift */; };
+		837C7055233335610004D636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C7054233335610004D636 /* Assets.xcassets */; };
+		837C705C2333362D0004D636 /* AggregateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70572333362C0004D636 /* AggregateData.swift */; };
+		837C705D2333362D0004D636 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70582333362C0004D636 /* Sales.swift */; };
+		837C705E2333362D0004D636 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70592333362C0004D636 /* DetailData.swift */; };
+		837C705F2333362D0004D636 /* Refund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C705A2333362D0004D636 /* Refund.swift */; };
+		837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C705B2333362D0004D636 /* AggregateTransationData.swift */; };
 		83CC12C3232F57270009A750 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = 83CC12C2232F57270009A750 /* .gitIgnore */; };
-		83CC12CE232F5CFA0009A750 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12CD232F5CFA0009A750 /* SummaryViewController.swift */; };
-		83CC12D0232F5D0B0009A750 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC12CF232F5D0B0009A750 /* DetailViewController.swift */; };
-		83CC1308232F91510009A750 /* ExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC1307232F91510009A750 /* ExpandCell.swift */; };
-		83CC13592330D9BA0009A750 /* AggregationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC13582330D9BA0009A750 /* AggregationRequest.swift */; };
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
@@ -96,7 +96,6 @@
 /* Begin PBXFileReference section */
 		8301E158231E6D3D00B25BC6 /* DemoAppMCInfox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppMCInfox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8301E160231E6D3D00B25BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8301E162231E6D3F00B25BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8301E165231E6D3F00B25BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8301E167231E6D3F00B25BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8301E16C231E6D3F00B25BC6 /* DemoAppMCInfoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppMCInfoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,21 +114,22 @@
 		8301E1AC231E775800B25BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8301E1AE231E776500B25BC6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		837C70212330EB130004D636 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		837C70252331FB4E0004D636 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		837C70262331FB4E0004D636 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
-		837C702A233204290004D636 /* AggregateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateData.swift; sourceTree = "<group>"; };
-		837C702B233204290004D636 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
-		837C702C233204290004D636 /* AggregateTransationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateTransationData.swift; sourceTree = "<group>"; };
-		837C702D233204290004D636 /* Refund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refund.swift; sourceTree = "<group>"; };
-		837C702E2332042A0004D636 /* Sales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
-		83CC12982328F1140009A750 /* AggregationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregationViewController.swift; sourceTree = "<group>"; };
-		83CC129D2328F1450009A750 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
-		83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sales&RefundTableViewCell.swift"; sourceTree = "<group>"; };
+		837C7037233334D60004D636 /* ExpandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCell.swift; sourceTree = "<group>"; };
+		837C7038233334D70004D636 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		837C7039233334D70004D636 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		837C703A233334D70004D636 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		837C703B233334D80004D636 /* AggregationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregationViewController.swift; sourceTree = "<group>"; };
+		837C703C233334D80004D636 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		837C703D233334D80004D636 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sales&RefundTableViewCell.swift"; sourceTree = "<group>"; };
+		837C7040233334D90004D636 /* AggregationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregationRequest.swift; sourceTree = "<group>"; };
+		837C7054233335610004D636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		837C70572333362C0004D636 /* AggregateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateData.swift; sourceTree = "<group>"; };
+		837C70582333362C0004D636 /* Sales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
+		837C70592333362C0004D636 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
+		837C705A2333362D0004D636 /* Refund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refund.swift; sourceTree = "<group>"; };
+		837C705B2333362D0004D636 /* AggregateTransationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateTransationData.swift; sourceTree = "<group>"; };
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
-		83CC12CD232F5CFA0009A750 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
-		83CC12CF232F5D0B0009A750 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		83CC1307232F91510009A750 /* ExpandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCell.swift; sourceTree = "<group>"; };
-		83CC13582330D9BA0009A750 /* AggregationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregationRequest.swift; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		92139AE0233335DC00EE730C /* AggregateCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateCallAPI.swift; sourceTree = "<group>"; };
@@ -196,7 +196,6 @@
 				8301E17B231E71C700B25BC6 /* logo_ntt.jpg */,
 				8301E15F231E6D3D00B25BC6 /* Main.storyboard */,
 				8301E19D231E76AD00B25BC6 /* Header.h */,
-				8301E162231E6D3F00B25BC6 /* Assets.xcassets */,
 				8301E164231E6D3F00B25BC6 /* LaunchScreen.storyboard */,
 				8301E167231E6D3F00B25BC6 /* Info.plist */,
 				83CC129F232904A60009A750 /* Aggregation */,
@@ -240,20 +239,31 @@
 			path = "Pay&Refund";
 			sourceTree = "<group>";
 		};
+		837C7056233336140004D636 /* AggregationResponse */ = {
+			isa = PBXGroup;
+			children = (
+				837C70572333362C0004D636 /* AggregateData.swift */,
+				837C705B2333362D0004D636 /* AggregateTransationData.swift */,
+				837C70592333362C0004D636 /* DetailData.swift */,
+				837C705A2333362D0004D636 /* Refund.swift */,
+				837C70582333362C0004D636 /* Sales.swift */,
+			);
+			path = AggregationResponse;
+			sourceTree = "<group>";
+		};
 		83CC129F232904A60009A750 /* Aggregation */ = {
 			isa = PBXGroup;
 			children = (
-				83CC12982328F1140009A750 /* AggregationViewController.swift */,
-				83CC13582330D9BA0009A750 /* AggregationRequest.swift */,
-				83CC12CF232F5D0B0009A750 /* DetailViewController.swift */,
-				83CC12CD232F5CFA0009A750 /* SummaryViewController.swift */,
-				83CC135A2330E35E0009A750 /* AggregationResponse */,
-				83CC12A0232905160009A750 /* Sales&RefundTableViewCell.swift */,
-				83CC1307232F91510009A750 /* ExpandCell.swift */,
-				837C70252331FB4E0004D636 /* HeaderView.swift */,
-				837C70262331FB4E0004D636 /* HeaderView.xib */,
-				83CC129D2328F1450009A750 /* Data.json */,
-				92139AE0233335DC00EE730C /* AggregateCallAPI.swift */,
+				837C7056233336140004D636 /* AggregationResponse */,
+				837C7040233334D90004D636 /* AggregationRequest.swift */,
+				837C703B233334D80004D636 /* AggregationViewController.swift */,
+				837C7039233334D70004D636 /* Data.json */,
+				837C703C233334D80004D636 /* DetailViewController.swift */,
+				837C7037233334D60004D636 /* ExpandCell.swift */,
+				837C703D233334D80004D636 /* HeaderView.swift */,
+				837C703A233334D70004D636 /* HeaderView.xib */,
+				837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */,
+				837C7038233334D70004D636 /* SummaryViewController.swift */,
 			);
 			path = Aggregation;
 			sourceTree = "<group>";
@@ -261,21 +271,10 @@
 		83CC12BE232F56A20009A750 /* Git Ignore */ = {
 			isa = PBXGroup;
 			children = (
+				837C7054233335610004D636 /* Assets.xcassets */,
 				83CC12C2232F57270009A750 /* .gitIgnore */,
 			);
 			path = "Git Ignore";
-			sourceTree = "<group>";
-		};
-		83CC135A2330E35E0009A750 /* AggregationResponse */ = {
-			isa = PBXGroup;
-			children = (
-				837C702A233204290004D636 /* AggregateData.swift */,
-				837C702B233204290004D636 /* DetailData.swift */,
-				837C702C233204290004D636 /* AggregateTransationData.swift */,
-				837C702D233204290004D636 /* Refund.swift */,
-				837C702E2332042A0004D636 /* Sales.swift */,
-			);
-			path = AggregationResponse;
 			sourceTree = "<group>";
 		};
 		92113ECB23278107002315C9 /* Products */ = {
@@ -396,11 +395,11 @@
 				83CC12C3232F57270009A750 /* .gitIgnore in Resources */,
 				8301E166231E6D3F00B25BC6 /* LaunchScreen.storyboard in Resources */,
 				8301E17E231E71C700B25BC6 /* logo_ntt.jpg in Resources */,
-				837C70292331FB4E0004D636 /* HeaderView.xib in Resources */,
 				8301E19A231E768C00B25BC6 /* IDTech.bundle in Resources */,
-				8301E163231E6D3F00B25BC6 /* Assets.xcassets in Resources */,
 				8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */,
-				83CC129E2328F1450009A750 /* Data.json in Resources */,
+				837C7043233334D90004D636 /* Data.json in Resources */,
+				837C7055233335610004D636 /* Assets.xcassets in Resources */,
+				837C7044233334D90004D636 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,19 +425,24 @@
 				837C70322332042A0004D636 /* Refund.swift in Sources */,
 				837C70302332042A0004D636 /* DetailData.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
-				83CC12A1232905160009A750 /* Sales&RefundTableViewCell.swift in Sources */,
+				837C7041233334D90004D636 /* ExpandCell.swift in Sources */,
+				837C7046233334D90004D636 /* DetailViewController.swift in Sources */,
+				837C705F2333362D0004D636 /* Refund.swift in Sources */,
+				837C704A233334D90004D636 /* AggregationRequest.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
 				9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */,
-				837C70332332042A0004D636 /* Sales.swift in Sources */,
+				837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */,
 				8301E17F231E71C700B25BC6 /* productTableViewCell.swift in Sources */,
 				9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */,
-				837C70312332042A0004D636 /* AggregateTransationData.swift in Sources */,
 				837C70222330EB130004D636 /* ShopViewController.swift in Sources */,
 				9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */,
-				837C70282331FB4E0004D636 /* HeaderView.swift in Sources */,
-				83CC12992328F1140009A750 /* AggregationViewController.swift in Sources */,
-				83CC12D0232F5D0B0009A750 /* DetailViewController.swift in Sources */,
-				837C702F2332042A0004D636 /* AggregateData.swift in Sources */,
+				837C7045233334D90004D636 /* AggregationViewController.swift in Sources */,
+				837C7049233334D90004D636 /* Sales&RefundTableViewCell.swift in Sources */,
+				837C7042233334D90004D636 /* SummaryViewController.swift in Sources */,
+				837C705E2333362D0004D636 /* DetailData.swift in Sources */,
+				837C7047233334D90004D636 /* HeaderView.swift in Sources */,
+				837C705D2333362D0004D636 /* Sales.swift in Sources */,
+				837C705C2333362D0004D636 /* AggregateData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
