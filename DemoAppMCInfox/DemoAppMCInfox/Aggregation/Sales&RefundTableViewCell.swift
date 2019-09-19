@@ -9,7 +9,13 @@
 import UIKit
 
 class Sales_RefundTableViewCell: UITableViewCell {
-//Sales&rRefundCell reuseIdentifier name
+    
+    @IBOutlet weak var comapnyName_Label: UILabel!
+    @IBOutlet weak var sale_totalCountComplete: UILabel!
+    @IBOutlet weak var sale_totalAmountCOmplete_label: UILabel!
+    //Sales&rRefundCell reuseIdentifier name
+    @IBOutlet weak var refund_TotalCountComplete_Label: UILabel!
+    @IBOutlet weak var refund_TotalAmountComplete_Label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

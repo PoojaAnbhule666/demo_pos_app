@@ -15,9 +15,10 @@ protocol HeaderViewDelegate {
 
 class HeaderView : UITableViewHeaderFooterView {
     
+    @IBOutlet weak var transactionType_Label: UILabel!
     @IBOutlet weak var checkPayView: UIView!
     @IBOutlet weak var containView: UIView!
-    @IBOutlet weak var number_Label: UILabel!
+    @IBOutlet weak var slipNo_Label: UILabel!
     @IBOutlet weak var brandName_Label: UILabel!
     @IBOutlet weak var date_Label: UILabel!
     @IBOutlet weak var checkOk_label: UILabel!
