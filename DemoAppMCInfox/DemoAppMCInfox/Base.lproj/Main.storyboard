@@ -218,6 +218,7 @@
                         <viewLayoutGuide key="safeArea" id="p9I-Z5-PKq"/>
                     </view>
                     <connections>
+                        <outlet property="cancelBtn" destination="Ewv-Ba-BFf" id="9hu-Mu-Wa6"/>
                         <outlet property="statusLable" destination="8ui-5z-fYN" id="fHg-FK-28S"/>
                         <outlet property="statusMsgLabel" destination="5fb-uC-7ra" id="ovC-hR-zgR"/>
                     </connections>
