@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AggregationList: NSObject {
+class AggregationRequest: NSObject {
     
 var tid: String = ""
 var fromDate: String = "" //YYYY-MM-DD HH:II

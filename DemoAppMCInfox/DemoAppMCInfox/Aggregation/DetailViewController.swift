@@ -106,14 +106,17 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandCell") as! ExpandCell
         
-        cell.tid_label.text = String(detailData_[indexPath.row].tid!)
-        cell.orgSlipNo_label.text = detailData_[indexPath.row].orgSlipNumber
-        cell.paymentDivison_Label.text = detailData_[indexPath.row].paymentDivision
-        cell.approveNo_label.text = String(detailData_[indexPath.row].approveNumber!)
-        cell.errorCode_label.text = detailData_[indexPath.row].errorCode
-        cell.autoCancelSts_label.text = detailData_[indexPath.row].autoCancelStatus
-        cell.captureSend_label.text = detailData_[indexPath.row].captureSend
-        cell.processingNo_label.text = detailData_[indexPath.row].processingNumber
+        cell.tid_label.text = String(detailData_[indexPath.section].tid!)
+        cell.orgSlipNo_label.text = detailData_[indexPath.section].orgSlipNumber
+        cell.paymentDivison_Label.text = detailData_[indexPath.section].paymentDivision
+        cell.approveNo_label.text = String(detailData_[indexPath.section].approveNumber!)
+        cell.errorCode_label.text = detailData_[indexPath.section].errorCode
+        print("errorCode_label")
+        cell.autoCancelSts_label.text = detailData_[indexPath.section].autoCancelStatus
+        cell.captureSend_label.text = detailData_[indexPath.section].captureSend
+        cell.processingNo_label.text = detailData_[indexPath.section].processingNumber
+        
+        print(detailData_[indexPath.row])
         
 
         
