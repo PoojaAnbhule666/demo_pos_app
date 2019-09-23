@@ -201,10 +201,6 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
              datePickerView .tag = 2
         }
         
-<<<<<<< HEAD
-=======
-//        let dateString = "01-01-1990"
->>>>>>> dev2
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH"       //"dd-MM-yyyy HH"
         let date = Date()

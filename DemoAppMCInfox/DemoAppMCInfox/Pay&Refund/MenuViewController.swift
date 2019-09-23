@@ -12,9 +12,9 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let menuLblArray = ["Pay","Money","Report","Refund","Wallet","Terminal Status"]
+    let menuLblArray = ["Pay","Money","Report","Refund","Wallet","Terminal Status" , "Register New Device"]
     
-    let imageArray = ["pay","money","report","refund","wallet", "activation" ]
+    let imageArray = ["pay","money","report","refund","wallet", "activation" ,"money" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +64,11 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let activationVC = storyboard.instantiateViewController(withIdentifier: "ActivationStatusViewController") as! ActivationStatusViewController
             self.navigationController?.pushViewController(activationVC, animated: true)
+        }
+        else if(indexPath.item == 6) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterDeviceViewController") as! RegisterDeviceViewController
+            self.navigationController?.pushViewController(registerVC, animated: true)
         }
         
         

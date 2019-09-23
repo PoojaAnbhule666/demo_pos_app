@@ -31,7 +31,6 @@
 		837C7047233334D90004D636 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703D233334D80004D636 /* HeaderView.swift */; };
 		837C7049233334D90004D636 /* Sales&RefundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */; };
 		837C704A233334D90004D636 /* AggregationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7040233334D90004D636 /* AggregationRequest.swift */; };
-		837C7055233335610004D636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C7054233335610004D636 /* Assets.xcassets */; };
 		837C705C2333362D0004D636 /* AggregateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70572333362C0004D636 /* AggregateData.swift */; };
 		837C705D2333362D0004D636 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70582333362C0004D636 /* Sales.swift */; };
 		837C705E2333362D0004D636 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70592333362C0004D636 /* DetailData.swift */; };
@@ -42,12 +41,13 @@
 		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
 		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
-		92122EAB2334B0EF00C5E173 /* RegisterNewDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92122EAA2334B0EF00C5E173 /* RegisterNewDeviceViewController.swift */; };
-		92139AE82333868400EE730C /* ActivationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92139AE72333868400EE730C /* ActivationStatusViewController.swift */; };
+		92122EB22334DF7C00C5E173 /* ActivationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */; };
+		92122EB62334E0F900C5E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92122EB42334E0F900C5E173 /* Assets.xcassets */; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
 		9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */; };
+		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +125,6 @@
 		837C703D233334D80004D636 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sales&RefundTableViewCell.swift"; sourceTree = "<group>"; };
 		837C7040233334D90004D636 /* AggregationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregationRequest.swift; sourceTree = "<group>"; };
-		837C7054233335610004D636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837C70572333362C0004D636 /* AggregateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateData.swift; sourceTree = "<group>"; };
 		837C70582333362C0004D636 /* Sales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
 		837C70592333362C0004D636 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
@@ -135,12 +134,13 @@
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		92122EAA2334B0EF00C5E173 /* RegisterNewDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewDeviceViewController.swift; sourceTree = "<group>"; };
-		92139AE72333868400EE730C /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
+		92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
+		92122EB42334E0F900C5E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
 		9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTransactionViewController.swift; sourceTree = "<group>"; };
+		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,6 @@
 				8301E16F231E6D3F00B25BC6 /* DemoAppMCInfoxTests */,
 				8301E159231E6D3D00B25BC6 /* Products */,
 				8301E1A3231E771500B25BC6 /* Frameworks */,
-				92139AE323333FB500EE730C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,13 +197,13 @@
 				837C701F2330EAE80004D636 /* Pay&Refund */,
 				83CC12BE232F56A20009A750 /* Git Ignore */,
 				8301E19B231E769C00B25BC6 /* AppDelegate.swift */,
-				837C7054233335610004D636 /* Assets.xcassets */,
 				8301E17B231E71C700B25BC6 /* logo_ntt.jpg */,
 				8301E15F231E6D3D00B25BC6 /* Main.storyboard */,
 				8301E19D231E76AD00B25BC6 /* Header.h */,
 				8301E164231E6D3F00B25BC6 /* LaunchScreen.storyboard */,
 				8301E167231E6D3F00B25BC6 /* Info.plist */,
 				83CC129F232904A60009A750 /* Aggregation */,
+				92122EB42334E0F900C5E173 /* Assets.xcassets */,
 			);
 			path = DemoAppMCInfox;
 			sourceTree = "<group>";
@@ -234,6 +233,7 @@
 		837C701F2330EAE80004D636 /* Pay&Refund */ = {
 			isa = PBXGroup;
 			children = (
+				92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */,
 				8301E17C231E71C700B25BC6 /* productTableViewCell.swift */,
 				837C70212330EB130004D636 /* ShopViewController.swift */,
 				9219E5EC231F881C00D822DD /* MenuViewController.swift */,
@@ -241,8 +241,7 @@
 				9219E5F0231F88A300D822DD /* CardProcessViewController.swift */,
 				9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */,
 				92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */,
-				92139AE72333868400EE730C /* ActivationStatusViewController.swift */,
-				92122EAA2334B0EF00C5E173 /* RegisterNewDeviceViewController.swift */,
+				92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */,
 			);
 			path = "Pay&Refund";
 			sourceTree = "<group>";
@@ -292,13 +291,6 @@
 				92113ED223278107002315C9 /* PinOnGlassTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		92139AE323333FB500EE730C /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +405,7 @@
 				8301E19A231E768C00B25BC6 /* IDTech.bundle in Resources */,
 				8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */,
 				837C7043233334D90004D636 /* Data.json in Resources */,
-				837C7055233335610004D636 /* Assets.xcassets in Resources */,
+				92122EB62334E0F900C5E173 /* Assets.xcassets in Resources */,
 				837C7044233334D90004D636 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,20 +432,20 @@
 				837C705F2333362D0004D636 /* Refund.swift in Sources */,
 				837C704A233334D90004D636 /* AggregationRequest.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,
+				92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */,
 				9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */,
-				92139AE82333868400EE730C /* ActivationStatusViewController.swift in Sources */,
 				837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */,
 				8301E17F231E71C700B25BC6 /* productTableViewCell.swift in Sources */,
 				9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */,
 				837C70222330EB130004D636 /* ShopViewController.swift in Sources */,
 				9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */,
+				92122EB22334DF7C00C5E173 /* ActivationStatusViewController.swift in Sources */,
 				837C7045233334D90004D636 /* AggregationViewController.swift in Sources */,
 				837C7049233334D90004D636 /* Sales&RefundTableViewCell.swift in Sources */,
 				837C7042233334D90004D636 /* SummaryViewController.swift in Sources */,
 				837C705E2333362D0004D636 /* DetailData.swift in Sources */,
 				837C7047233334D90004D636 /* HeaderView.swift in Sources */,
 				837C705D2333362D0004D636 /* Sales.swift in Sources */,
-				92122EAB2334B0EF00C5E173 /* RegisterNewDeviceViewController.swift in Sources */,
 				837C705C2333362D0004D636 /* AggregateData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,16 +621,12 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.ntt;
->>>>>>> dev2
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,16 +645,12 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.ntt;
->>>>>>> dev2
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
