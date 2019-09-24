@@ -66,10 +66,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OY-Ja-csh">
-                                                    <rect key="frame" x="0.0" y="160" width="140" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OY-Ja-csh">
+                                                    <rect key="frame" x="0.0" y="160" width="140" height="34"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="PVm-RH-prv"/>
+                                                        <constraint firstAttribute="height" constant="34" id="PVm-RH-prv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>

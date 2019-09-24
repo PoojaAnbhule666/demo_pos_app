@@ -31,6 +31,8 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath as IndexPath) as! MenuCollectionViewCell
         cell.menuLbl.text = self.menuLblArray[indexPath.item]
         cell.menuImg.image = UIImage(named: imageArray[indexPath.item])
+        cell.menuLbl.sizeToFit()
+        cell.menuLbl.adjustsFontSizeToFitWidth = true
         
         return cell
     }
