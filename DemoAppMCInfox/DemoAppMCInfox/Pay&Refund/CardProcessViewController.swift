@@ -57,16 +57,16 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         // logTextView.text = "Transaction Complete"
         print("response is ..." , response)
         
-        statusLable.backgroundColor = .green
+        statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         //statusLable.text = "Transaction Complete"
-        statusMsgLabel.textColor = .green
+        statusMsgLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         statusMsgLabel.text = "Transaction Complete"
         
         if(!isRefund) {
             
-            statusLable.backgroundColor = .green
+            statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
             //statusLable.text = "Refund Complete"
-            statusMsgLabel.textColor = .green
+            statusMsgLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
             statusMsgLabel.text = "Transaction Complete"
         }
         
@@ -103,7 +103,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     func payMessage(message: MessageData) {
         print("----------MESSAGE -------------",message.Code)
         
-        statusLable.backgroundColor = .green
+        statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         //statusLable.text = message.Message
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message

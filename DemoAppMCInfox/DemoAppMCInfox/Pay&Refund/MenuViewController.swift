@@ -14,7 +14,7 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     let menuLblArray = ["Pay","Money","Report","Refund","Wallet","Terminal Status" , "Register New Device"]
     
-    let imageArray = ["pay","money","report","refund","wallet", "activation" ,"money" ]
+    let imageArray = ["pay","money","report","refund","wallet", "activation" ,"registerDevice" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

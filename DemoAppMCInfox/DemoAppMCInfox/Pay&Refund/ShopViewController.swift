@@ -133,12 +133,12 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
 
     func paySuccess(response: NSDictionary) {
        // logTextView.text = "Transaction Complete"
-        statusLable.textColor = .green
+        statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         statusLable.text = "Transaction Complete"
 
         if(refundCall == 1) {
             
-            statusLable.textColor = .green
+            statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
             statusLable.text = "Refund Complete"
         }
 
@@ -160,7 +160,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
     func payMessage(message: MessageData) {
         print("----------MESSAGE -------------", message.Code)
 
-        statusLable.textColor = .green
+        statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         statusLable.text = message.Message
     }
    

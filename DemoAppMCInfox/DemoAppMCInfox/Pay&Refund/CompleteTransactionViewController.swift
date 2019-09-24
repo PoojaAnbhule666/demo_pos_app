@@ -52,7 +52,7 @@ class CompleteTransactionViewController: UIViewController {
             requestTypeLbl.textColor = .red
         }
         else {
-             requestTypeLbl.textColor = .green
+             requestTypeLbl.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         }
         
     }

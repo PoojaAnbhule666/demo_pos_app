@@ -42,7 +42,7 @@ class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
         if(response["resultCode"] as? String == "0")
         {
             statusLabel.text = "Device registered successfully"
-            statusLabel.textColor = .green
+            statusLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         }
         else {
             statusLabel.text = "Device not registered"

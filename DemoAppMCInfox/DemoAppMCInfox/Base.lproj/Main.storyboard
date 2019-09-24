@@ -2090,7 +2090,6 @@
                                     <constraint firstAttribute="height" constant="30" id="BRJ-pH-NK9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
