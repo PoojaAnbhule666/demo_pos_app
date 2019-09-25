@@ -239,7 +239,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     let decoder = JSONDecoder()
                     
                     let aggregateData = try decoder.decode(AggregateTransationData.self, from: data)
-                    print("aggregateData.detailData",aggregateData.detailData ?? "")
+//                    print("aggregateData.detailData",aggregateData.detailData ?? "")
                     //                            self.detailData = aggregateData.detailData ?? []
                     
                     var salesData = [DetailData]()
@@ -286,7 +286,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 
                 let decoder = JSONDecoder()
                 let aggregateData = try decoder.decode(AggregateTransationData.self, from: _data)
-                print(aggregateData.detailData!)
+                //print(aggregateData.detailData!)
                 var salesData = [DetailData]()
                 var refundData = [DetailData]()
                 self.detailData = aggregateData.detailData!
