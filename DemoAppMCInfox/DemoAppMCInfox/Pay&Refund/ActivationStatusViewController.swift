@@ -9,9 +9,10 @@
 import UIKit
 import PinOnGlass
 
+@available(iOS 11.0, *)
 class ActivationStatusViewController: UIViewController , PinOnGlass_Delegate {
     @IBOutlet weak var statusLabel: UILabel!
-    
+    let greenColor = UIColor(named: "ColorSucces")
     
     
     override func viewDidLoad() {
@@ -35,14 +36,14 @@ class ActivationStatusViewController: UIViewController , PinOnGlass_Delegate {
     func paySuccess(response: NSDictionary) {
         // logTextView.text = "Transaction Complete"
         print("response is ..." , response)
-        if(response["activationStatus"] as? String == "1")
+        if(response["resultCode"] as? String == "1")
         {
             statusLabel.text = "Inactive"
             statusLabel.textColor = .red
         }
         else {
             statusLabel.text = "Active"
-            statusLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+            statusLabel.textColor = greenColor
         }
         
     

@@ -97,11 +97,16 @@ class SlipNumberViewController: UIViewController, UITextFieldDelegate {
         
         if (slipNumberTxt.text != "" && amountTxt.text != "" && slipNumberTxt.text != "0" && amountTxt.text != "0" && slipNumberTxt.text?.count != 0 && amountTxt.text?.count != 0) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let cardVC = storyboard.instantiateViewController(withIdentifier: "CardProcessViewController") as! CardProcessViewController
-            cardVC.slipNo = slipNumberTxt.text ?? ""
-            cardVC.amount  = amountTxt.text ?? "0.0"
-            cardVC.isRefund = true
-            self.navigationController?.pushViewController(cardVC, animated: true)
+            if #available(iOS 11.0, *) {
+                let cardVC = storyboard.instantiateViewController(withIdentifier: "CardProcessViewController") as! CardProcessViewController
+                cardVC.slipNo = slipNumberTxt.text ?? ""
+                cardVC.amount  = amountTxt.text ?? "0.0"
+                cardVC.isRefund = true
+                self.navigationController?.pushViewController(cardVC, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+           
         }
         //self.present(cardVC, animated: true, completion: nil)
     }

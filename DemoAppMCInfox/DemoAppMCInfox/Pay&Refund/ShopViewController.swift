@@ -11,6 +11,7 @@ import PinOnGlass
 
 
 
+@available(iOS 11.0, *)
 class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDelegate{
     
 //    PinOnGlass_Delegate , UIAlertViewDelegate
@@ -24,6 +25,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
    // @IBOutlet weak var logTextView: UITextView!
     @IBOutlet weak var pay_Button: UIButton!
     @IBOutlet weak var clear_button: UIButton!
+    let greenColor = UIColor(named: "ColorSucces")
     
     var refundCall = 0;
     
@@ -133,12 +135,12 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
 
     func paySuccess(response: NSDictionary) {
        // logTextView.text = "Transaction Complete"
-        statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+        statusLable.textColor = greenColor
         statusLable.text = "Transaction Complete"
 
         if(refundCall == 1) {
             
-            statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+            statusLable.textColor = greenColor
             statusLable.text = "Refund Complete"
         }
 
@@ -160,7 +162,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
     func payMessage(message: MessageData) {
         print("----------MESSAGE -------------", message.Code)
 
-        statusLable.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+        statusLable.textColor = greenColor
         statusLable.text = message.Message
     }
    
@@ -181,20 +183,10 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
             self.refund_amt = amount_TextField.text ?? ""
             
             print("slip no  -- \(self.slipNo) refund amt--  \(self.refund_amt)")
-//            if let txtField = alertController.textFields?.first, let text = txtField.text {
-//                // operations
-//
-//                self.slipNo = text
-//                print("Text==>" + text)
             
             if(self.slipNo == "" && self.refund_amt == "") {
                 return;
             }
-            
-//            let payment : PinOnGlass = PinOnGlass.shared(Delegate: self)
-            
-//            payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.refund_amt ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "IDT23181")
-
         }
         let cancelAction = UIAlertAction(title: "CANCEL", style: .cancel) { (_) in }
         alertController.addTextField { (textField) in
@@ -210,6 +202,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
 
 
 
+@available(iOS 11.0, *)
 extension ShopViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -228,6 +221,7 @@ extension ShopViewController : UITableViewDataSource {
     
 }
 
+@available(iOS 11.0, *)
 extension ShopViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

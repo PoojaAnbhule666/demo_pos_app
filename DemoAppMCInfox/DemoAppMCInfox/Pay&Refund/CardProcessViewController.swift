@@ -9,6 +9,7 @@
 import UIKit
 import PinOnGlass
 
+@available(iOS 11.0, *)
 class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
 
     @IBOutlet weak var statusLable: UILabel!
@@ -19,6 +20,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     var amount : String = ""
     var isRefund = false
     var isCancel = false
+    let greenColor = UIColor(named: "ColorSucces")
 
     
     var payment : PinOnGlass = PinOnGlass()
@@ -57,16 +59,16 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         // logTextView.text = "Transaction Complete"
         print("response is ..." , response)
         
-        statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+        statusLable.backgroundColor = greenColor
         //statusLable.text = "Transaction Complete"
-        statusMsgLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+        statusMsgLabel.textColor = greenColor
         statusMsgLabel.text = "Transaction Complete"
         
         if(!isRefund) {
             
-            statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+            statusLable.backgroundColor = greenColor
             //statusLable.text = "Refund Complete"
-            statusMsgLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+            statusMsgLabel.textColor = greenColor
             statusMsgLabel.text = "Transaction Complete"
         }
         
@@ -103,7 +105,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     func payMessage(message: MessageData) {
         print("----------MESSAGE -------------",message.Code)
         
-        statusLable.backgroundColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+        statusLable.backgroundColor = greenColor
         //statusLable.text = message.Message
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message

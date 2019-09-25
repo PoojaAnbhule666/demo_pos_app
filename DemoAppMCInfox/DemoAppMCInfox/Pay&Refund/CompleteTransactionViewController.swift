@@ -9,6 +9,8 @@
 import UIKit
 import PinOnGlass
 
+
+@available(iOS 11.0, *)
 class CompleteTransactionViewController: UIViewController {
 
      @IBOutlet weak var homeBtn: UIButton!
@@ -18,6 +20,7 @@ class CompleteTransactionViewController: UIViewController {
      @IBOutlet weak var requestTypeLbl: UILabel!
      var requestType : String = ""
      var payDictory : NSDictionary = [:]
+     let greenColor = UIColor(named: "ColorSucces")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +55,7 @@ class CompleteTransactionViewController: UIViewController {
             requestTypeLbl.textColor = .red
         }
         else {
-             requestTypeLbl.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+             requestTypeLbl.textColor = greenColor
         }
         
     }

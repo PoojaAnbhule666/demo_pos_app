@@ -45,8 +45,13 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         
         if(indexPath.item == 0 ){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let payVC = storyboard.instantiateViewController(withIdentifier: "ShopViewController") as! ShopViewController
-            self.navigationController?.pushViewController(payVC, animated: true)
+            if #available(iOS 11.0, *) {
+                let payVC = storyboard.instantiateViewController(withIdentifier: "ShopViewController") as! ShopViewController
+                 self.navigationController?.pushViewController(payVC, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+           
         }
         else if(indexPath.item == 3) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -64,13 +69,23 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         }
         else if(indexPath.item == 5) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let activationVC = storyboard.instantiateViewController(withIdentifier: "ActivationStatusViewController") as! ActivationStatusViewController
-            self.navigationController?.pushViewController(activationVC, animated: true)
+            if #available(iOS 11.0, *) {
+                let activationVC = storyboard.instantiateViewController(withIdentifier: "ActivationStatusViewController") as! ActivationStatusViewController
+                 self.navigationController?.pushViewController(activationVC, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+           
         }
         else if(indexPath.item == 6) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterDeviceViewController") as! RegisterDeviceViewController
-            self.navigationController?.pushViewController(registerVC, animated: true)
+            if #available(iOS 11.0, *) {
+                let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterDeviceViewController") as! RegisterDeviceViewController
+                self.navigationController?.pushViewController(registerVC, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
         
         

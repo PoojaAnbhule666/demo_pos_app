@@ -9,10 +9,12 @@
 import UIKit
 import PinOnGlass
 
+@available(iOS 11.0, *)
 class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
 
     @IBOutlet weak var statusLabel: UILabel!
      var payment : PinOnGlass = PinOnGlass()
+     let greenColor = UIColor(named: "ColorSucces")
     
     
     
@@ -25,24 +27,20 @@ class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
     
     
     func startTransactionProcess() {
-        
-       
+
         payment = PinOnGlass.shared(Delegate: self)
         payment.registerNewDevice(deviceName: "IDT23181")
-        //PinOnGlass.getShared()._Delegate = self
-        //PinOnGlass.getShared().registerNewDevice()
         
     }
     
     
     
     func paySuccess(response: NSDictionary) {
-        // logTextView.text = "Transaction Complete"
         print("response is ..." , response)
         if(response["resultCode"] as? String == "0")
         {
             statusLabel.text = "Device registered successfully"
-            statusLabel.textColor = UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
+            statusLabel.textColor =  greenColor //UIColor (red: 40.0/255.0, green: 128.0/255.0, blue: 95/255.0, alpha: 1.0)
         }
         else {
             statusLabel.text = "Device not registered"
@@ -56,7 +54,7 @@ class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR ------------- ", error.Code)
         statusLabel.text = error.Message
-        
+        statusLabel.textColor = .red
     }
     
     
