@@ -43,6 +43,10 @@
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
 		92122EB22334DF7C00C5E173 /* ActivationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */; };
 		92122EB62334E0F900C5E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92122EB42334E0F900C5E173 /* Assets.xcassets */; };
+		921351BB233B40A5009A261D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 921351B5233B40A5009A261D /* LICENSE */; };
+		921351BC233B40A5009A261D /* MaterialLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921351B8233B40A5009A261D /* MaterialLoader.swift */; };
+		921351BD233B40A5009A261D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 921351B9233B40A5009A261D /* README.md */; };
+		921351BF233B416C009A261D /* AppCommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921351BE233B416C009A261D /* AppCommonData.swift */; };
 		9219E5ED231F881C00D822DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EC231F881C00D822DD /* MenuViewController.swift */; };
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
@@ -136,6 +140,10 @@
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
 		92122EB42334E0F900C5E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		921351B5233B40A5009A261D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		921351B8233B40A5009A261D /* MaterialLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLoader.swift; sourceTree = "<group>"; };
+		921351B9233B40A5009A261D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		921351BE233B416C009A261D /* AppCommonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonData.swift; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +269,7 @@
 		83CC129F232904A60009A750 /* Aggregation */ = {
 			isa = PBXGroup;
 			children = (
+				921351B4233B40A5009A261D /* FullMaterialLoader */,
 				837C70622333B4DE0004D636 /* LodingViewController.swift */,
 				837C7056233336140004D636 /* AggregationResponse */,
 				837C7040233334D90004D636 /* AggregationRequest.swift */,
@@ -272,6 +281,7 @@
 				837C703A233334D70004D636 /* HeaderView.xib */,
 				837C703F233334D90004D636 /* Sales&RefundTableViewCell.swift */,
 				837C7038233334D70004D636 /* SummaryViewController.swift */,
+				921351BE233B416C009A261D /* AppCommonData.swift */,
 			);
 			path = Aggregation;
 			sourceTree = "<group>";
@@ -291,6 +301,32 @@
 				92113ED223278107002315C9 /* PinOnGlassTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		921351B4233B40A5009A261D /* FullMaterialLoader */ = {
+			isa = PBXGroup;
+			children = (
+				921351B5233B40A5009A261D /* LICENSE */,
+				921351B6233B40A5009A261D /* FullMaterialLoader */,
+				921351B9233B40A5009A261D /* README.md */,
+			);
+			path = FullMaterialLoader;
+			sourceTree = "<group>";
+		};
+		921351B6233B40A5009A261D /* FullMaterialLoader */ = {
+			isa = PBXGroup;
+			children = (
+				921351B7233B40A5009A261D /* Classes */,
+			);
+			path = FullMaterialLoader;
+			sourceTree = "<group>";
+		};
+		921351B7233B40A5009A261D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				921351B8233B40A5009A261D /* MaterialLoader.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,10 +437,12 @@
 			files = (
 				83CC12C3232F57270009A750 /* .gitIgnore in Resources */,
 				8301E166231E6D3F00B25BC6 /* LaunchScreen.storyboard in Resources */,
+				921351BD233B40A5009A261D /* README.md in Resources */,
 				8301E17E231E71C700B25BC6 /* logo_ntt.jpg in Resources */,
 				8301E19A231E768C00B25BC6 /* IDTech.bundle in Resources */,
 				8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */,
 				837C7043233334D90004D636 /* Data.json in Resources */,
+				921351BB233B40A5009A261D /* LICENSE in Resources */,
 				92122EB62334E0F900C5E173 /* Assets.xcassets in Resources */,
 				837C7044233334D90004D636 /* HeaderView.xib in Resources */,
 			);
@@ -426,9 +464,11 @@
 			files = (
 				8301E19C231E769C00B25BC6 /* AppDelegate.swift in Sources */,
 				9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */,
+				921351BF233B416C009A261D /* AppCommonData.swift in Sources */,
 				837C7041233334D90004D636 /* ExpandCell.swift in Sources */,
 				837C7046233334D90004D636 /* DetailViewController.swift in Sources */,
 				837C70642333B4DF0004D636 /* LodingViewController.swift in Sources */,
+				921351BC233B40A5009A261D /* MaterialLoader.swift in Sources */,
 				837C705F2333362D0004D636 /* Refund.swift in Sources */,
 				837C704A233334D90004D636 /* AggregationRequest.swift in Sources */,
 				92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */,

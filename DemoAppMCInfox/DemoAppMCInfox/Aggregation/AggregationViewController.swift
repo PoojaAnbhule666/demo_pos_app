@@ -11,7 +11,7 @@ import UIKit
 
 @available(iOS 11.0, *)
 class AggregationViewController: UIViewController ,UITextFieldDelegate{
-
+    
     @IBOutlet weak var topTabBar: UIView!
     @IBOutlet weak var flipView: UIView!
     @IBOutlet weak var summaryTab_View: UIView!
@@ -22,31 +22,23 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var tidTo_TextField: UITextField!
     @IBOutlet weak var dateFrom_TextField: UITextField!
     @IBOutlet weak var dateTo_TextField: UITextField!
+    @IBOutlet weak var status_SegmentControl: UISegmentedControl!
     
     var numberToolbar:UIToolbar? = nil
     var currentTextField:UITextField? = nil
     var  isUpdatePageDisplayed : Bool = false
-     var detailData = [DetailData]()
+    var detailData = [DetailData]()
     var aggregateData_ = [AggregateData]()
     var aggregationRequest : AggregationRequest = AggregationRequest()
-    
     let colorSucess = UIColor(named: "ColorSucces")
-
+    var statusTranc = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        setCurrentdate()
         self.displayDatePicker(textfield: self.dateTo_TextField)
         self.displayDatePicker(textfield: self.dateFrom_TextField)
-        
-//         readJson()
-//        testCallAGgregateApi()
-        setCurrentdate()
-        
-        
-        aggregateCall()
-        
-        
-        loadController()
         
         numberToolbarForKeyBoard(textFiled: dateTo_TextField)
         numberToolbarForKeyBoard(textFiled: dateFrom_TextField)
@@ -56,24 +48,37 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         DetailTab_View.layer.cornerRadius = 12
     }
     
+    
+    // MARK: - Load controllers
+    
     func loadController()  {
         let summaryVc = self.storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         self .addChild(summaryVc)
         summaryVc.view.frame = subView_summary.bounds
         summaryVc._aggregateData = aggregateData_
+        if summaryVc._aggregateData.count != 0 {
+            summaryVc.nodataView.alpha = 0
+        }else {
+            summaryVc.nodataView.alpha = 1
+        }
         subView_summary .addSubview(summaryVc.view)
         self .addChild(summaryVc)
         summaryVc .didMove(toParent: self)
+        summaryVc.totalcount_TableView.reloadData()
         
         let detailVc = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         self .addChild(detailVc)
         detailVc.view.frame = subView_Detail.bounds
         detailVc.detailData_ = detailData
-        print("deataildata1",detailData)
+        if detailVc.detailData_.count != 0 {
+            detailVc.nodataView.alpha = 0
+        }else {
+            detailVc.nodataView.alpha = 1
+        }
         subView_Detail .addSubview(detailVc.view)
         self .addChild(detailVc)
-        
         detailVc .didMove(toParent: self)
+        detailVc.aggregateDetail_TableView.reloadData()
     }
     
     
@@ -81,28 +86,47 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         let date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy-MM-dd HH"
-        let formattedDate = format.string(from: date)
-        print("formattedDate---\(formattedDate)")
-//        current_Date = formattedDate
-//        filteredDate(date: current_Date)
+        let formattedDate =
+            format.string(from: date)
+        //        print("formattedDate---\(formattedDate)")
+        //        current_Date = formattedDate
+        //        filteredDate(date: current_Date)
         dateFrom_TextField.text = formattedDate
         
     }
     
     @IBAction func tap_filter(_ sender: UIButton) {
+        //                 readJson()
+        //         loadController()
+        dateTo_TextField.resignFirstResponder()
+        dateFrom_TextField.resignFirstResponder()
+        aggregateCall()
         
-//        aggregateCall()
     }
     
+    // MARK: - Button Tapped & Switch
+    
+    @IBAction func staus_Switch(_ sender: Any) {
+        switch status_SegmentControl.selectedSegmentIndex {
+        case 0:
+            statusTranc = "" // for all
+        case 1:
+            statusTranc = "0" // for complete transaction
+        case 2:
+            statusTranc = "1" // for Incomplete transaction
+        default:
+            break
+        }
+    }
     
     @IBAction func tap_summaryButton(_ sender: UIButton) {
-        print("tap_summaryButton")
         if isUpdatePageDisplayed {
             summaryTab_View .backgroundColor = UIColor(red: 90/255.0, green: 136/255.0, blue: 194/255.0, alpha: 1.0)
             DetailTab_View .backgroundColor = .white
             isUpdatePageDisplayed = false
             
             UIView .transition(with: flipView, duration: 0.5, options:.showHideTransitionViews, animations: {
+                //                 showHideTransitionViews
                 self.subView_summary.isHidden = false
                 self.subView_Detail.isHidden = true
             }) { (Finished) in
@@ -111,9 +135,8 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
     }
     @IBAction func tap_detailButton(_ sender: UIButton) {
-        print("tap_detailButton")
         if !isUpdatePageDisplayed {
-            print("tap_detailButton")
+            
             summaryTab_View .backgroundColor = .white
             DetailTab_View .backgroundColor = UIColor(red: 90/255.0, green: 136/255.0, blue: 194/255.0, alpha: 1.0)
             isUpdatePageDisplayed = true
@@ -126,45 +149,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         }
     }
     
-    // MARK: - ApiCall
     
-    func aggregateCall()  {
-        
-       Apicall.sharedInstance.addLoader()
-        let url = String(format: "http://10.232.35.2:8080/v1/aggregate")
-        let paramdata = ["toTid" : tidTo_TextField.text ?? "" , "fromDate" : dateFrom_TextField.text ?? "" ,"toDate": dateTo_TextField.text ?? "", "fromTid" : tidFrom_textField.text ?? "" ] as [String : Any]
-//        "0000356000000"
-        
-         print("paramdata--- \(paramdata)")
-        
-        Apicall.sharedInstance.sendPOSTDataWithoutDataKey(serviceUrl: url, parameters: paramdata) { (isSuccesfull, response) in
-          
-            if isSuccesfull {
-                let responseStr = response as! String
-                let data = Data(responseStr.utf8)
-                do {
-                    let decoder = JSONDecoder()
-//                    let payData = try decoder.decode(PayResponse.self, from: data)
-//                    self.response = payData;
-//                    print("payData response is ",payData)
-                    
-                    let aggregateData = try decoder.decode(AggregateTransationData.self, from: data)
-                    print(aggregateData.detailData ?? "")
-                    self.detailData = aggregateData.detailData ?? []
-                    self.aggregateData_ = aggregateData.aggregateData ?? []
-                Apicall.sharedInstance.removeLoader()
-                } catch {
-                    Apicall.sharedInstance.removeLoader()
-                    print("data not parse properly")
-                }
-                
-            } else {
-                Apicall.sharedInstance.removeLoader()
-                 print(" call fail")
-            }
-         
-    }
- }
     // MARK: - number tool bar
     
     func numberToolbarForKeyBoard(textFiled : UITextField)
@@ -178,14 +163,14 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         textFiled.inputAccessoryView = self.numberToolbar
     }
     
-
-    @objc func doneWithNumberPad() {
-       dateTo_TextField.resignFirstResponder()
-        dateFrom_TextField.resignFirstResponder()
     
+    @objc func doneWithNumberPad() {
+        dateTo_TextField.resignFirstResponder()
+        dateFrom_TextField.resignFirstResponder()
+        
     }
     
-     // MARK: - date picker
+    // MARK: - date picker
     
     func displayDatePicker(textfield : UITextField)
     {
@@ -198,7 +183,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         if textfield == dateTo_TextField {
             datePickerView.tag = 1
         } else{
-             datePickerView .tag = 2
+            datePickerView .tag = 2
         }
         
         let dateFormatter = DateFormatter()
@@ -213,51 +198,83 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     @objc func datePickerValueChanged(sender:UIDatePicker) {
         
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "dd-MM-yyyy HH"
-        print("datePickerValueChanged method ",dateFormatterPrint.string(from: sender.date))
+        dateFormatterPrint.dateFormat = "yyyy-MM-dd HH"  //"yyyy-MM-dd HH" dd-MM-yyyy HH"
+        //            print("datePickerValueChanged method ",dateFormatterPrint.string(from: sender.date))
         if sender.tag == 1 {
-             self.dateTo_TextField.text = dateFormatterPrint.string(from: sender.date)
+            self.dateTo_TextField.text = dateFormatterPrint.string(from: sender.date)
         }else {
             self.dateFrom_TextField.text = dateFormatterPrint.string(from: sender.date)
             
         }
-       
-       
+        
+        
     }
     
-    // MARK:  - Api CAll
     
+    // MARK: - ApiCall
     
-    
-    func testCallAGgregateApi() {
+    func aggregateCall()  {
         
-        let Url = String(format: "http://10.232.35.2:8080/v1/aggregate")
-        guard let serviceUrl = URL(string: Url) else { return }
-        let parameterDictionary = ["ToTID" : "", "FromDate" : "2019-09-15" ,"ToDate": "", "FromTID" : "0000356000000" ] ////YYYY-MM-DD HH:II
-        var request = URLRequest(url: serviceUrl)
-        request.httpMethod = "POST"
-        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
-            return
+        
+        Apicall.sharedInstance.addLoader()
+        
+        let url = String(format: "http://10.232.35.3:8080/v1/aggregate")
+        var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
+        //        "0000356000000"
+        
+        if(dateTo_TextField.text != "" && tidTo_TextField.text != "" ) {
+            paramdata["toDate"] = dateTo_TextField.text
+            paramdata["toTid"] = tidTo_TextField.text
         }
-        request.httpBody = httpBody
         
-        let session = URLSession.shared
-        session.dataTask(with: request) { (data, response, error) in
-            if let response = response {
-                print(response)
-            }
-            if let data = data {
+        print("paramdata--- \(paramdata)")
+        
+        
+        Apicall.sharedInstance.sendPOSTDataWithoutDataKey(serviceUrl: url, parameters: paramdata) { (isSuccesfull, response) in
+            
+            if isSuccesfull {
+                let responseStr = response as! String
+                let data = Data(responseStr.utf8)
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
+                    let decoder = JSONDecoder()
+                    
+                    let aggregateData = try decoder.decode(AggregateTransationData.self, from: data)
+                    print("aggregateData.detailData",aggregateData.detailData ?? "")
+                    //                            self.detailData = aggregateData.detailData ?? []
+                    
+                    var salesData = [DetailData]()
+                    var refundData = [DetailData]()
+                    self.detailData = aggregateData.detailData!
+                    for data in self.detailData {
+                        
+                        if( data.status == "0") {
+                            salesData.append(data)
+                        }
+                        else { // data.status = 1
+                            refundData.append(data)
+                        }
+                    }
+                    
+                    self.detailData.removeAll()
+                    self.detailData = salesData + refundData
+                    
+                    self.aggregateData_ = aggregateData.aggregateData ?? []
+                    self.loadController()
+                    Apicall.sharedInstance.removeLoader()
                 } catch {
-                    print(error)
+                    Apicall.sharedInstance.removeLoader()
+                    print("data not parse properly")
                 }
+                
+            } else {
+                Apicall.sharedInstance.removeLoader()
+                print(" call fail")
             }
-            }.resume()
+            
+        }
     }
     
+    //--- thrugh json file
     func readJson()
     {
         if let path = Bundle.main.path(forResource: "Data", ofType: "json") {
@@ -266,134 +283,36 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 let str = String(data: data, encoding: .utf8)
                 print ("response is",str ?? "" )
                 let _data = Data(str!.utf8)
-
+                
                 let decoder = JSONDecoder()
                 let aggregateData = try decoder.decode(AggregateTransationData.self, from: _data)
                 print(aggregateData.detailData!)
+                var salesData = [DetailData]()
+                var refundData = [DetailData]()
                 self.detailData = aggregateData.detailData!
+                for data in self.detailData {
+                    
+                    if( data.status == "0") {
+                        salesData.append(data)
+                    }
+                    else { // data.status = 1
+                        refundData.append(data)
+                    }
+                }
+                
+                self.detailData.removeAll()
+                self.detailData = salesData + refundData
+                // self.detailData = aggregateData.detailData
                 self.aggregateData_ = aggregateData.aggregateData!
             } catch {
                 // handle error
             }
         }
     }
-    
-
-
-
 }
 
 
-@available(iOS 11.0, *)
-//@available(iOS 11.0, *)
-class Apicall : NSObject {
-    
-    static let sharedInstance = Apicall()
-    let loadingView : LodingViewController
-    let currentStoryboard : UIStoryboard
-    
-    private override init() {
-        
-        self.currentStoryboard = UIStoryboard(name: "Main",
-                                              bundle: Bundle.main)
-        
-        self.loadingView = currentStoryboard.instantiateViewController(withIdentifier: "LodingViewController") as! LodingViewController
-        
-        super.init()
-    }
-    
-    private var sharedSession: URLSession {
-        let config = URLSessionConfiguration.default
-        config.timeoutIntervalForRequest = 60
-        config.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
-        config.httpAdditionalHeaders = ["Cache-Control" : "no-cache"]
-        return URLSession(configuration: config)
-    }
-    
-    
-    // MARK: Loader
-    func addLoader() {
-        UIApplication.shared.keyWindow?.addSubview(self.loadingView.view)
-    }
-    
-    func removeLoader() {
-        self.loadingView.view.removeFromSuperview()
-    }
-    
-    // MARK:- services methods
-    
-    class func getStringFromData(data: Data) -> String? {
-        guard let str = String(data: data, encoding: .utf8) else { return nil }
-        return str
-    }
-    class func getJSONObject(data: Data) -> Any? {
-        do {
-            let jsonObject = try JSONSerialization.jsonObject(with: data,
-                                                              options: [])
-            return jsonObject
-        } catch {
-            return nil
-        }
-    }
-    
-    class func getJSONStringFromObject(_ jsonObject: Any) -> String? {
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: jsonObject,
-                                                      options: .init(rawValue: 0))
-            return Apicall.getStringFromData(data: jsonData)
-        } catch {
-            return nil
-        }
-    }
-    
-    func sendPOSTDataWithoutDataKey(serviceUrl : String, parameters:Any, completionBlock : @escaping (_ successful:Bool,_ response:Any?) -> ()) {
-        
-        guard let url = URL(string: "\(serviceUrl)")
-            else {
-                DispatchQueue.main.async
-                    {
-                        completionBlock(false, "Invalid URL")
-                }
-                return
-        }
-        
-        do {
-            let data = try JSONSerialization.data(withJSONObject: parameters,
-                                                  options: [])
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.httpBody = data
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.addValue("application/json", forHTTPHeaderField: "Accept")
-            
-            let dataTask = sharedSession.dataTask(with: request) { (data, response, error) in
-                if error == nil {
-                    DispatchQueue.main.async {
-                        
-                        print("\(#function) :  Success \n \(Apicall.getStringFromData(data: data!) ?? "")")
-                        //                        print("\(#function) : Success \n \(String(describing: Apicall.getStringFromData(data: data!)))")
-                        //                        completionBlock(true,(Apicall.getJSONObject(data: data!)))
-                        completionBlock(true,(Apicall.getStringFromData(data: data!)))
-                    }
-                } else {
-                    print("\(#function) error : \(error?.localizedDescription ?? "No error")")
-                    
-                    DispatchQueue.main.async {
-                        completionBlock(false, "Connection Error")
-                    }
-                }
-            }
-            dataTask.resume()
-        } catch let error {
-            print("\(#function) error : \(error.localizedDescription)")
-            DispatchQueue.main.async {
-                completionBlock(false, "Connection Error")
-            }
-        }
-    }
-    
-    
-}
+
 
 
 
