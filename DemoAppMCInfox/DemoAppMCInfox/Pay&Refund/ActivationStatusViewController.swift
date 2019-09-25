@@ -53,6 +53,7 @@ class ActivationStatusViewController: UIViewController , PinOnGlass_Delegate {
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR ------------- ", error.Code)
         statusLabel.text = error.Message
+        statusLabel.textColor = .red
       
     }
     

@@ -20,6 +20,7 @@ class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        statusLabel.text = "---"
         startTransactionProcess()
         
         // Do any additional setup after loading the view.
