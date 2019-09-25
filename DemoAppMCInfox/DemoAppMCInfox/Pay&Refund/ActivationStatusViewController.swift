@@ -36,7 +36,7 @@ class ActivationStatusViewController: UIViewController , PinOnGlass_Delegate {
     func paySuccess(response: NSDictionary) {
         // logTextView.text = "Transaction Complete"
         print("response is ..." , response)
-        if(response["resultCode"] as? String == "1")
+        if(response["activationStatus"] as? String == "1")
         {
             statusLabel.text = "Inactive"
             statusLabel.textColor = .red
