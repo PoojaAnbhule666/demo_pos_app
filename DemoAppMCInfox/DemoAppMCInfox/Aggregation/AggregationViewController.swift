@@ -222,8 +222,10 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
         
-        if(dateTo_TextField.text != "" && tidTo_TextField.text != "" ) {
-            paramdata["toDate"] = dateTo_TextField.text
+        if(dateTo_TextField.text != "") {
+            paramdata["toDate"] = dateTo_TextField.text        }
+        
+        if(tidTo_TextField.text != "" ) {
             paramdata["toTid"] = tidTo_TextField.text
         }
         
@@ -244,7 +246,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     
                     var salesData = [DetailData]()
                     var refundData = [DetailData]()
-                    self.detailData = aggregateData.detailData!
+                    self.detailData = aggregateData.detailData ?? []
                     for data in self.detailData {
                         
                         if( data.status == "0") {
