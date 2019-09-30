@@ -63,6 +63,8 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
         // Do any additional setup after loading the view.
     }
     
+    
+  
     @IBAction func cancel(_ sender: UIButton) {
 
         statusLable.textColor = .black

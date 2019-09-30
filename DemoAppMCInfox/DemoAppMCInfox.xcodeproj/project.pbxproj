@@ -51,6 +51,10 @@
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
 		9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */; };
+		921E377923421F8900AA7D38 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; };
+		921E377A23421F8900AA7D38 /* mcSDKiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		921E377D2342213800AA7D38 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 921E377B2342213800AA7D38 /* Config.xcconfig */; };
+		921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377E234221D300AA7D38 /* mcSDKiOS.framework */; };
 		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */,
+				921E377A23421F8900AA7D38 /* mcSDKiOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +153,10 @@
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
 		9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTransactionViewController.swift; sourceTree = "<group>"; };
+		921E377723421F8900AA7D38 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mcSDKiOS.framework; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/mcSDKiOS.framework; sourceTree = "<group>"; };
+		921E377B2342213800AA7D38 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		921E377C2342213800AA7D38 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		921E377E234221D300AA7D38 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
 		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,11 +168,13 @@
 				8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */,
 				8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */,
 				8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */,
+				921E377923421F8900AA7D38 /* mcSDKiOS.framework in Frameworks */,
 				8301E1A9231E774000B25BC6 /* CFNetwork.framework in Frameworks */,
 				8301E1A7231E773300B25BC6 /* CoreBluetooth.framework in Frameworks */,
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
 				92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
+				921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,11 +211,14 @@
 		8301E15A231E6D3D00B25BC6 /* DemoAppMCInfox */ = {
 			isa = PBXGroup;
 			children = (
+				921E377E234221D300AA7D38 /* mcSDKiOS.framework */,
 				8301E199231E768C00B25BC6 /* IDTech.bundle */,
 				8301E197231E767A00B25BC6 /* IDTech.framework */,
 				837C701F2330EAE80004D636 /* Pay&Refund */,
 				83CC12BE232F56A20009A750 /* Git Ignore */,
 				8301E19B231E769C00B25BC6 /* AppDelegate.swift */,
+				921E377B2342213800AA7D38 /* Config.xcconfig */,
+				921E377C2342213800AA7D38 /* module.modulemap */,
 				8301E17B231E71C700B25BC6 /* logo_ntt.jpg */,
 				8301E15F231E6D3D00B25BC6 /* Main.storyboard */,
 				8301E19D231E76AD00B25BC6 /* Header.h */,
@@ -228,6 +242,7 @@
 		8301E1A3231E771500B25BC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				921E377723421F8900AA7D38 /* mcSDKiOS.framework */,
 				8301E1AE231E776500B25BC6 /* MediaPlayer.framework */,
 				8301E1AC231E775800B25BC6 /* AVFoundation.framework */,
 				8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */,
@@ -438,6 +453,7 @@
 				83CC12C3232F57270009A750 /* .gitIgnore in Resources */,
 				8301E166231E6D3F00B25BC6 /* LaunchScreen.storyboard in Resources */,
 				921351BD233B40A5009A261D /* README.md in Resources */,
+				921E377D2342213800AA7D38 /* Config.xcconfig in Resources */,
 				8301E17E231E71C700B25BC6 /* logo_ntt.jpg in Resources */,
 				8301E19A231E768C00B25BC6 /* IDTech.bundle in Resources */,
 				8301E161231E6D3D00B25BC6 /* Main.storyboard in Resources */,
@@ -661,7 +677,7 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,7 +701,7 @@
 					"$(PROJECT_DIR)/DemoAppMCInfox",
 				);
 				INFOPLIST_FILE = DemoAppMCInfox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
