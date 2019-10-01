@@ -5,13 +5,13 @@
             "sales": {
                 "amountComplete": 194000,
                 "amountInComplete": 10000,
-                "totalCountComplete": 8,
-                "totalCountInComplete": 2
+                "totalCountComplete": 0,
+                "totalCountInComplete": 3
             },
             "refund": {
                 "amountComplete": 78000,
                 "amountInComplete": 15000,
-                "totalCountComplete": 3,
+                "totalCountComplete": 0,
                 "totalCountInComplete": 3
             }
         },
@@ -20,13 +20,13 @@
             "sales": {
                 "amountComplete": 220000,
                 "amountInComplete": 15000,
-                "totalCountComplete": 11,
+                "totalCountComplete": 10,
                 "totalCountInComplete": 3
             },
             "refund": {
                 "amountComplete": 69000,
                 "amountInComplete": 25000,
-                "totalCountComplete": 2,
+                "totalCountComplete": 0,
                 "totalCountInComplete": 5
             }
         },

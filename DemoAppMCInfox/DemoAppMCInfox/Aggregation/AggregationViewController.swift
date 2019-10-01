@@ -28,7 +28,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     var currentTextField:UITextField? = nil
     var  isUpdatePageDisplayed : Bool = false
     var detailData = [DetailData]()
-    var aggregateData_ = [AggregateData]()
+    var aggregateArr = [AggregateData]()
     var aggregationRequest : AggregationRequest = AggregationRequest()
     let colorSucess = UIColor(named: "ColorSucces")
     var statusTranc = ""
@@ -55,8 +55,8 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         let summaryVc = self.storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         self .addChild(summaryVc)
         summaryVc.view.frame = subView_summary.bounds
-        summaryVc._aggregateData = aggregateData_
-        if summaryVc._aggregateData.count != 0 {
+        summaryVc.aggregateSummaryData = aggregateArr
+        if summaryVc.aggregateSummaryData.count != 0 {
             summaryVc.nodataView.alpha = 0
         }else {
             summaryVc.nodataView.alpha = 1
@@ -98,9 +98,11 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     @IBAction func tap_filter(_ sender: UIButton) {
         //                 readJson()
         //         loadController()
+        print("--------")
         dateTo_TextField.resignFirstResponder()
         dateFrom_TextField.resignFirstResponder()
-        aggregateCall()
+         readJson()
+//        aggregateCall()
         
     }
     
@@ -218,7 +220,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
         Apicall.sharedInstance.addLoader()
         
-        let url = String(format: "http://10.232.35.4:8080/v1/aggregate")
+        let url = String(format: "http://10.232.35.3:8080/v1/aggregate")
         var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
         
@@ -260,7 +262,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     self.detailData.removeAll()
                     self.detailData = salesData + refundData
                     
-                    self.aggregateData_ = aggregateData.aggregateData ?? []
+                    self.aggregateArr = aggregateData.aggregateData ?? []
                     self.loadController()
                     Apicall.sharedInstance.removeLoader()
                 } catch {
@@ -305,7 +307,20 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 self.detailData.removeAll()
                 self.detailData = salesData + refundData
                 // self.detailData = aggregateData.detailData
-                self.aggregateData_ = aggregateData.aggregateData!
+        
+               
+                self.aggregateArr = aggregateData.aggregateData!
+                
+                var arrayIndex = 0
+                for data in self.aggregateArr {
+                    arrayIndex += 1
+                    if ( data.sales?.totalCountComplete == 0 && data.refund?.totalCountComplete == 0) {
+                        aggregateArr.remove(at: arrayIndex - 1)
+                    }
+                }
+                
+                self.loadController()
+                
             } catch {
                 // handle error
             }

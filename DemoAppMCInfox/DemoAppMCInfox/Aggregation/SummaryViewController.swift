@@ -12,7 +12,7 @@
             @IBOutlet weak var nodataView: UIView!
             @IBOutlet weak var totalcount_TableView: UITableView!
             
-            var _aggregateData = [AggregateData]()
+            var aggregateSummaryData = [AggregateData]()
             
             override func viewDidLoad() {
                 super.viewDidLoad()
@@ -24,18 +24,18 @@
             }
             
             func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                return _aggregateData.count
+                return aggregateSummaryData.count
             }
             
             func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let Cell = tableView.dequeueReusableCell(withIdentifier: "Sales&rRefundCell") as! Sales_RefundTableViewCell
                 
-                Cell.comapnyName_Label.text = _aggregateData[indexPath.row].companyName
-                Cell.sale_totalCountComplete.text = String(_aggregateData[indexPath.row].sales!.totalCountComplete!)
-                Cell.sale_totalAmountCOmplete_label.text = String(_aggregateData[indexPath.row].sales!.amountComplete!)
+                Cell.comapnyName_Label.text = aggregateSummaryData[indexPath.row].companyName
+                Cell.sale_totalCountComplete.text = String(aggregateSummaryData[indexPath.row].sales!.totalCountComplete!)
+                Cell.sale_totalAmountCOmplete_label.text = String(aggregateSummaryData[indexPath.row].sales!.amountComplete!)
                 
-                Cell.refund_TotalCountComplete_Label.text = String(_aggregateData[indexPath.row].refund!.totalCountComplete!)
-                Cell.refund_TotalAmountComplete_Label.text = String(_aggregateData[indexPath.row].refund!.amountComplete!)
+                Cell.refund_TotalCountComplete_Label.text = String(aggregateSummaryData[indexPath.row].refund!.totalCountComplete!)
+                Cell.refund_TotalAmountComplete_Label.text = String(aggregateSummaryData[indexPath.row].refund!.amountComplete!)
                 
                 return Cell
             }
