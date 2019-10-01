@@ -45,10 +45,10 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         payment = PinOnGlass.shared(Delegate: self)
         
         if(isRefund) {
-              payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.amount ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "IDT23181")
+              payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.amount ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "IDTECH3187")
         }
         else {
-        payment.startTransaction(dAmount: Double(amount ?? "0.00") as! Double, sSeqNumber: "asdasd", sProductCategoryCode: "001", sDeviceName: "IDT23181")
+        payment.startTransaction(dAmount: Double(amount ?? "0.00") as! Double, sSeqNumber: "asdasd", sProductCategoryCode: "001", sDeviceName: "IDTECH3187")
         }
         
     }
