@@ -20,10 +20,10 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         super.viewDidLoad()
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         collectionView.reloadData()
-        
-    }
+      }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.menuLblArray.count
@@ -38,6 +38,7 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         cell.menuImg.image = UIImage(named: imageArray[indexPath.item])
         cell.menuLbl.sizeToFit()
         cell.menuLbl.adjustsFontSizeToFitWidth = true
+        cell.backgroundColor = .clear
         
         return cell
     }
@@ -52,6 +53,13 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
 //        cell?.layer.borderWidth = 2.0
 //        cell?.layer.borderColor = UIColor.gray.cgColor
         
+//        if (indexPath.item == 0 || indexPath.item == 3 || indexPath.item == 5 || indexPath.item == 6) {
+//                 if let cell = collectionView.cellForItem(at: indexPath) as? MenuCollectionViewCell {
+//                    cell.layer.borderColor = UIColor.lightGray.cgColor
+//                   cell.layer.borderWidth = 2.0
+//                       }
+//
+//               }
         
         if(indexPath.item == 0 ){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

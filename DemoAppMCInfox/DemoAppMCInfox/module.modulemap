@@ -1,0 +1,4 @@
+module mcSDKiOS1 {
+    header "mcSDKiOS.framework/Headers/mcSDKiOS.h"
+    export *
+}

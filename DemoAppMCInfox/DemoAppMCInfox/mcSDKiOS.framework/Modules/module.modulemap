@@ -1,0 +1,6 @@
+framework module mcSDKiOS {
+  umbrella header "mcSDKiOS.h"
+
+  export *
+  module * { export * }
+}

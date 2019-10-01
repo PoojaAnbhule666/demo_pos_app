@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  PinOnGlass
+//
+//  Created by user914766 on 8/3/19.
+//  Copyright © 2019 NTTDATA. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SWIFT_INCLUDE_PATHS = $(SRCROOT)/
+MODULEMAP_PRIVATE_FILE = $(SRCROOT)/module.modulemap
