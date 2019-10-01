@@ -20,6 +20,11 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.menuLblArray.count
     }
@@ -41,7 +46,12 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
-        print("You selected cell #\(indexPath.item)!")
+//        print("You selected cell #\(indexPath.item)!")
+//        
+//        let cell = collectionView.cellForItem(at: indexPath)
+//        cell?.layer.borderWidth = 2.0
+//        cell?.layer.borderColor = UIColor.gray.cgColor
+        
         
         if(indexPath.item == 0 ){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

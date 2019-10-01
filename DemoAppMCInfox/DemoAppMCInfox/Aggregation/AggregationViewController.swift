@@ -218,7 +218,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
         Apicall.sharedInstance.addLoader()
         
-        let url = String(format: "http://10.232.35.3:8080/v1/aggregate")
+        let url = String(format: "http://10.232.35.4:8080/v1/aggregate")
         var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
         
