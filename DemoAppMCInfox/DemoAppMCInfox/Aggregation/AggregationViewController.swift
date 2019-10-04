@@ -46,6 +46,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         DetailTab_View .backgroundColor = .white
         summaryTab_View.layer.cornerRadius = 12
         DetailTab_View.layer.cornerRadius = 12
+        
+        tidFrom_textField.delegate = self
+        tidTo_TextField.delegate = self
     }
     
     
@@ -94,11 +97,30 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         dateFrom_TextField.text = formattedDate
         
     }
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    @IBAction func tapped_Clear(_ sender: Any) {
+        
+        tidFrom_textField.text = ""
+        tidTo_TextField.text = ""
+        dateFrom_TextField.text = ""
+        dateTo_TextField.text = ""
+        
+        tidFrom_textField.resignFirstResponder()
+        tidTo_TextField.resignFirstResponder()
+        dateTo_TextField.resignFirstResponder()
+        dateFrom_TextField.resignFirstResponder()
+    }
     
     @IBAction func tap_filter(_ sender: UIButton) {
         //                 readJson()
         //         loadController()
         print("--------")
+        tidFrom_textField.resignFirstResponder()
+        tidTo_TextField.resignFirstResponder()
         dateTo_TextField.resignFirstResponder()
         dateFrom_TextField.resignFirstResponder()
 //         readJson()
@@ -174,8 +196,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     
     // MARK: - date picker
     
-    func displayDatePicker(textfield : UITextField)
-    {
+    func displayDatePicker(textfield : UITextField) {
+        
+       print("displayDatePicker")
         
         let datePickerView:UIDatePicker = UIDatePicker()
         
@@ -195,9 +218,12 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         textfield.inputView = datePickerView
         datePickerView.setDate(date, animated: false)
         datePickerView.addTarget(self, action: #selector(self.datePickerValueChanged(sender:)), for: UIControl.Event.allEvents)
+         setCurrentdate()
     }
     
     @objc func datePickerValueChanged(sender:UIDatePicker) {
+        
+         print("datePickerValueChanged")
         
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "yyyy-MM-dd HH"  //"yyyy-MM-dd HH" dd-MM-yyyy HH"
