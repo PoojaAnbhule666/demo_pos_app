@@ -21,6 +21,8 @@
 		8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */; };
 		8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AC231E775800B25BC6 /* AVFoundation.framework */; };
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
+		83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; };
+		83088D0923434FAB0026A878 /* mcSDKiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		837C70222330EB130004D636 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70212330EB130004D636 /* ShopViewController.swift */; };
 		837C7041233334D90004D636 /* ExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7037233334D60004D636 /* ExpandCell.swift */; };
 		837C7042233334D90004D636 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7038233334D70004D636 /* SummaryViewController.swift */; };
@@ -51,8 +53,6 @@
 		9219E5EF231F887200D822DD /* SlipNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5EE231F887200D822DD /* SlipNumberViewController.swift */; };
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
 		9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */; };
-		921E377923421F8900AA7D38 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; };
-		921E377A23421F8900AA7D38 /* mcSDKiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		921E377D2342213800AA7D38 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 921E377B2342213800AA7D38 /* Config.xcconfig */; };
 		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
 /* End PBXBuildFile section */
@@ -96,7 +96,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */,
-				921E377A23421F8900AA7D38 /* mcSDKiOS.framework in Embed Frameworks */,
+				83088D0923434FAB0026A878 /* mcSDKiOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,12 +167,13 @@
 				8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */,
 				8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */,
 				8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */,
-				921E377923421F8900AA7D38 /* mcSDKiOS.framework in Frameworks */,
 				8301E1A9231E774000B25BC6 /* CFNetwork.framework in Frameworks */,
 				8301E1A7231E773300B25BC6 /* CoreBluetooth.framework in Frameworks */,
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
 				92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
+				921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */,
+				83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

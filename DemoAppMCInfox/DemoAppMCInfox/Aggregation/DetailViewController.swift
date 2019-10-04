@@ -158,7 +158,7 @@
             headerView?.brandName_Label.text =  detailData_[section].cardCompanyName
             headerView?.amount_Label.text = String(detailData_[section].amount!)
             
-            let status = detailData_[section].status
+            let status = detailData_[section].paymentStatus
             
             if status == "0" {
                 headerView?.checkOk_label.text = "Ok"

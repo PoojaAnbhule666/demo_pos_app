@@ -28,7 +28,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     var currentTextField:UITextField? = nil
     var  isUpdatePageDisplayed : Bool = false
     var detailData = [DetailData]()
-    var aggregateData_ = [AggregateData]()
+    var aggregateArr = [AggregateData]()
     var aggregationRequest : AggregationRequest = AggregationRequest()
     let colorSucess = UIColor(named: "ColorSucces")
     var statusTranc = ""
@@ -46,6 +46,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         DetailTab_View .backgroundColor = .white
         summaryTab_View.layer.cornerRadius = 12
         DetailTab_View.layer.cornerRadius = 12
+        
+        tidFrom_textField.delegate = self
+        tidTo_TextField.delegate = self
     }
     
     
@@ -55,8 +58,8 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         let summaryVc = self.storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         self .addChild(summaryVc)
         summaryVc.view.frame = subView_summary.bounds
-        summaryVc._aggregateData = aggregateData_
-        if summaryVc._aggregateData.count != 0 {
+        summaryVc.aggregateSummaryData = aggregateArr
+        if summaryVc.aggregateSummaryData.count != 0 {
             summaryVc.nodataView.alpha = 0
         }else {
             summaryVc.nodataView.alpha = 1
@@ -94,12 +97,33 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         dateFrom_TextField.text = formattedDate
         
     }
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    @IBAction func tapped_Clear(_ sender: Any) {
+        
+        tidFrom_textField.text = ""
+        tidTo_TextField.text = ""
+        dateFrom_TextField.text = ""
+        dateTo_TextField.text = ""
+        
+        tidFrom_textField.resignFirstResponder()
+        tidTo_TextField.resignFirstResponder()
+        dateTo_TextField.resignFirstResponder()
+        dateFrom_TextField.resignFirstResponder()
+    }
     
     @IBAction func tap_filter(_ sender: UIButton) {
         //                 readJson()
         //         loadController()
+        print("--------")
+        tidFrom_textField.resignFirstResponder()
+        tidTo_TextField.resignFirstResponder()
         dateTo_TextField.resignFirstResponder()
         dateFrom_TextField.resignFirstResponder()
+//         readJson()
         aggregateCall()
         
     }
@@ -172,8 +196,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     
     // MARK: - date picker
     
-    func displayDatePicker(textfield : UITextField)
-    {
+    func displayDatePicker(textfield : UITextField) {
+        
+       print("displayDatePicker")
         
         let datePickerView:UIDatePicker = UIDatePicker()
         
@@ -193,9 +218,12 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         textfield.inputView = datePickerView
         datePickerView.setDate(date, animated: false)
         datePickerView.addTarget(self, action: #selector(self.datePickerValueChanged(sender:)), for: UIControl.Event.allEvents)
+         setCurrentdate()
     }
     
     @objc func datePickerValueChanged(sender:UIDatePicker) {
+        
+         print("datePickerValueChanged")
         
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "yyyy-MM-dd HH"  //"yyyy-MM-dd HH" dd-MM-yyyy HH"
@@ -218,9 +246,12 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
         Apicall.sharedInstance.addLoader()
         
-        let url = String(format: "http://10.232.35.3:8080/v1/aggregate")
-        var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
+        let url = String(format: "http://10.232.35.5:8080/v1/aggregate")
+        var  paramdata = ["fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
+        
+        if(dateFrom_TextField.text != "") {
+            paramdata["fromDate"] = dateFrom_TextField.text        }
         
         if(dateTo_TextField.text != "") {
             paramdata["toDate"] = dateTo_TextField.text        }
@@ -249,7 +280,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     self.detailData = aggregateData.detailData ?? []
                     for data in self.detailData {
                         
-                        if( data.status == "0") {
+                        if( data.paymentStatus == "0") {
                             salesData.append(data)
                         }
                         else { // data.status = 1
@@ -259,8 +290,18 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     
                     self.detailData.removeAll()
                     self.detailData = salesData + refundData
+                    self.aggregateArr.removeAll()
+                    self.aggregateArr = aggregateData.aggregateData ?? []
+                    var arrayIndex = 0
+                    for data in self.aggregateArr {
+                        arrayIndex += 1
+                        if ( data.sales?.totalCountComplete == 0 && data.refund?.totalCountComplete == 0) {
+                            self.aggregateArr.remove(at: arrayIndex - 1 )
+                            arrayIndex -= 1
+                            
+                        }
+                    }
                     
-                    self.aggregateData_ = aggregateData.aggregateData ?? []
                     self.loadController()
                     Apicall.sharedInstance.removeLoader()
                 } catch {
@@ -294,7 +335,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 self.detailData = aggregateData.detailData!
                 for data in self.detailData {
                     
-                    if( data.status == "0") {
+                    if( data.paymentStatus == "0") {
                         salesData.append(data)
                     }
                     else { // data.status = 1
@@ -305,7 +346,22 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 self.detailData.removeAll()
                 self.detailData = salesData + refundData
                 // self.detailData = aggregateData.detailData
-                self.aggregateData_ = aggregateData.aggregateData!
+        
+               
+                self.aggregateArr = aggregateData.aggregateData!
+                
+                var arrayIndex = 0
+                for data in self.aggregateArr {
+                    arrayIndex += 1
+                    if ( data.sales?.totalCountComplete == 0 && data.refund?.totalCountComplete == 0) {
+                        aggregateArr.remove(at: arrayIndex - 1 )
+                        arrayIndex -= 1
+                        
+                    }
+                }
+                
+                self.loadController()
+                
             } catch {
                 // handle error
             }

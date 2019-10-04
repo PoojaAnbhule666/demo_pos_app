@@ -47,14 +47,11 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
-        if (indexPath.item == 0 || indexPath.item == 3 || indexPath.item == 5 || indexPath.item == 6) {
-          if let cell = collectionView.cellForItem(at: indexPath) as? MenuCollectionViewCell {
-                cell.backgroundColor = .lightGray
-                cell.alpha = 0.1
-                }
-        
-        }
-        
+//        print("You selected cell #\(indexPath.item)!")
+//        
+//        let cell = collectionView.cellForItem(at: indexPath)
+//        cell?.layer.borderWidth = 2.0
+//        cell?.layer.borderColor = UIColor.gray.cgColor
         
 //        if (indexPath.item == 0 || indexPath.item == 3 || indexPath.item == 5 || indexPath.item == 6) {
 //                 if let cell = collectionView.cellForItem(at: indexPath) as? MenuCollectionViewCell {
