@@ -101,8 +101,8 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         print("--------")
         dateTo_TextField.resignFirstResponder()
         dateFrom_TextField.resignFirstResponder()
-         readJson()
-//        aggregateCall()
+//         readJson()
+        aggregateCall()
         
     }
     
@@ -220,9 +220,12 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
         Apicall.sharedInstance.addLoader()
         
-        let url = String(format: "http://10.232.35.3:8080/v1/aggregate")
-        var  paramdata = ["fromDate" : dateFrom_TextField.text ?? "" , "fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
+        let url = String(format: "http://10.232.35.5:8080/v1/aggregate")
+        var  paramdata = ["fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
+        
+        if(dateFrom_TextField.text != "") {
+            paramdata["fromDate"] = dateFrom_TextField.text        }
         
         if(dateTo_TextField.text != "") {
             paramdata["toDate"] = dateTo_TextField.text        }
@@ -251,7 +254,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     self.detailData = aggregateData.detailData ?? []
                     for data in self.detailData {
                         
-                        if( data.status == "0") {
+                        if( data.paymentStatus == "0") {
                             salesData.append(data)
                         }
                         else { // data.status = 1
@@ -261,8 +264,18 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     
                     self.detailData.removeAll()
                     self.detailData = salesData + refundData
-                    
+                    self.aggregateArr.removeAll()
                     self.aggregateArr = aggregateData.aggregateData ?? []
+                    var arrayIndex = 0
+                    for data in self.aggregateArr {
+                        arrayIndex += 1
+                        if ( data.sales?.totalCountComplete == 0 && data.refund?.totalCountComplete == 0) {
+                            self.aggregateArr.remove(at: arrayIndex - 1 )
+                            arrayIndex -= 1
+                            
+                        }
+                    }
+                    
                     self.loadController()
                     Apicall.sharedInstance.removeLoader()
                 } catch {
@@ -296,7 +309,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 self.detailData = aggregateData.detailData!
                 for data in self.detailData {
                     
-                    if( data.status == "0") {
+                    if( data.paymentStatus == "0") {
                         salesData.append(data)
                     }
                     else { // data.status = 1
@@ -315,7 +328,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                 for data in self.aggregateArr {
                     arrayIndex += 1
                     if ( data.sales?.totalCountComplete == 0 && data.refund?.totalCountComplete == 0) {
-                        aggregateArr.remove(at: arrayIndex - 1)
+                        aggregateArr.remove(at: arrayIndex - 1 )
+                        arrayIndex -= 1
+                        
                     }
                 }
                 
