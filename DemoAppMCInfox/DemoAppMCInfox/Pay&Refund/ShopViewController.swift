@@ -20,6 +20,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
     @IBOutlet weak var total_Price_Lable: UILabel!
     
     @IBOutlet weak var taxLabel: UILabel!
+    @IBOutlet weak var discountLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var statusLable: UILabel!
    // @IBOutlet weak var logTextView: UITextView!
@@ -249,8 +250,12 @@ extension ShopViewController : UITableViewDelegate {
         let percentAmount = ((6 * amountValue)/100)
         taxLabel.text = ("\(String(percentAmount))")
         
+        let discountVlaue  =  totalPrize
+         let discAMnt = ((6 * discountVlaue)/100)
+        discountLabel.text = ("\(String(discAMnt))")
         
-        let totalvalue = amountValue + percentAmount
+        
+        let totalvalue = amountValue - discAMnt + percentAmount
         total_Price_Lable.text = ("\(String(totalvalue))")
 
         clear_button.isEnabled = true
