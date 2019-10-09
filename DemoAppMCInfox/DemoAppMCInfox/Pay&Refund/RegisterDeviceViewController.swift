@@ -30,7 +30,7 @@ class RegisterDeviceViewController: UIViewController , PinOnGlass_Delegate {
     func startTransactionProcess() {
 
         payment = PinOnGlass.shared(Delegate: self)
-        payment.registerNewDevice(deviceName: "IDT23181")
+        payment.registerNewDevice(deviceName: "IDTECH3187")
         
     }
     

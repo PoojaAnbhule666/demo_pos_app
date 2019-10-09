@@ -54,7 +54,6 @@
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
 		9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */; };
 		921E377D2342213800AA7D38 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 921E377B2342213800AA7D38 /* Config.xcconfig */; };
-		921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377E234221D300AA7D38 /* mcSDKiOS.framework */; };
 		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +140,7 @@
 		837C705B2333362D0004D636 /* AggregateTransationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateTransationData.swift; sourceTree = "<group>"; };
 		837C70622333B4DE0004D636 /* LodingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
+		9209714D23471901002D168E /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
 		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 		921E377723421F8900AA7D38 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mcSDKiOS.framework; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/mcSDKiOS.framework; sourceTree = "<group>"; };
 		921E377B2342213800AA7D38 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		921E377C2342213800AA7D38 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		921E377E234221D300AA7D38 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
 		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,9 +210,9 @@
 		8301E15A231E6D3D00B25BC6 /* DemoAppMCInfox */ = {
 			isa = PBXGroup;
 			children = (
-				921E377E234221D300AA7D38 /* mcSDKiOS.framework */,
 				8301E199231E768C00B25BC6 /* IDTech.bundle */,
 				8301E197231E767A00B25BC6 /* IDTech.framework */,
+				9209714D23471901002D168E /* mcSDKiOS.framework */,
 				837C701F2330EAE80004D636 /* Pay&Refund */,
 				83CC12BE232F56A20009A750 /* Git Ignore */,
 				8301E19B231E769C00B25BC6 /* AppDelegate.swift */,
@@ -682,7 +681,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
