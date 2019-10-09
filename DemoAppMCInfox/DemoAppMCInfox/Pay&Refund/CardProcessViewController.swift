@@ -21,6 +21,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     var isRefund = false
     var isCancel = false
     let greenColor = UIColor(named: "ColorSucces")
+    var gotresponse = false
 
     
     var payment : PinOnGlass = PinOnGlass()
@@ -63,6 +64,7 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         //statusLable.text = "Transaction Complete"
         statusMsgLabel.textColor = greenColor
         statusMsgLabel.text = "Transaction Complete"
+        gotresponse = true
         
         if(!isRefund) {
             
@@ -110,6 +112,20 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         statusMsgLabel.textColor = UIColor(red: 0.0/255, green: 143/255, blue: 0.0/255, alpha: 1.0)
         statusMsgLabel.text =  message.Message
 
+        
+        
+         if (message.Code == "M014" && gotresponse ) {
+                    statusMsgLabel.textColor = .red
+            NotificationCenter.default.post(name:  NSNotification.Name("CancelTransaction"),
+                     object: nil)
+        }
+        else if (message.Code == "M014" && !gotresponse ) {
+                    statusMsgLabel.textColor = .red
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let completeVC = storyboard.instantiateViewController(withIdentifier: "CompleteTransactionViewController") as! CompleteTransactionViewController
+             completeVC.requestType = "Cancel"
+             self.navigationController?.pushViewController(completeVC, animated: true)
+        }
         if (message.Code == "M013") {
              statusMsgLabel.textColor = .red
              self.navigationController?.popViewController(animated: true)
