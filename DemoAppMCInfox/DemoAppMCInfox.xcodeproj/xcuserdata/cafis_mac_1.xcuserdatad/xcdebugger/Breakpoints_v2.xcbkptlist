@@ -118,8 +118,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "542"
             endingLineNumber = "542"
-            landmarkName = "PinOnGlass"
-            landmarkType = "21">
+            landmarkName = "getActivationStatus()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "EC3AAD0E-6494-43C8-A3C3-23986B10D216 - 218c4864ed22669b"

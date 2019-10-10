@@ -129,7 +129,7 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     func testCallAGgregateApi() {
        
-            let Url = String(format: "http://10.232.35.2:8080/v1/aggregate")
+            let Url = String(format: "http://10.232.35.4:8080/v1/aggregate")
             guard let serviceUrl = URL(string: Url) else { return }
             let parameterDictionary = ["ToTID" : "", "FromDate" : "2019-09-15" ,"ToDate": "", "FromTID" : "0000356000000" ] ////YYYY-MM-DD HH:II
             var request = URLRequest(url: serviceUrl)

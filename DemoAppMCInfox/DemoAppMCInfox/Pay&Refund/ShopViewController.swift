@@ -247,11 +247,11 @@ extension ShopViewController : UITableViewDelegate {
         }
         amountLabel.text = ("\(String(totalPrize))")
         let amountValue = totalPrize
-        let percentAmount = ((6 * amountValue)/100)
+        let percentAmount = ((10 * amountValue)/100)
         taxLabel.text = ("\(String(percentAmount))")
         
         let discountVlaue  =  totalPrize
-         let discAMnt = ((6 * discountVlaue)/100)
+         let discAMnt = ((10 * discountVlaue)/100)
         discountLabel.text = ("\(String(discAMnt))")
         
         
