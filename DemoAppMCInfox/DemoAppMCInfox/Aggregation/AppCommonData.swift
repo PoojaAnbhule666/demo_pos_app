@@ -11,9 +11,9 @@ import UIKit
 
 @available(iOS 11.0, *)
 //@available(iOS 11.0, *)
-class Apicall : NSObject {
+class AppCommonData : NSObject {
     
-    static let sharedInstance = Apicall()
+    static let sharedInstance = AppCommonData()
     
     let loadingView : LodingViewController
     let currentStoryboard : UIStoryboard
@@ -68,7 +68,7 @@ class Apicall : NSObject {
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: jsonObject,
                                                       options: .init(rawValue: 0))
-            return Apicall.getStringFromData(data: jsonData)
+            return AppCommonData.getStringFromData(data: jsonData)
         } catch {
             return nil
         }
@@ -98,10 +98,10 @@ class Apicall : NSObject {
                 if error == nil {
                     DispatchQueue.main.async {
                         
-                        print("\(#function) :  Success \n \(Apicall.getStringFromData(data: data!) ?? "")")
+                        print("\(#function) :  Success \n \(AppCommonData.getStringFromData(data: data!) ?? "")")
                         //                        print("\(#function) : Success \n \(String(describing: Apicall.getStringFromData(data: data!)))")
                         //                        completionBlock(true,(Apicall.getJSONObject(data: data!)))
-                        completionBlock(true,(Apicall.getStringFromData(data: data!)))
+                        completionBlock(true,(AppCommonData.getStringFromData(data: data!)))
                     }
                 } else {
                     print("\(#function) error : \(error?.localizedDescription ?? "No error")")

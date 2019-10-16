@@ -12,9 +12,9 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let menuLblArray = ["Pay","Money","Report","Refund","Wallet","Terminal Status" , "Register New Device"]
+    let menuLblArray = ["Pay","Refund","Aggregation","Terminal Status" , "Register New Device", "Connect Backend VPN"]
     
-    let imageArray = ["pay","money","report","refund","wallet", "activation" ,"registerDevice" ]
+    let imageArray = ["pay","refund","report", "activation" ,"registerDevice" , "vpn"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,11 +71,12 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             }
            
         }
-        else if(indexPath.item == 3) {
+        else if(indexPath.item == 1) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let slipVC = storyboard.instantiateViewController(withIdentifier: "SlipNumberViewController") as! SlipNumberViewController
             self.navigationController?.pushViewController(slipVC, animated: true)
-        } else if (indexPath.item == 2)  {
+        }
+        else if (indexPath.item == 2)  {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if #available(iOS 11.0, *) {
                 let slipVC = storyboard.instantiateViewController(withIdentifier: "AggregationViewController") as! AggregationViewController
@@ -85,7 +86,7 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             }
             
         }
-        else if(indexPath.item == 5) {
+        else if(indexPath.item == 3) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if #available(iOS 11.0, *) {
                 let activationVC = storyboard.instantiateViewController(withIdentifier: "ActivationStatusViewController") as! ActivationStatusViewController
@@ -95,7 +96,7 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             }
            
         }
-        else if(indexPath.item == 6) {
+        else if(indexPath.item == 4) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if #available(iOS 11.0, *) {
                 let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterDeviceViewController") as! RegisterDeviceViewController
@@ -105,6 +106,17 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
             }
             
         }
+        
+        else if(indexPath.item == 5) {
+                   let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                   if #available(iOS 11.0, *) {
+                       let registerVC = storyboard.instantiateViewController(withIdentifier: "VPNStatusViewController") as! VPNStatusViewController
+                       self.navigationController?.pushViewController(registerVC, animated: true)
+                   } else {
+                       // Fallback on earlier versions
+                   }
+                   
+               }
         
         
     }

@@ -87,6 +87,7 @@ class ShopViewController: UIViewController, PinOnGlass_Delegate , UIAlertViewDel
         amountLabel.text = "¥ 0.0"
         taxLabel.text = "¥ 0.0"
         total_Price_Lable.text = "0.0"
+        discountLabel.text = "¥ 0.0"
       
     }
     

@@ -244,7 +244,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
     func aggregateCall()  {
         
         
-        Apicall.sharedInstance.addLoader()
+        AppCommonData.sharedInstance.addLoader()
         
         let url = String(format: "http://10.232.35.4:8080/v1/aggregate")
         var  paramdata = ["fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
@@ -263,7 +263,7 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         print("paramdata--- \(paramdata)")
         
         
-        Apicall.sharedInstance.sendPOSTDataWithoutDataKey(serviceUrl: url, parameters: paramdata) { (isSuccesfull, response) in
+        AppCommonData.sharedInstance.sendPOSTDataWithoutDataKey(serviceUrl: url, parameters: paramdata) { (isSuccesfull, response) in
             
             if isSuccesfull {
                 let responseStr = response as! String
@@ -303,14 +303,14 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
                     }
                     
                     self.loadController()
-                    Apicall.sharedInstance.removeLoader()
+                    AppCommonData.sharedInstance.removeLoader()
                 } catch {
-                    Apicall.sharedInstance.removeLoader()
+                    AppCommonData.sharedInstance.removeLoader()
                     print("data not parse properly")
                 }
                 
             } else {
-                Apicall.sharedInstance.removeLoader()
+                AppCommonData.sharedInstance.removeLoader()
                 print(" call fail")
             }
             
