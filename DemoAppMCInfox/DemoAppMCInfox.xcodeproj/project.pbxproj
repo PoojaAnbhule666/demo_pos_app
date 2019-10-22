@@ -21,8 +21,6 @@
 		8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */; };
 		8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AC231E775800B25BC6 /* AVFoundation.framework */; };
 		8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8301E1AE231E776500B25BC6 /* MediaPlayer.framework */; };
-		83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; };
-		83088D0923434FAB0026A878 /* mcSDKiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921E377723421F8900AA7D38 /* mcSDKiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		837C70222330EB130004D636 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70212330EB130004D636 /* ShopViewController.swift */; };
 		837C7041233334D90004D636 /* ExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7037233334D60004D636 /* ExpandCell.swift */; };
 		837C7042233334D90004D636 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C7038233334D70004D636 /* SummaryViewController.swift */; };
@@ -54,6 +52,10 @@
 		921E377D2342213800AA7D38 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 921E377B2342213800AA7D38 /* Config.xcconfig */; };
 		9251860C2355AD290075F566 /* VPNStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251860B2355AD290075F566 /* VPNStatusViewController.swift */; };
 		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
+		AFCA57F5235EE777002DB8A9 /* mcSDKiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA57F4235EE777002DB8A9 /* mcSDKiOS.framework */; };
+		AFCA57F6235EE777002DB8A9 /* mcSDKiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA57F4235EE777002DB8A9 /* mcSDKiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFCA57F8235EE7C2002DB8A9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA57E9235ED677002DB8A9 /* PinOnGlass.framework */; };
+		AFCA57F9235EE7C2002DB8A9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA57E9235ED677002DB8A9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +83,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8301E1A2231E770100B25BC6 /* Embed Frameworks */ = {
+		AFCA57F7235EE777002DB8A9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				83088D0923434FAB0026A878 /* mcSDKiOS.framework in Embed Frameworks */,
+				AFCA57F9235EE7C2002DB8A9 /* PinOnGlass.framework in Embed Frameworks */,
+				AFCA57F6235EE777002DB8A9 /* mcSDKiOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +152,7 @@
 		9251860B2355AD290075F566 /* VPNStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusViewController.swift; sourceTree = "<group>"; };
 		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
 		AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
+		AFCA57F4235EE777002DB8A9 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mcSDKiOS.framework; path = ../../../POS_FRAMEWORK/PinOnGlass/mcSDKiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,11 +163,12 @@
 				8301E1AF231E776500B25BC6 /* MediaPlayer.framework in Frameworks */,
 				8301E1AD231E775800B25BC6 /* AVFoundation.framework in Frameworks */,
 				8301E1AB231E774D00B25BC6 /* AudioToolbox.framework in Frameworks */,
+				AFCA57F5235EE777002DB8A9 /* mcSDKiOS.framework in Frameworks */,
 				8301E1A9231E774000B25BC6 /* CFNetwork.framework in Frameworks */,
 				8301E1A7231E773300B25BC6 /* CoreBluetooth.framework in Frameworks */,
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
+				AFCA57F8235EE7C2002DB8A9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
-				83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				921E377723421F8900AA7D38 /* mcSDKiOS.framework */,
+				AFCA57F4235EE777002DB8A9 /* mcSDKiOS.framework */,
 				8301E1AE231E776500B25BC6 /* MediaPlayer.framework */,
 				8301E1AC231E775800B25BC6 /* AVFoundation.framework */,
 				8301E1AA231E774D00B25BC6 /* AudioToolbox.framework */,
@@ -344,7 +350,7 @@
 				8301E154231E6D3D00B25BC6 /* Sources */,
 				8301E155231E6D3D00B25BC6 /* Frameworks */,
 				8301E156231E6D3D00B25BC6 /* Resources */,
-				8301E1A2231E770100B25BC6 /* Embed Frameworks */,
+				AFCA57F7235EE777002DB8A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -653,10 +659,9 @@
 		8301E176231E6D3F00B25BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2C6V6DF7SS;
+				DEVELOPMENT_TEAM = Y66PPUA4LV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoAppMCInfox",
@@ -667,7 +672,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n4;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -677,10 +682,9 @@
 		8301E177231E6D3F00B25BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VX2MC43HJ4;
+				DEVELOPMENT_TEAM = Y66PPUA4LV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoAppMCInfox",
@@ -691,7 +695,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nn;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -26,6 +26,11 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
     
     var payment : PinOnGlass = PinOnGlass()
     
+    var activityIndicator = UIActivityIndicatorView()
+       var strLabel = UILabel()
+
+    let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+    
    
    
     override func viewDidLoad() {
@@ -46,10 +51,10 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         payment = PinOnGlass.shared(Delegate: self)
         
         if(isRefund) {
-              payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.amount ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "IDTECH3187") // idtech3187
+              payment.startRefund(slipNumber: self.slipNo, dAmount: Double(self.amount ) ?? 0.0, sSeqNumber: "1234567", sProductCategoryCode: "1234567", sDeviceName: "") // idtech3187
         }
         else {
-        payment.startTransaction(dAmount: Double(amount ?? "0.00") as! Double, sSeqNumber: "", sProductCategoryCode: "001", sDeviceName: "IDTECH3187") // IDTECH3187
+        payment.startTransaction(dAmount: Double(amount ?? "0.00") as! Double, sSeqNumber: "", sProductCategoryCode: "001", sDeviceName: "") // IDTECH3187
         }
         
     }
@@ -128,25 +133,28 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
         }
         if (message.Code == "M013") {
              statusMsgLabel.textColor = .red
+             self.effectView.removeFromSuperview()
              self.navigationController?.popViewController(animated: true)
         }
         
     }
     
     @objc func landToMenuVc() {
+         self.effectView.removeFromSuperview()
         self.navigationController?.popViewController(animated: true)
     }
     
     
     
     @IBAction func cancelMethod(_ sender: UIButton) {
-        
+        activityIndicator("Cancelling...")
         if(!isCancel) {
             print("cancel button clicked")
             isCancel = true
             if(payment._inTransaction == 0){
                 print("cancel button clicked , in transaction 0")
                 payment.cancelInMiddle()
+                self.effectView.removeFromSuperview()
                 self.navigationController?.popViewController(animated: true)
             }
             else {
@@ -155,5 +163,37 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
             }
         }
     }
+    
+    
+    
+    
+    
+    func activityIndicator(_ title: String) {
+
+           strLabel.removeFromSuperview()
+           activityIndicator.removeFromSuperview()
+           effectView.removeFromSuperview()
+
+           strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 160, height: 46))
+           strLabel.text = title
+           strLabel.font = .systemFont(ofSize: 14, weight: .medium)
+           strLabel.textColor = UIColor(white: 0.9, alpha: 0.7)
+
+           effectView.frame = CGRect(x: view.frame.midX - strLabel.frame.width/2, y: view.frame.midY + view.frame.midY/2 , width: 160, height: 46)
+           effectView.layer.cornerRadius = 15
+           effectView.layer.masksToBounds = true
+           
+
+           activityIndicator = UIActivityIndicatorView(style: .white)
+           activityIndicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
+           activityIndicator.startAnimating()
+
+           effectView.contentView.addSubview(activityIndicator)
+           effectView.contentView.addSubview(strLabel)
+           effectView.alpha = 0.7
+           effectView.backgroundColor = .white
+           view.addSubview(effectView)
+       }
+
     
 }
