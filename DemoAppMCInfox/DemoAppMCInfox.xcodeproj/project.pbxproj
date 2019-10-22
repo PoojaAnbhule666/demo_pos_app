@@ -172,7 +172,6 @@
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
 				92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
-				921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */,
 				83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,7 +683,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -708,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.nn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
