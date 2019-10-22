@@ -245,8 +245,9 @@ class AggregationViewController: UIViewController ,UITextFieldDelegate{
         
         
         AppCommonData.sharedInstance.addLoader()
-        
-        let url = String(format: "http://10.232.35.4:8080/v1/aggregate")
+//        https://app.dev.cafis-magic.com:8080
+//        "http://10.232.35.4:8080
+        let url = String(format: "https://app.dev.cafis-magic.com:8080/v1/aggregate")
         var  paramdata = ["fromTid" : tidFrom_textField.text ?? "" , "status" : statusTranc] as [String : Any]
         //        "0000356000000"
         
