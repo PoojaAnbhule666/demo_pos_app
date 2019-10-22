@@ -54,6 +54,7 @@
 		9219E5F1231F88A300D822DD /* CardProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F0231F88A300D822DD /* CardProcessViewController.swift */; };
 		9219E5F3231F88CA00D822DD /* CompleteTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */; };
 		921E377D2342213800AA7D38 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 921E377B2342213800AA7D38 /* Config.xcconfig */; };
+		9251860C2355AD290075F566 /* VPNStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251860B2355AD290075F566 /* VPNStatusViewController.swift */; };
 		92CBCB2F2338C81B0024C8C0 /* RegisterDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		921E377723421F8900AA7D38 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mcSDKiOS.framework; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass/mcSDKiOS.framework; sourceTree = "<group>"; };
 		921E377B2342213800AA7D38 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		921E377C2342213800AA7D38 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		9251860B2355AD290075F566 /* VPNStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusViewController.swift; sourceTree = "<group>"; };
 		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,7 +174,6 @@
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
 				92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
-				921E377F234221D300AA7D38 /* mcSDKiOS.framework in Frameworks */,
 				83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +265,7 @@
 				9219E5F2231F88CA00D822DD /* CompleteTransactionViewController.swift */,
 				92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */,
 				92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */,
+				9251860B2355AD290075F566 /* VPNStatusViewController.swift */,
 			);
 			path = "Pay&Refund";
 			sourceTree = "<group>";
@@ -498,6 +500,7 @@
 				837C7045233334D90004D636 /* AggregationViewController.swift in Sources */,
 				837C7049233334D90004D636 /* Sales&RefundTableViewCell.swift in Sources */,
 				837C7042233334D90004D636 /* SummaryViewController.swift in Sources */,
+				9251860C2355AD290075F566 /* VPNStatusViewController.swift in Sources */,
 				837C705E2333362D0004D636 /* DetailData.swift in Sources */,
 				837C7047233334D90004D636 /* HeaderView.swift in Sources */,
 				837C705D2333362D0004D636 /* Sales.swift in Sources */,
@@ -681,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n3;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nttdata.cafis.n4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

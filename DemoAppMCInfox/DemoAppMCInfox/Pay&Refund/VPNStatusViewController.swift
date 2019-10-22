@@ -16,7 +16,7 @@ class VPNStatusViewController: UIViewController {
         super.viewDidLoad()
         getVPNStatus()
 
-        
+        // Do any additional setup after loading the view.
     }
     
     
