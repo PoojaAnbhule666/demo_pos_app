@@ -40,8 +40,6 @@
 		837C70602333362D0004D636 /* AggregateTransationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C705B2333362D0004D636 /* AggregateTransationData.swift */; };
 		837C70642333B4DF0004D636 /* LodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C70622333B4DE0004D636 /* LodingViewController.swift */; };
 		83CC12C3232F57270009A750 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = 83CC12C2232F57270009A750 /* .gitIgnore */; };
-		92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; };
-		92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92113ED023278107002315C9 /* PinOnGlass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92113EEE2328B958002315C9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */; };
 		92122EB22334DF7C00C5E173 /* ActivationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */; };
 		92122EB62334E0F900C5E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92122EB42334E0F900C5E173 /* Assets.xcassets */; };
@@ -66,26 +64,19 @@
 			remoteGlobalIDString = 8301E157231E6D3D00B25BC6;
 			remoteInfo = DemoAppMCInfox;
 		};
-		92113ECF23278107002315C9 /* PBXContainerItemProxy */ = {
+		AFCA57E8235ED677002DB8A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */;
+			containerPortal = AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 061309CF22F43B4100056970;
 			remoteInfo = PinOnGlass;
 		};
-		92113ED123278107002315C9 /* PBXContainerItemProxy */ = {
+		AFCA57EA235ED677002DB8A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */;
+			containerPortal = AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 061309D822F43B4100056970;
 			remoteInfo = PinOnGlassTests;
-		};
-		92113ED523278122002315C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 061309CE22F43B4100056970;
-			remoteInfo = PinOnGlass;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -96,7 +87,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				92113ED423278122002315C9 /* PinOnGlass.framework in Embed Frameworks */,
 				83088D0923434FAB0026A878 /* mcSDKiOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -142,7 +132,6 @@
 		837C70622333B4DE0004D636 /* LodingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		9209714D23471901002D168E /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
-		92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/payment_sdk_pog/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
 		92122EB42334E0F900C5E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +148,7 @@
 		921E377C2342213800AA7D38 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		9251860B2355AD290075F566 /* VPNStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusViewController.swift; sourceTree = "<group>"; };
 		92CBCB2E2338C81B0024C8C0 /* RegisterDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceViewController.swift; sourceTree = "<group>"; };
+		AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinOnGlass.xcodeproj; path = ../../../POS_FRAMEWORK/PinOnGlass.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +162,6 @@
 				8301E1A9231E774000B25BC6 /* CFNetwork.framework in Frameworks */,
 				8301E1A7231E773300B25BC6 /* CoreBluetooth.framework in Frameworks */,
 				8301E1A5231E771500B25BC6 /* ExternalAccessory.framework in Frameworks */,
-				92113ED323278122002315C9 /* PinOnGlass.framework in Frameworks */,
 				8301E198231E767A00B25BC6 /* IDTech.framework in Frameworks */,
 				83088D0823434FAB0026A878 /* mcSDKiOS.framework in Frameworks */,
 			);
@@ -191,7 +180,7 @@
 		8301E14F231E6D3D00B25BC6 = {
 			isa = PBXGroup;
 			children = (
-				92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */,
+				AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */,
 				8301E15A231E6D3D00B25BC6 /* DemoAppMCInfox */,
 				8301E16F231E6D3F00B25BC6 /* DemoAppMCInfoxTests */,
 				8301E159231E6D3D00B25BC6 /* Products */,
@@ -310,15 +299,6 @@
 			path = "Git Ignore";
 			sourceTree = "<group>";
 		};
-		92113ECB23278107002315C9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				92113ED023278107002315C9 /* PinOnGlass.framework */,
-				92113ED223278107002315C9 /* PinOnGlassTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		921351B4233B40A5009A261D /* FullMaterialLoader */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +325,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		AFCA57E4235ED677002DB8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA57E9235ED677002DB8A9 /* PinOnGlass.framework */,
+				AFCA57EB235ED677002DB8A9 /* PinOnGlassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,7 +349,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				92113ED623278122002315C9 /* PBXTargetDependency */,
 			);
 			name = DemoAppMCInfox;
 			productName = DemoAppMCInfox;
@@ -417,8 +405,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 92113ECB23278107002315C9 /* Products */;
-					ProjectRef = 92113ECA23278107002315C9 /* PinOnGlass.xcodeproj */;
+					ProductGroup = AFCA57E4235ED677002DB8A9 /* Products */;
+					ProjectRef = AFCA57E3235ED677002DB8A9 /* PinOnGlass.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -430,18 +418,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		92113ED023278107002315C9 /* PinOnGlass.framework */ = {
+		AFCA57E9235ED677002DB8A9 /* PinOnGlass.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PinOnGlass.framework;
-			remoteRef = 92113ECF23278107002315C9 /* PBXContainerItemProxy */;
+			remoteRef = AFCA57E8235ED677002DB8A9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		92113ED223278107002315C9 /* PinOnGlassTests.xctest */ = {
+		AFCA57EB235ED677002DB8A9 /* PinOnGlassTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = PinOnGlassTests.xctest;
-			remoteRef = 92113ED123278107002315C9 /* PBXContainerItemProxy */;
+			remoteRef = AFCA57EA235ED677002DB8A9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -523,11 +511,6 @@
 			isa = PBXTargetDependency;
 			target = 8301E157231E6D3D00B25BC6 /* DemoAppMCInfox */;
 			targetProxy = 8301E16D231E6D3F00B25BC6 /* PBXContainerItemProxy */;
-		};
-		92113ED623278122002315C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PinOnGlass;
-			targetProxy = 92113ED523278122002315C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
