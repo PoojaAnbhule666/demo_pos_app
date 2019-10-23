@@ -134,7 +134,6 @@
 		837C705B2333362D0004D636 /* AggregateTransationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateTransationData.swift; sourceTree = "<group>"; };
 		837C70622333B4DE0004D636 /* LodingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LodingViewController.swift; sourceTree = "<group>"; };
 		83CC12C2232F57270009A750 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
-		9209714D23471901002D168E /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
 		92113EED2328B958002315C9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		92122EB12334DF7B00C5E173 /* ActivationStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationStatusViewController.swift; sourceTree = "<group>"; };
 		92122EB42334E0F900C5E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +141,7 @@
 		921351B8233B40A5009A261D /* MaterialLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLoader.swift; sourceTree = "<group>"; };
 		921351B9233B40A5009A261D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		921351BE233B416C009A261D /* AppCommonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonData.swift; sourceTree = "<group>"; };
+		921583ED2360719A00718543 /* mcSDKiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mcSDKiOS.framework; sourceTree = "<group>"; };
 		9219E5EC231F881C00D822DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9219E5EE231F887200D822DD /* SlipNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipNumberViewController.swift; sourceTree = "<group>"; };
 		9219E5F0231F88A300D822DD /* CardProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProcessViewController.swift; sourceTree = "<group>"; };
@@ -205,9 +205,9 @@
 		8301E15A231E6D3D00B25BC6 /* DemoAppMCInfox */ = {
 			isa = PBXGroup;
 			children = (
+				921583ED2360719A00718543 /* mcSDKiOS.framework */,
 				8301E199231E768C00B25BC6 /* IDTech.bundle */,
 				8301E197231E767A00B25BC6 /* IDTech.framework */,
-				9209714D23471901002D168E /* mcSDKiOS.framework */,
 				837C701F2330EAE80004D636 /* Pay&Refund */,
 				83CC12BE232F56A20009A750 /* Git Ignore */,
 				8301E19B231E769C00B25BC6 /* AppDelegate.swift */,

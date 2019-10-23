@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFPlugInFactories</key>
+	<dict/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -26,7 +28,9 @@
 		<true/>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Allow</string>
+	<string>allow</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>allow</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>
@@ -48,11 +52,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>allow</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>allow</string>
-	<key>CFPlugInFactories</key>
-	<dict/>
 </dict>
 </plist>
