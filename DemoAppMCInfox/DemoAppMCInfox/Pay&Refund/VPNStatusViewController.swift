@@ -26,7 +26,7 @@ class VPNStatusViewController: UIViewController {
     func getVPNStatus() {
          AppCommonData.sharedInstance.addLoader()
          let url = String(format: "https://app.dev.cafis-magic.com/vpn/connectToVPN")
-         AppCommonData.sharedInstance.sendPOSTDataWithoutDataKey(serviceUrl: url, parameters: [:]) { (isSuccesfull, response) in
+         AppCommonData.sharedInstance.callGETservice(serviceURL: url) { (isSuccesfull, statusCode , response) in
                     
                 if isSuccesfull {
                         
@@ -40,8 +40,9 @@ class VPNStatusViewController: UIViewController {
                        print("vpn dic is ",dataDic)
                         let keys = dataDic.keys
                         for key in keys {
-                           if (key == "connectionStatus"){
-                            if(dataDic["connectionStatus"] as! Bool)  {
+                           if (key == "vPNConnectionStatus"){
+                            if(dataDic["vPNConnectionStatus"] as! Bool)  {
+                                
                                 self.setMessage(message: "Connected")
 
                             }
@@ -51,12 +52,10 @@ class VPNStatusViewController: UIViewController {
                            }
                         }
                    } catch _ {
-                       AppCommonData.sharedInstance.removeLoader()
                        self.setMessage(message: "Not able to get the status")
                    }
                }
                else {
-                    AppCommonData.sharedInstance.removeLoader()
                     //print("server error")
                    self.setMessage(message: "Server error")
                }
@@ -66,8 +65,14 @@ class VPNStatusViewController: UIViewController {
     
     
     func setMessage(message : String) {
+        AppCommonData.sharedInstance.removeLoader()
         DispatchQueue.main.async{
-            self.statusLabel.text = message
+             self.statusLabel.text = message
+            if(message == "Connected") {
+                self.statusLabel.textColor = .green
+            }else {
+                self.statusLabel.textColor = .red
+            }
         }
     }
    

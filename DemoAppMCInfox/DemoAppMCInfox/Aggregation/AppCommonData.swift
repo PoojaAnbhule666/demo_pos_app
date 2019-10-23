@@ -121,4 +121,46 @@ class AppCommonData : NSObject {
     }
     
     
+    
+    func callGETservice(serviceURL : String, completionBlock : @escaping (_ successful:Bool,_ statusCode:Int,_ responseDict:Any?) -> ()) {
+        guard let url = URL(string: "\(serviceURL)") else { return }
+        print("url is-->> \(url)")
+        let dataTask = sharedSession.dataTask(with: url,
+                                              completionHandler: { (data, response, error) in
+                                                
+                                                let httpResponse = response as? HTTPURLResponse
+                                                
+                                                
+                                                if error == nil {
+                                                    print("completion block done")
+                                                    //                                                    if AppCommonData.getJSONObject(data: data!) != nil
+                                                    print("\(String(describing: response))")
+                                                    
+                                                    
+                                                    print(" \(#function) : Success \n \(String(describing: AppCommonData.getStringFromData(data: data!)))")
+                                                    
+                                                    //                                                        print("\(#function) : Success \n \(AppCommonData.getJSONObject(data: data!)!)")
+                                                    DispatchQueue.main.async {
+                                                        //                                                        completionBlock(true,(Apicall.getJSONObject(data: data!)))
+                                                        completionBlock(true,httpResponse!.statusCode,(AppCommonData.getStringFromData(data: data!)))
+                                                    }
+                                                    //                                                    }else
+                                                    //                                                    {
+                                                    //                                                        completionBlock(false,"Somethig went wrong")
+                                                    //                                                    }
+                                                    
+                                                } else {
+                                                    
+                                                    print("\(#function) : failed (\(error?.localizedDescription ?? "No error"))")
+                                                    DispatchQueue.main.async {
+                                                        
+                                                        completionBlock(false,001,(error?.localizedDescription ?? "No error"))
+                                                    }
+                                                }
+        })
+        dataTask.resume()
+    }
+    
+    
+    
 }
