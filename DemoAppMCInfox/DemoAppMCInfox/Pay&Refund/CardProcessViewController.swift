@@ -99,6 +99,7 @@ class CardProcessViewController: UIViewController , UIScrollViewDelegate , PinOn
     
     func payError(error: MessageData, response: NSObject) {
         print("----------ERROR ------------- ", error.Code)
+        cancelBtn.setTitle("Back", for: .normal)
         statusLable.backgroundColor = .red
         //statusLable.text = error.Message
         statusMsgLabel.textColor = .red
