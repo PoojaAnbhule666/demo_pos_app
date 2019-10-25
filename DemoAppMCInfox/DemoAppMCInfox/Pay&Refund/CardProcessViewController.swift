@@ -10,11 +10,12 @@ import UIKit
 import PinOnGlass
 
 @available(iOS 11.0, *)
-class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
+class CardProcessViewController: UIViewController , UIScrollViewDelegate , PinOnGlass_Delegate{
 
     @IBOutlet weak var statusLable: UILabel!
     @IBOutlet weak var statusMsgLabel: UILabel!
     @IBOutlet weak var cancelBtn: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var slipNo : String = ""
     var amount : String = ""
@@ -35,7 +36,6 @@ class CardProcessViewController: UIViewController , PinOnGlass_Delegate{
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationItem.hidesBackButton = true
         startTransactionProcess()
         // Do any additional setup after loading the view.
