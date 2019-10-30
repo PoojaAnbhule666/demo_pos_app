@@ -18,10 +18,14 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
-    
+    override func viewWillLayoutSubviews() {
+       super.viewDidLayoutSubviews()
+    }
     override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
         collectionView.reloadData()
       }
     
@@ -125,6 +129,9 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if UIDevice.current.orientation.isLandscape {
+             return CGSize(width: collectionView.bounds.width / 6 - 10, height: collectionView.bounds.width / 3 + 60)
+        }
         return CGSize(width: collectionView.bounds.width / 3 - 10, height: collectionView.bounds.width / 3 + 30)
     }
     
@@ -137,7 +144,10 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
         
     }
     
-    
+//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//        super.viewWillTransition(to: size, with: coordinator)
+//        self.collectionView.collectionViewLayout.invalidateLayout()
+//    }
     
     func testCallAGgregateApi() {
        
