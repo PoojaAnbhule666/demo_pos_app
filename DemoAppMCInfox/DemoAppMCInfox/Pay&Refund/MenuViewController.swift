@@ -35,10 +35,10 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
     
     // make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath as IndexPath) as! MenuCollectionViewCell
         cell.menuLbl.text = self.menuLblArray[indexPath.item]
+        cell.menuLbl.textAlignment = .center
         cell.menuImg.image = UIImage(named: imageArray[indexPath.item])
         cell.menuLbl.sizeToFit()
         cell.menuLbl.adjustsFontSizeToFitWidth = true
@@ -130,13 +130,16 @@ class MenuViewController: UIViewController , UICollectionViewDelegate, UICollect
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIDevice.current.orientation.isLandscape {
-             return CGSize(width: collectionView.bounds.width / 6 - 10, height: collectionView.bounds.width / 3 + 60)
+             return CGSize(width: collectionView.bounds.width / 6 - 10, height: collectionView.bounds.width / 6 + 60)
         }
         return CGSize(width: collectionView.bounds.width / 3 - 10, height: collectionView.bounds.width / 3 + 30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        if UIDevice.current.orientation.isLandscape {
+             return 30
+        }
+       return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
